@@ -174,6 +174,61 @@ header .button.white {
     cursor: pointer;
 }
 
+.rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.star-rating .star {
+    color: #FDC639;
+}
+
+        /* Additional styles */
+.rating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-section .company-name {
+    color: #FFFBFB;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.15px;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.rating-section img {
+  margin-left: -115px;
+  margin-bottom: -20px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Adjust the spacing as needed */
+}
+
+.separator {
+  width: 50px;
+  padding-right:20px ;
+  height: 50px;
+  color: #fff;
+  
+}
+
+
+/* Styling for the blue box */
+
+
 .blue-box {
     background-color: #4C40F7; /* Blue background color */
     color: white;
