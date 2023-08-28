@@ -270,12 +270,21 @@ header .button.white {
 
 #johnson{
   width: 200px;
-  height: 42px;
+  height: 40px;
 }
 
 #edwards{
   width: 290px;
-  height: 48px;
+  height: 40px;
+}
+
+#abbott{
+  width: 120px;
+  height: 42px;
+}
+#bd{
+  width: 120px;
+  height: 42px;
 }
 
 
