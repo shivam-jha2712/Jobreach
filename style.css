@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif, "Urbanist";
 }
 body {
   background: #ffffff;
@@ -295,6 +295,120 @@ header .button.white {
     to {
         transform: translateX(-100%); /* Move to the left side */
     }
+}
+
+
+.cards-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Spacing between cards */
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+#card-1
+{
+  box-shadow: none;
+}
+
+.card {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: #FFF;
+    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s, color 0.3s;
+}
+.card1 {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 121.429% */
+    letter-spacing: -1.68px;
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+}
+
+h1 .greens{
+  color:#1CC382;
+}
+
+
+
+.circle {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: #ffffff; /* Change the circle's background color */
+    position: absolute;
+    top: 43px; /* Position the circle above the card */
+    left: 50%; /* Move the circle to the center horizontally */
+    transform: translateX(-50%); /* Center the circle */
+    z-index: 1; /* Place circle above the card */
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.10))
+}
+
+.circle img{
+  margin-top: 25px;
+  margin-left: 27px;
+}
+
+.card h3 {
+    font-size: 20px;
+    position: absolute;
+    top: 138px; /* Position the circle above the card */
+    left: 28.5%;
+    padding: 25px;
+    color: #000000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 32px; /* 91.429% */
+  letter-spacing: -0.7px;
+    z-index: 2; /* Place heading and paragraph above the circle */
+}
+
+.card p {
+    font-size: 16px;
+    color: #000000;
+    position: absolute;
+    top: 183px; /* Position the circle above the card */
+    left: 20%;
+    padding: 25px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 28.8px */
+    letter-spacing: -0.18px;
+    z-index: 2; /* Place heading and paragraph above the circle */
+}
+
+.card:hover {
+    background-color: #4C40F7; /* Blue background color on hover */
+    color: white; /* Text color on hover */
 }
 
 
