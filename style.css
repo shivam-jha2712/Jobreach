@@ -229,12 +229,19 @@ header .button.white {
 
 .blue-box {
     background-color: #4C40F7; /* Blue background color */
+    position: relative;
     color: white;
+    width: 92%;
+    height: 260px;
+    margin: 50px;
+    margin-top: -20%;
+    border-radius: 45px;
     padding: 40px 0;
+    overflow: hidden; /* Prevent content overflow */
 }
 
 .blue-box-content {
-    max-width: 1200px;
+    max-width: 1080px;
     margin: 0 auto;
     text-align: center;
 }
@@ -246,8 +253,11 @@ header .button.white {
 }
 
 .marquee {
-    overflow: hidden;
+    display: flex;
+    margin: 55px;
+    overflow: hidden; /* Hide any overflowing content */
     white-space: nowrap;
+    animation: marquee-scroll 20s linear infinite; /* Animation for marquee */
 }
 
 .marquee img {
@@ -256,6 +266,15 @@ header .button.white {
     margin: 0 20px; /* Adjust spacing between logos */
     width: 100px; /* Adjust logo size */
     height: auto;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(100%); /* Start from the right side */
+    }
+    to {
+        transform: translateX(-100%); /* Move to the left side */
+    }
 }
 
 
