@@ -349,12 +349,6 @@ header .button.white {
     border-radius: 27px;
 }
 
-h1 .greens{
-  color:#1CC382;
-}
-
-
-
 .circle {
     width: 106px;
     height: 106px;
@@ -376,8 +370,15 @@ h1 .greens{
 .card h3 {
     font-size: 20px;
     position: relative;
-    margin-top: 35px;
+    margin-top: 125px;
     color: #555;
+}
+
+.text {
+  margin-top: 10px;
+  width: 265px;
+height: 85px;
+text-align: center;
 }
 
 .card p {
@@ -454,6 +455,7 @@ margin-top: -550px;
 margin-left: 450px;
 transform: rotate(180.291deg);
 }
+
 
 .circle2 {
     width: 106px;
