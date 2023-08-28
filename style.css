@@ -375,41 +375,117 @@ h1 .greens{
 
 .card h3 {
     font-size: 20px;
-    position: absolute;
-    top: 138px; /* Position the circle above the card */
-    left: 28.5%;
-    padding: 25px;
-    color: #000000;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 32px; /* 91.429% */
-  letter-spacing: -0.7px;
-    z-index: 2; /* Place heading and paragraph above the circle */
+    position: relative;
+    margin-top: 35px;
+    color: #555;
 }
 
 .card p {
     font-size: 16px;
-    color: #000000;
-    position: absolute;
-    top: 183px; /* Position the circle above the card */
-    left: 20%;
-    padding: 25px;
-    text-align: center;
-    font-family: Poppins;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 160%; /* 28.8px */
-    letter-spacing: -0.18px;
-    z-index: 2; /* Place heading and paragraph above the circle */
+    color: #555;
 }
-
 .card:hover {
     background-color: #4C40F7; /* Blue background color on hover */
     color: white; /* Text color on hover */
 }
+
+
+.blue-box2 {
+    background-color: #4C40F7;
+    width: 1352px;
+    height: 944px;
+    margin-left: 75px;
+    border-radius: 25px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.content-top {
+  width: 757px;
+  color: var(--mindful-gray-white, #FFF);
+text-align: center;
+font-size: 52px;
+font-style: normal;
+font-weight: 500;
+line-height: 80px; /* 153.846% */
+letter-spacing: -1.56px;
+text-align: center;
+margin-left: 270px;
+margin-bottom: 160px;
+}
+
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blue-box2 h2 {
+    font-size: 36px;
+    margin-bottom: 140px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 374px;
+    height: 479px;
+    border-radius: 27px;
+    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.union{
+  position: absolute;
+  width: 894.692px;
+height: 885.225px;
+margin-top: -550px;
+margin-left: 450px;
+transform: rotate(180.291deg);
+}
+
+.circle2 {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: #4C40F7;
+    position: absolute;
+    top: -53px;
+    left: calc(50% - 53px);
+    z-index: 1;
+}
+
+
+.card2 h3 {
+    font-size: 20px;
+    position: relative;
+    margin-top: 65px;
+    color: #555;
+}
+
+.card2 p {
+    font-size: 16px;
+    color: #555;
+}
+.card2 .service {
+    font-size: 16px;
+    color: #555;
+    margin-top: 15px;
+}
+
+
+
 
 
 /* .banner {
