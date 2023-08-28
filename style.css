@@ -37,6 +37,7 @@ header ul {
 header ul li {
   list-style: none;
   margin-left: 20px;
+  font-weight: 700;
 }
 header ul li a {
   text-decoration: none;
@@ -55,8 +56,9 @@ header .button {
     color: white;
     border: none;
     font-size: 16px;
+    font-weight: 500;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 35px;
     margin: 10px 5px;
     cursor: pointer;
 }
@@ -65,9 +67,10 @@ header .button.white {
     background-color: white; /* White color for "Get Hired" */
     color: #4CAF50;
     border-radius: 50px;
-    padding: 10px 20px;
+    padding: 10px 35px;
     margin: 10px 5px;
     font-size: 16px;
+    font-weight: 500;
     border: 2px solid #4CAF50;
     cursor: pointer;
 }
@@ -83,7 +86,7 @@ header .button.white {
 .banner img {
     width: 1064px;
     height: 706px;
-    margin-left: 39em;
+    margin-left: 29em;
     object-fit: cover;
 }
 
@@ -93,7 +96,7 @@ header .button.white {
     left: 0;
     width: 1440px;
     height: 706px;
-    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 100%);
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,9 +104,105 @@ header .button.white {
     text-align: center;
 }
 
-.banner-overlay h2 {
-    font-size: 24px;
+.overlay-content {
+  margin-left: -50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.overlay-content button {
+    background-color: #3ceca8;
+    color: #4CAF50;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.overlay-content #banner-text {
+    text-align: left; /* Align text content to the left */
+}
+
+.overlay-content h1 {
+    font-size: 36px;
     font-weight: bold;
+    margin-bottom: 10px; /* Add margin to create spacing between elements */
+}
+
+.overlay-content p {
+    text-align: left; /* Align paragraph to the left */
+    margin-bottom: 20px; /* Add margin to create spacing between elements */
+}
+
+.overlay-content .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.banner-overlay h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.banner .button {
+    background-color: #4CAF50; /* Light green color for "Hire Talent" */
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 9px 40px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+.banner .btn-data{
+    background-color: #3ceca8; /* Light green color for "Hire Talent" */
+    color: #4CAF50;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.blue-box {
+    background-color: #4C40F7; /* Blue background color */
+    color: white;
+    padding: 40px 0;
+}
+
+.blue-box-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.blue-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px; /* Adjust spacing between logos */
+    width: 100px; /* Adjust logo size */
+    height: auto;
 }
 
 
