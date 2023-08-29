@@ -75,6 +75,43 @@ header .button.white {
     cursor: pointer;
 }
 
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  header ul.active {
+    display: flex;
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
+
+  header .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  header ul li:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+/* Rest of your existing CSS */
+
+
+
+
 .banner {
     position: relative;
     margin-top: 109px;
@@ -308,6 +345,7 @@ header .button.white {
     grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
     gap: 20px; /* Spacing between cards */
     max-width: 1064px;
+    /* margin: 0 35px; */
     margin: 0 auto;
 }
 
@@ -462,10 +500,12 @@ margin-left: 30%;
   position: absolute;
   width: 894.692px;
 height: 885.225px;
-margin-top: -550px;
-margin-left: 450px;
+margin-top: -350px;
+margin-left: -230px;
 transform: rotate(180.291deg);
+overflow-y: hidden;
 }
+
 
 
 .circle2 {
@@ -509,7 +549,94 @@ transform: rotate(180.291deg);
     color: white;
     text-align: center;
 }
+.blue-box3 .apply {
+  background-color: #ffffff; /* Grey background color */
+  color: #4C40F7; /* Blue text color */
+  font-weight: bold;
+  border: 1 px solid #4C40F7;
+  margin-top: 20px;
+  margin-left: 4em;
+  border-radius: 62px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+.blue-box3 .apply:hover {
+  background-color: #4C40F7; /* Blue background color on hover */
+  color: #ffffff; /* White text color on hover */
+}
+
+
+.card3 {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    color: rgb(0, 0, 0);
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s, color 0.3s;
+    align-items: flex-start;
+}
+
+.card3 .line{
+  width: 317px;
+  height: 1px;
+  background-color: #000000;
+  margin: 20px;
+}
+
+.card3 img{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.card3 h4{
+  margin-left: 25px;
+  font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 52px; /* 212.5% */
+letter-spacing: -0.96px;
+}
+
+.card3 h5{
+  margin-left: 27px;
+  font-size: 18px;
+font-style: normal;
+font-weight: 600;
+margin-top: -15px;
+line-height: 60px; /* 340% */
+letter-spacing: -0.6px;
+}
+
+
+.blue-box3 .apply-direct {
+  background-color: #ffffff; /* Grey background color */
+  color: #000000; /* Blue text color */
+  width: 318px;
+height: 46px;
+  border: 1px solid #000000;
+  margin-top: 10px;
+  margin-left: 25px;
+  border-radius: 22px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.blue-box3 .apply-direct:hover {
+  background-color: #4C40F7; /* Blue background color on hover */
+  color: #ffffff; /* White text color on hover */
+}
 
 
 /* .banner {
