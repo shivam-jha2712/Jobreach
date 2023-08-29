@@ -424,8 +424,8 @@ text-align: center;
     color: #555;
 }
 .card:hover {
-    background-color: #4C40F7; /* Blue background color on hover */
-    color: white; /* Text color on hover */
+  background-color: #4C40F7; /* Blue background color on hover */
+  color: #ffffff; /* Text color on hover */
 }
 
 
