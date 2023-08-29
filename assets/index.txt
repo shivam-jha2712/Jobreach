@@ -298,15 +298,55 @@
     </section>
 
 
-    
+    <section class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-heading">
+                    <img src="/assets/Heading3.svg" alt="heading">
+                </div>
+                <div class="contact-text">
+                    We are here to help and answer any question you might have. We look forward to hearing from you.
+                </div>
+                <div class="contact-reach">
+<div class="newsletter-footer">
+                    <h2>Join Our Newsletter</h2>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+
+                    <div class="footer-social-icons">
+                        <ul>
+                            <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
+                            <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
+                            <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <div class="data-form">
+                <div class="rect">
+                    
+                </div>
+                <img src="/assets/business-man1.png" alt="">
+            </div>
+
+        </div>
+    </section>
 
     <section class="blue-box4">
         <div class="container2">
-            <div class="content-top">
-                Explore 2000+ Popular Job Opening
+            <div class="content-top1">
+                Achieve Your Career or Hiring Goals
+                with Our Expert Recruitment Services
             </div>
-            <div class="content-next">
-                With Investaffing! Discover perfect job that align perfectly with your skills and passions.
+            <div class="content-next1">
+                Sign up for our job alerts and be the first to know about new opportunities in your field.
             </div>
             <div class="union">
                 <img src="/assets/Union.png" alt="">
