@@ -1,6 +1,611 @@
-.box
-{
-    width:100px;
-    height:100px;
-    background-color:blue;
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, "Urbanist";
+}
+body {
+  background: #ffffff;
+  min-height: 100vh;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: -10px;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 12;
+}
+header .logo {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+  font-weight: 700;
+}
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+}
+header ul li a:hover {
+  background-color: #ddd;
+    color: black;
+}
+
+/* Styling for the buttons */
+header .button {
+    background-color: #4CAF50; /* Light green color for "Hire Talent" */
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+header .button.white {
+    background-color: white; /* White color for "Get Hired" */
+    color: #4CAF50;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin: 10px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #4CAF50;
+    cursor: pointer;
+}
+
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  header ul.active {
+    display: flex;
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
+
+  header .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  header ul li:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+/* Rest of your existing CSS */
+
+
+
+
+.banner {
+    position: relative;
+    margin-top: 109px;
+    width: 100%;
+    height: 1064px; /* Set the desired height for the banner */
+    overflow: hidden;
+}
+
+.banner img {
+    width: 1064px;
+    height: 706px;
+    margin-left: 29em;
+    object-fit: cover;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    height: 706px;
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.overlay-content {
+  margin-left: -50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.overlay-content button {
+    background-color: #3ceca8;
+    color: #4CAF50;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.overlay-content #banner-text {
+    text-align: left; /* Align text content to the left */
+}
+
+.overlay-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Add margin to create spacing between elements */
+}
+
+.overlay-content p {
+    text-align: left; /* Align paragraph to the left */
+    margin-bottom: 20px; /* Add margin to create spacing between elements */
+}
+
+.overlay-content .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.banner-overlay h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.banner .button {
+    background-color: #4CAF50; /* Light green color for "Hire Talent" */
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 9px 40px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+.banner .btn-data{
+    background-color: #3ceca8; /* Light green color for "Hire Talent" */
+    color: #4CAF50;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.star-rating .star {
+    color: #FDC639;
+}
+
+        /* Additional styles */
+.rating-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-section .company-name {
+    color: #FFFBFB;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    letter-spacing: -0.15px;
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.rating-section img {
+  margin-left: -115px;
+  margin-bottom: -20px;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    margin-top: 5px; /* Adjust the spacing as needed */
+}
+
+.separator {
+  width: 50px;
+  padding-right:20px ;
+  height: 50px;
+  color: #fff;
+  
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Spacing between cards */
+    max-width: 1064px;
+    /* margin: 0 35px; */
+    margin: 0 auto;
+}
+
+
+
+
+.container2 {
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    margin: 0 -2%;
+}
+
+
+.union{
+  position: absolute;
+  width: 894.692px;
+height: 885.225px;
+margin-top: -350px;
+margin-left: -230px;
+transform: rotate(180.291deg);
+overflow-y: hidden;
+}
+
+
+
+
+
+
+
+.blue-box2 {
+    background: #DBFFF2;
+    width: 1352px;
+    height: 944px;
+    margin-left: 75px;
+    border-radius: 25px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+.content-top {
+  width: 803px;
+  color: var(--mindful-gray-white, #FFF);
+text-align: center;
+font-size: 52px;
+font-style: normal;
+font-weight: 500;
+line-height: 80px; /* 153.846% */
+letter-spacing: -1.56px;
+text-align: center;
+margin-left: 270px;
+margin-bottom: 160px;
+}
+
+
+.content-next{
+  width: 573px;
+  text-align: center;
+font-size: 20px;
+font-style: normal;
+margin-top: -120px;
+margin-bottom: 25px;
+margin-left: 30%;
+}
+
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin: 0 -2%; */
+}
+
+.blue-box2 h2 {
+    font-size: 36px;
+    margin-bottom: 140px;
+}
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 374px;
+    height: 479px;
+    border-radius: 27px;
+    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.union{
+  position: absolute;
+  width: 894.692px;
+height: 885.225px;
+margin-top: -350px;
+margin-left: -230px;
+transform: rotate(180.291deg);
+overflow-y: hidden;
+}
+
+
+
+.circle2 {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: #DBFFF2;
+    position: absolute;
+    top: -53px;
+    left: calc(50% - 53px);
+    z-index: 1;
+}
+
+
+.card2 h3 {
+    font-size: 20px;
+    position: relative;
+    margin-top: 65px;
+    color: #555;
+}
+
+.card2 p {
+    font-size: 16px;
+    color: #555;
+}
+.card2 .service {
+    font-size: 16px;
+    color: #555;
+    margin-top: 15px;
+}
+
+
+.content-top {
+  width: 803px;
+  color: var(--mindful-gray-white, #FFF);
+text-align: center;
+font-size: 52px;
+font-style: normal;
+font-weight: 500;
+line-height: 80px; /* 153.846% */
+letter-spacing: -1.56px;
+text-align: center;
+margin-left: 270px;
+margin-bottom: 160px;
+}
+
+.content-top img {
+    margin-top:8%;
+    margin-bottom:-5% ;
+}
+
+
+.content-next{
+  width: 573px;
+  text-align: center;
+font-size: 20px;
+font-style: normal;
+margin-top: -120px;
+margin-bottom: 25px;
+margin-left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+.blue-box4 {
+    background-color: #4C40F7;
+    width: 1352px;
+    height: 476px;
+    margin-left: 75px;
+    margin-bottom: 75px;
+    margin-top: 75px;
+    border-radius: 25px;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    list-style: none;
+}
+
+
+.blue-box4 .button {
+    background-color: #4CAF50; /* Light green color for "Hire Talent" */
+    color: white;
+    border: none;
+    width: 242px;
+    height: 67px;
+    font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 40px */
+letter-spacing: -0.25px;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin-top: 10px;
+    margin-left: 135%;
+    cursor: pointer;
+}
+
+/* .blue-box4 .button.white {
+    background-color: white; 
+    color: #4CAF50;
+    width: 242px;
+height: 67px;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin-top: 10px;
+    margin-left: 80%;
+    font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; 
+letter-spacing: -0.25px;
+    border: 2px solid #4CAF50;
+    cursor: pointer;
+} */
+
+
+
+
+
+
+
+
+
+
+
+ .blue-box5 {
+    width: 100%;
+    height: 341px;
+    border-radius: 56px 56px 0px 0px;
+    margin-top: 7%;
+    background: #4C40F7;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.reach, .quick {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Add margin between the two divs */
+}
+
+.reach h3, .quick h3 {
+    margin-left: -65%;
+    margin-bottom: 15px;
+}
+
+.reach ul, .quick ul {
+    list-style: none; /* Remove list style */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.reach ul li, .quick ul li {
+    margin-bottom: 25px;
+    text-align: left; 
+    display: flex;
+    align-items: center; /* Align items vertically within each list item */
+}
+
+.reach ul li img {
+    margin-right: 20px; /* Add space between image and content */
+}
+
+.reach a, .quick a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+.newsletter-footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.newsletter-footer h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    margin-left: -30px;
+}
+
+.form-control {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    padding: 10px 20px;
+    background-color: #1CC382;
+    color: #fff;
+    border: none;
+    width: 105px;
+    height: 43px;
+    margin-left: -10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-social-icons ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-icons li {
+    margin: 0 10px;
+}
+
+.footer-social-icons img {
+    width: 30px;
+    height: 30px;
 }
