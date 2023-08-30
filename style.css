@@ -1146,21 +1146,22 @@ line-height: 34.6px; /* 138.4% */
     font-size: 16px;
     border-radius: 50px;
     padding: 10px 12px;
-    margin: 20px -5%;
+    margin: 20px 10%;
     cursor: pointer;
 }
 
 .data-2-heading {
-  margin: 5% -5%;
+  margin: 5% 10%;
 }
 
 .data-2-img{
   margin-left: -5%;
+  margin-right: 5%;
 }
 
 
 .data-2 .contact-reach {
-  margin-left: -5%;
+  margin-left: 10%;
   width: 700px;
     display: inline-block;
     vertical-align: top;
