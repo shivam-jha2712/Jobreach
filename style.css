@@ -996,8 +996,9 @@ margin-left: 30%;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   list-style: none;
+
 }
 
 .data .data-heading {
@@ -1032,6 +1033,7 @@ line-height: 34.6px; /* 138.4% */
     margin-bottom: 20px;
     margin-left: 3%;
 }
+
 
 .data .form-control {
     width: 60%;
