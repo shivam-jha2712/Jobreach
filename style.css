@@ -428,6 +428,14 @@ text-align: center;
   color: #ffffff; /* Text color on hover */
 }
 
+.card:hover h3 {
+  color: #ffffff; /* Change the color of the heading text on hover */
+}
+.card:hover p {
+  color: #ffffff; /* Change the color of the heading text on hover */
+}
+
+
 
 .blue-box2 {
     background-color: #4C40F7;

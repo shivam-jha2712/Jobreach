@@ -841,10 +841,20 @@ text-align: center;
     font-size: 16px;
     color: #555;
 }
+/* Existing CSS */
+
 .card:hover {
   background-color: #4C40F7; /* Blue background color on hover */
   color: #ffffff; /* Text color on hover */
 }
+
+.card:hover h3 {
+  color: #ffffff; /* Change the color of the heading text on hover */
+}
+.card:hover p {
+  color: #ffffff; /* Change the color of the heading text on hover */
+}
+
 
 
 /* .blue-box4 .button.white {
