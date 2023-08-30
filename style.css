@@ -949,7 +949,7 @@ line-height: 34.6px; /* 138.4% */
     width: 105px;
     height: 43px;
     margin-left: -10px;
-    border-radius: 5px;
+    border-radius:  0 5px 5px 0;
     cursor: pointer;
     font-size: 14px;
 }
