@@ -755,6 +755,98 @@ letter-spacing: -0.6px;
 
 
 
+.cards-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Spacing between cards */
+    max-width: 1064px;
+    /* margin: 0 35px; */
+    margin: 0 auto;
+}
+
+
+.card {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: #FFF;
+    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s, color 0.3s;
+}
+/* .card1 {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; 
+    letter-spacing: -1.68px;
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+} */
+
+
+.circle {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: #ffffff; /* Change the circle's background color */
+    position: absolute;
+    top: 43px; /* Position the circle above the card */
+    left: 50%; /* Move the circle to the center horizontally */
+    transform: translateX(-50%); /* Center the circle */
+    z-index: 1; /* Place circle above the card */
+    /* border: 1px solid #15956F; */
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.10))
+}
+
+.circle img{
+  margin-top: 25px;
+  margin-left: 27px;
+}
+
+.card h3 {
+    font-size: 20px;
+    position: relative;
+    margin-top: 125px;
+    color: #555;
+}
+
+.text {
+  margin-top: 10px;
+  width: 265px;
+height: 85px;
+text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+.card:hover {
+  background-color: #4C40F7; /* Blue background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+
 /* .blue-box4 .button.white {
     background-color: white; 
     color: #4CAF50;
@@ -774,6 +866,89 @@ letter-spacing: -0.25px;
 } */
 
 
+
+.content{
+    margin-bottom: 10%;
+}
+
+.content .heading{
+    margin-top: -17%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+}
+
+
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Spacing between cards */
+    max-width: 1064px;
+    /* margin: 0 35px; */
+    margin: 0 auto;
+}
+
+
+.card1 {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: #FFF;
+    /* box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10); */
+    /* transition: background-color 0.3s, color 0.3s; */
+}
+
+
+.circle2 {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: #ffffff; /* Change the circle's background color */
+    position: absolute;
+    top: 43px; /* Position the circle above the card */
+    margin-bottom: 15px;
+    left: 50%; /* Move the circle to the center horizontally */
+    transform: translateX(-50%); /* Center the circle */
+    z-index: 1; /* Place circle above the card */
+    border: 3px solid #15956F;
+    /* filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.10)) */
+}
+
+.circle2 img{
+  margin-top: 21px;
+  margin-left: 23px;
+}
+
+.card1 h3 {
+    font-size: 20px;
+    position: absolute;
+    margin-top: 15px;
+    color: #555;
+}
+
+.text {
+  margin-top: 18px;
+  width: 265px;
+height: 85px;
+text-align: center;
+}
+
+.card1 p {
+    margin-top: 75px;
+    font-size: 16px;
+    color: #555;
+}
+/* .card2:hover {
+  background-color: #4C40F7; 
+  color: #ffffff; 
+} */
 
 
 
