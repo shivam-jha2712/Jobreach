@@ -913,7 +913,7 @@ letter-spacing: -0.25px;
     background-color: #ffffff; /* Change the circle's background color */
     position: absolute;
     top: 43px; /* Position the circle above the card */
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     left: 50%; /* Move the circle to the center horizontally */
     transform: translateX(-50%); /* Center the circle */
     z-index: 1; /* Place circle above the card */
@@ -925,23 +925,32 @@ letter-spacing: -0.25px;
   margin-top: 21px;
   margin-left: 23px;
 }
+.circle2 .favorite-window {
+  margin-top: 25px;
+  margin-left: 27px;
+}
+.circle2 .talk{
+  margin-top: 25px;
+  margin-left: 33px;
+}
+
 
 .card1 h3 {
     font-size: 20px;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 18%;
     color: #555;
 }
 
 .text {
   margin-top: 18px;
-  width: 265px;
+  width: 325px;
 height: 85px;
 text-align: center;
 }
 
 .card1 p {
-    margin-top: 75px;
+    margin-top: 40%;
     font-size: 16px;
     color: #555;
 }
