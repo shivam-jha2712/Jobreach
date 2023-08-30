@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satoshi&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif, "Urbanist";
+  font-family: "Poppins", sans-serif, "Satoshi", "Urbanist";
 }
 body {
   background: #ffffff;
@@ -272,14 +274,24 @@ header .button.white {
     margin: 0 auto;
 }
 
-
-
-
 .container2 {
     max-width: 1200px;
     /* margin: 0 auto; */
     margin: 0 -2%;
 }
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns in the grid */
+    gap: 20px; /* Spacing between cards */
+    max-width: 1064px;
+    /* margin: 0 35px; */
+    margin: 0 auto;
+}
+
+
+
+
 
 
 .union{
@@ -456,13 +468,14 @@ margin-left: 30%;
     text-align: center;
 }
 .blue-box3 .apply {
-  background-color: #ffffff; /* Grey background color */
-  color: #4C40F7; /* Blue text color */
+  background-color: #1CC382;
+  color: #ffffff; /* Blue text color */
   font-weight: bold;
-  border: 1 px solid #4C40F7;
-  margin-top: 20px;
+  border: none;
+  width: 318px;
+  margin-top: 50px;
   margin-left: 4em;
-  border-radius: 62px;
+  border-radius: 12px;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
@@ -474,10 +487,226 @@ margin-left: 30%;
 }
 
 
-.blue-box3 .apply:hover {
-  background-color: #4C40F7; /* Blue background color on hover */
-  color: #ffffff; /* White text color on hover */
+/* .blue-box3 .apply:hover {
+  background-color: #4C40F7; 
+  color: #ffffff;
+} */
+
+
+.blue-box3 .apply-direct {
+  background-color: #1CC382;
+  color: #ffffff; /* Blue text color */
+  width: 158px;
+height: 46px;
+  /* border: 1px solid #000000; */
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 25px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
+.blue-box3 .facility-place {
+  background-color:  #F5F7FB;
+  color: #6B7C8F; /* Blue text color */
+  width: 135px;
+  height: 46px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.blue-box3 .facility-place img {
+    margin-top:-1%;
+    margin-left: -5%;
+}
+.blue-box3 .facility-place h5 {
+    margin-top:-50%;
+    margin-left: 25%;
+    font-size: 15px;
+}
+
+
+.blue-box3 .facility-openings {
+  background-color:  #F5F7FB;
+  color: #6B7C8F; /* Blue text color */
+  width: 145px;
+  height: 46px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: -65px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.blue-box3 .facility-openings img {
+    margin-top:-1%;
+    margin-left: -5%;
+}
+.blue-box3 .facility-openings h5 {
+    margin-top: -47%;
+    margin-left: 25%;
+    font-size: 15px;
+}
+
+.blue-box3 .facility-study {
+  background-color:  #F5F7FB;
+  color: #6B7C8F; /* Blue text color */
+  width: 195px;
+  height: 46px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: -75px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.blue-box3 .facility-study img {
+    margin-top:-1%;
+    margin-left: -5%;
+}
+.blue-box3 .facility-study h5 {
+    margin-top: -32%;
+    margin-left: 15%;
+    font-size: 15px;
+}
+
+.blue-box3 .facility-application {
+  background-color:  #F5F7FB;
+  color: #6B7C8F; /* Blue text color */
+  width: 215px;
+  height: 46px;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 15px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.blue-box3 .facility-application img {
+    margin-top:-1%;
+    margin-left: -5%;
+}
+.blue-box3 .facility-application h5 {
+    margin-top: -30%;
+    margin-left: 15%;
+    font-size: 15px;
+}
+
+
+
+
+.blue-box3 .card3-top {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 1%;
+    font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 23.189px; /* 100% */
+}
+
+.blue-box3 .card3-top .name {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: left;
+}
+.blue-box3 .card3-top .price {
+    margin-left: 30%;
+}
+
+.blue-box3 .card3-data {
+    display: grid;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: left;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    /* gap: 20px; Spacing between cards */
+    max-width: 100%;
+}
+
+.blue-box3 .card3-data .wfh{
+    margin-left: 130%;
+}
+.blue-box3 .card3-data .ns{
+    margin-left: 50%;
+}
+
+
+/* .blue-box3 .apply-direct:hover {
+  background-color: #4C40F7;
+  color: #ffffff; 
+} */
+
+
+
+
+.card3 {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    color: rgb(0, 0, 0);
+    width: 569px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 1px solid #DDD;
+    /* box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10); */
+    transition: background-color 0.3s, color 0.3s;
+    align-items: flex-start;
+}
+
+.card3 .line{
+  width: 317px;
+  height: 1px;
+  background-color: #000000;
+  margin: 20px;
+}
+
+.card3 img{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.card3 h4{
+  margin-left: 25px;
+  font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: 52px; /* 212.5% */
+letter-spacing: -0.96px;
+}
+
+.card3 h5{
+  margin-left: 27px;
+  font-size: 18px;
+font-style: normal;
+font-weight: 600;
+margin-top: -15px;
+line-height: 60px; /* 340% */
+letter-spacing: -0.6px;
+}
+
 
 
 
@@ -517,73 +746,7 @@ letter-spacing: -0.25px;
     cursor: pointer;
 }
 
-.card3 {
-    position: relative; /* Set position to relative for circle positioning */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #FFF;
-    color: rgb(0, 0, 0);
-    width: 365px;
-    height: 327px;
-    flex-shrink: 0;
-    border-radius: 27px;
-    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
-    transition: background-color 0.3s, color 0.3s;
-    align-items: flex-start;
-}
 
-.card3 .line{
-  width: 317px;
-  height: 1px;
-  background-color: #000000;
-  margin: 20px;
-}
-
-.card3 img{
-  margin-left: 25px;
-  margin-top: 20px;
-}
-
-.card3 h4{
-  margin-left: 25px;
-  font-size: 32px;
-font-style: normal;
-font-weight: 500;
-line-height: 52px; /* 212.5% */
-letter-spacing: -0.96px;
-}
-
-.card3 h5{
-  margin-left: 27px;
-  font-size: 18px;
-font-style: normal;
-font-weight: 600;
-margin-top: -15px;
-line-height: 60px; /* 340% */
-letter-spacing: -0.6px;
-}
-
-.blue-box3 .apply-direct {
-  background-color: #ffffff; /* Grey background color */
-  color: #000000; /* Blue text color */
-  width: 318px;
-height: 46px;
-  border: 1px solid #000000;
-  margin-top: 10px;
-  margin-left: 25px;
-  border-radius: 22px;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.blue-box3 .apply-direct:hover {
-  background-color: #4C40F7; /* Blue background color on hover */
-  color: #ffffff; /* White text color on hover */
-}
 
 /* .blue-box4 .button.white {
     background-color: white; 

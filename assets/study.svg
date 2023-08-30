@@ -1,0 +1,18 @@
+<svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="SVG">
+<g id="Clip path group">
+<mask id="mask0_175_2550" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="1" y="1" width="25" height="24">
+<g id="clip0_221_40880">
+<path id="Vector" d="M25.1404 1.18945H1.78906V24.5408H25.1404V1.18945Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_175_2550)">
+<g id="Group">
+<path id="Vector_2" fill-rule="evenodd" clip-rule="evenodd" d="M6.16797 6.29761L13.4653 9.21653V20.1625L6.16797 17.2436V6.29761Z" fill="white" stroke="#6B7C8F" stroke-width="1.94595" stroke-linejoin="round"/>
+<path id="Vector_3" fill-rule="evenodd" clip-rule="evenodd" d="M20.7622 6.29761L13.4648 9.21653V20.1625L20.7622 17.2436V6.29761Z" fill="white" stroke="#6B7C8F" stroke-width="1.94595" stroke-linejoin="round"/>
+<path id="Vector_4" fill-rule="evenodd" clip-rule="evenodd" d="M12.0078 9.21655H14.9267V18.7031C14.9267 19.5091 14.2733 20.1625 13.4673 20.1625C12.6612 20.1625 12.0078 19.5091 12.0078 18.7031V9.21655Z" fill="white" stroke="#6B7C8F" stroke-width="1.94595" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
