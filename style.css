@@ -842,13 +842,23 @@ line-height: 65px;
     cursor: pointer;
 }
 
+.faq-item .answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.open .answer {
+    display: block;
+}
+
+
 .answer {
     display: none;
     color: rgba(60, 60, 67, 0.85);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 172%; /* 30.96px */
+    line-height: 172%; 
     margin-top: 10px;
 }
 
