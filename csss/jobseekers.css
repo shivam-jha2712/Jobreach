@@ -280,6 +280,7 @@ header .button.white {
     margin: 0 -2%;
 }
 
+
 .container3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 3 columns in the grid */
