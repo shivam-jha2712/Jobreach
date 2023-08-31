@@ -47,9 +47,56 @@ header ul li a {
   color: rgb(0, 0, 0);
   border-radius: 15px;
 }
-header ul li a:hover {
+/* header ul li a:hover {
   background-color: #ddd;
     color: black;
+} */
+
+#menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+
+#menu li:last-child {
+  margin-right: 0;
+}
+
+#menu a {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+#menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 5px;
+  background-color: #1CC382;
+  border-radius: 10px;
+  transform-origin: left;
+  transition: width 0.3s ease-in-out;
+}
+
+#menu a:hover::after {
+  width: 100%;
+}
+
+#menu .active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #1CC382;
+  border-radius: 10px;
 }
 
 /* Styling for the buttons */
