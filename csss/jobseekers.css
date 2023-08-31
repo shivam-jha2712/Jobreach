@@ -750,6 +750,17 @@ letter-spacing: -0.25px;
 }
 
 
+.blue-box4 .content-next{
+  width: 573px;
+  text-align: center;
+font-size: 20px;
+font-style: normal;
+margin-top: -120px;
+margin-bottom: 25px;
+margin-left: 30%;
+}
+
+
 
 /* .blue-box4 .button.white {
     background-color: white; 
