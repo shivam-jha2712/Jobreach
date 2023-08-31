@@ -4,6 +4,13 @@
     menu.classList.toggle("active");
   }
 
+window.addEventListener('load', () => {
+    const loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+});
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButtons = document.querySelectorAll(".toggle");
 
