@@ -203,9 +203,10 @@ header .button.white {
     cursor: pointer;
 }
 .banner .btn-data{
-    background-color: #3ceca8; /* Light green color for "Hire Talent" */
-    color: #4CAF50;
-    border: none;
+    background-color: transparent; /* Light green color for "Hire Talent" */
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 5px;
     font-size: 16px;
     border-radius: 50px;
     padding: 10px 12px;

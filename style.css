@@ -201,9 +201,10 @@ header .button.white {
     cursor: pointer;
 }
 .banner .btn-data{
-    background-color: #3ceca8; /* Light green color for "Hire Talent" */
-    color: #4CAF50;
-    border: none;
+    background-color: transparent; /* Light green color for "Hire Talent" */
+    color: #ffffff;
+    border: 1px solid white;
+    border-radius: 5px;
     font-size: 16px;
     border-radius: 50px;
     padding: 10px 12px;
@@ -265,14 +266,14 @@ header .button.white {
 
 
 .blue-box {
-    background-color: #4C40F7; /* Blue background color */
+    background-color: #F0EFFF;
     position: relative;
-    color: white;
-    width: 92%;
+    color: rgb(0, 0, 0);
+    width: 100%;
     height: 260px;
-    margin: 50px;
-    margin-top: -20%;
-    border-radius: 45px;
+    /* margin-left: 50px; */
+    margin-top: -25%;
+    /* border-radius: 45px; */
     padding: 40px 0;
     overflow: hidden; /* Prevent content overflow */
 }
