@@ -161,30 +161,51 @@ header ul li a {
   border-radius: 10px;
 }
 
-/* Styling for the buttons */
+/* Styling for the buttons in the header */
 header .button {
-    background-color: #4CAF50; /* Light green color for "Hire Talent" */
-    color: white;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin: 10px 5px;
-    cursor: pointer;
+  background-color: #4CAF50; /* Light green color for "Hire Talent" */
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
 
 header .button.white {
-    background-color: white; /* White color for "Get Hired" */
-    color: #4CAF50;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin: 10px 5px;
-    font-size: 16px;
-    font-weight: 500;
-    border: 2px solid #4CAF50;
-    cursor: pointer;
+  background-color: white; /* White color for "Get Hired" */
+  color: #4CAF50;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
+
+/* Add :hover styles */
+header .button:hover,
+header .button.white:hover {
+  transform: translateY(-2px); /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+header .button:active {
+  background-color: #3e8e41; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
+header .button.white:active {
+  background-color: #3e8e41; /* Darker green for button when pressed */
+  color: #ffffff; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
 
 /* Add media query for mobile devices */
 @media screen and (max-width: 768px) {
@@ -285,16 +306,29 @@ header .button.white {
     margin-bottom: 20px; /* Add margin to create spacing between elements */
 }
 
+/* [Pressing button */
+
 .overlay-content .button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
+
+/* Add :active styles */
+.overlay-content .button:active {
+  background-color: #3e8e41; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
+
+
+
 
 .banner-overlay h1 {
     font-size: 36px;
@@ -882,6 +916,55 @@ letter-spacing: -0.25px;
     cursor: pointer;
 }
 
+
+/* Pressed Buttons */
+
+.blue-box4 .button,
+.blue-box4 .button.white {
+  /* Common styles for both buttons */
+  width: 242px;
+  height: 67px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 40px */
+  letter-spacing: -0.25px;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.blue-box4 .button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-left: 20%;
+}
+
+.blue-box4 .button.white {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  margin-left: -40%;
+}
+
+/* Add :active styles */
+.blue-box4 .button:active,
+.blue-box4 .button.white:active {
+  background-color: #3e8e41; /* Darker green for "Hire Talent" button when pressed */
+  color: #f2f2f2;
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
+.blue-box4 .button.white:active {
+  background-color: #f2f2f2; /* Light gray for "Get Hired" button when pressed */
+  color: #3e8e41;
+}
+
+
+
 .blue-box4 .content-top {
   width: 803px;
   color: var(--mindful-gray-white, #FFF);
@@ -1014,17 +1097,30 @@ line-height: 34.6px; /* 138.4% */
 }
 
 .btn-secondary {
-    padding: 10px 20px;
-    background-color: #1CC382;
-    color: #fff;
-    border: none;
-    width: 90%;
-    height: 43px;
-    margin-left: -10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 90%;
+  height: 43px;
+  margin-left: -10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
+
+/* Add :hover styles */
+.btn-secondary:hover {
+  transform: translateY(-2px); /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+.btn-secondary:active {
+  background-color: #159b60; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
 
 
 
@@ -1100,17 +1196,30 @@ line-height: 34.6px; /* 138.4% */
 }
 
 .btn-primary {
-    padding: 10px 20px;
-    background-color: #1CC382;
-    color: #fff;
-    border: none;
-    width: 105px;
-    height: 43px;
-    margin-left: -10px;
-    border-radius:  0 5px 5px 0;
-    cursor: pointer;
-    font-size: 14px;
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 105px;
+  height: 43px;
+  margin-left: -10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
+
+/* Add :hover styles */
+.btn-primary:hover {
+  transform: translateY(-2px); /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+.btn-primary:active {
+  background-color: #159b60; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
 
 .footer-social-icons ul {
     list-style: none;
