@@ -355,6 +355,8 @@ margin-left: 30%;
     /* margin: 0 -2%; */
 }
 
+
+
 .blue-box2 h2 {
     font-size: 36px;
     margin-bottom: 140px;
@@ -769,6 +771,195 @@ letter-spacing: -0.25px;
 
 
 
+
+
+
+
+
+.green-box {
+    background-color: #15956F;
+    width: 100%;
+    height: 1134px;
+    margin-top: 15%;
+    margin-bottom: 75px;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.green-box .heading{
+    margin-top: 5%;
+}
+
+
+
+.content-next{
+  width: 573px;
+  text-align: center;
+font-size: 20px;
+font-style: normal;
+margin-top: 3%;
+margin-bottom: 25px;
+margin-left: 30%;
+color: #fff;
+}
+
+
+
+.data-2{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.data-2-content{
+    width: 110%;
+    height:110%;
+    margin-left: -20%;
+    border: 1px solid #fff;
+    border-radius: 62px;
+    background: linear-gradient(0.5deg, #000000 0%, rgba(70, 206, 153, 0.00) 100%);
+    /* z-index: 2; */
+}
+
+/* .rect {
+  z-index: 5;
+  position: absolute;
+  margin-left: 3%;
+  width: 35%;
+  height: 70%;
+  background: linear-gradient(1deg, #000000 0%, rgba(70, 206, 153, 0.00) 100%);
+  transform: skew(-10deg);
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+} */
+
+/* .data-2-content button {
+    background-color: #4C40F7;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 20px 10%;
+    cursor: pointer;
+} */
+
+/* .data-2-heading {
+  margin: 5% 10%;
+} */
+
+/* .data-2-content  */
+
+.data-2-img{
+  margin-left: -30%;
+  margin-top: 25%;
+  margin-right: 5%;
+}
+/* .data-2-img .wave1{
+  margin-left: -30%;
+  margin-top: 25%;
+  margin-right: 5%;
+}
+.data-2-img .wave{
+  margin-left: -30%;
+  margin-top: 25%;
+  margin-right: 5%;
+} */
+
+
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columns in the grid */
+    gap: 5px; /* Spacing between cards */
+    max-width: 685px;
+    /* margin: 0 35px; */
+    margin: 0 auto;
+}
+
+
+.card3 {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 365px;
+    height: 327px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: transparent;
+    margin-left: 5%;
+    border: none;
+    /* box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10); */
+    /* transition: background-color 0.3s, color 0.3s; */
+}
+
+
+.circle3 {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: transparent; /* Change the circle's background color */
+    position: absolute;
+    top: 43px; /* Position the circle above the card */
+    /* margin-bottom: 25px; */
+    left: 15%; /* Move the circle to the center horizontally */
+    transform: translateX(-50%); /* Center the circle */
+    z-index: 1; /* Place circle above the card */
+    border: 3px solid #fff;
+    /* filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.10)) */
+}
+
+/* .circle3 img{
+  margin-top: 21px;
+  margin-left: 23px;
+} */
+.circle3 .handshake {
+  margin-top: 31px;
+  margin-left: 0px;
+}
+.circle3 .resume {
+  margin-top: 21px;
+  margin-left: 0px;
+}
+.circle3 .stats {
+  margin-top: 31px;
+  margin-left: 0px;
+}
+.circle3 .gear {
+ margin-top: 21px;
+  margin-left: 0px;
+}
+
+
+
+.card3 h3 {
+    font-size: 20px;
+    align-items: left;
+    text-align: left;
+    position: absolute;
+    margin-top: 10%;
+    /* margin-left: 7%; */
+    color: #ffffff;
+}
+
+.text2 {
+  /* margin-top: 18px; */
+      align-items: left;
+    text-align: left;
+  width: 325px;
+height: 85px;
+text-align: center;
+}
+
+.card3 p {
+        align-items: left;
+    text-align: left;
+    margin-top: 30%;
+    font-size: 16px;
+    color: #ffffff;
+}
 
 
 

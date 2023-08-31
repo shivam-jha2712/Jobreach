@@ -863,6 +863,8 @@ text-align: center;
   color: #ffffff; /* Change the color of the heading text on hover */
 }
 
+
+
 .green-box {
     background-color: #15956F;
     width: 100%;
@@ -911,8 +913,21 @@ color: #fff;
     margin-left: -20%;
     border: 1px solid #fff;
     border-radius: 62px;
-    z-index: 2;
+    background: linear-gradient(0.5deg, #000000 0%, rgba(70, 206, 153, 0.00) 100%);
+    /* z-index: 2; */
 }
+
+/* .rect {
+  z-index: 5;
+  position: absolute;
+  margin-left: 3%;
+  width: 35%;
+  height: 70%;
+  background: linear-gradient(1deg, #000000 0%, rgba(70, 206, 153, 0.00) 100%);
+  transform: skew(-10deg);
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+} */
 
 /* .data-2-content button {
     background-color: #4C40F7;
@@ -936,6 +951,16 @@ color: #fff;
   margin-top: 25%;
   margin-right: 5%;
 }
+/* .data-2-img .wave1{
+  margin-left: -30%;
+  margin-top: 25%;
+  margin-right: 5%;
+}
+.data-2-img .wave{
+  margin-left: -30%;
+  margin-top: 25%;
+  margin-right: 5%;
+} */
 
 
 .data-2 .contact-reach {
