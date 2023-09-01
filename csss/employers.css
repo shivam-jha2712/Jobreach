@@ -330,7 +330,7 @@ header .button.white {
 
 .container3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 columns in the grid */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
     gap: 20px; /* Spacing between cards */
     max-width: 1064px;
     /* margin: 0 35px; */
@@ -348,7 +348,11 @@ header .button.white {
 
 
 
-
+.arrow {
+  width:70%;
+  margin-top: 30%;
+  margin-left: -20%;
+}
 
 .union{
   position: absolute;
@@ -1081,8 +1085,9 @@ letter-spacing: -0.25px;
 
 
 .container3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: repeat(3, 1fr); 3 columns in the grid */
     gap: 20px; /* Spacing between cards */
     max-width: 1064px;
     /* margin: 0 35px; */
@@ -1096,15 +1101,44 @@ letter-spacing: -0.25px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: transparent;
     width: 365px;
     height: 327px;
     flex-shrink: 0;
     border-radius: 27px;
-    background: #FFF;
+    background: transparent;
     /* box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10); */
     /* transition: background-color 0.3s, color 0.3s; */
 }
+.card5 {
+    position: relative; /* Set position to relative for circle positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 365px;
+    height: 77px;
+    margin-left: -10%;
+    flex-shrink: 0;
+    border-radius: 27px;
+    background: transparent;
+    /* box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10); */
+    /* transition: background-color 0.3s, color 0.3s; */
+}
+
+
+#first{
+  margin-left: -10%;
+}
+#second{
+  margin-left: -17%;
+}
+#third{
+  margin-left: -17%;
+}
+
+
 
 
 .circle2 {
