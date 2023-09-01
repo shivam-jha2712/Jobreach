@@ -1103,6 +1103,8 @@ font-weight: 600;
     font-size: 20px;
     transition: transform 0.2s, color 0.2s; /* Added color transition */
     color: #333; /* Default color */
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
   }
 
   .plus-sign.open {
@@ -1117,7 +1119,6 @@ font-weight: 600;
   }
 
   
-
 
   .faq-section .heading {
     text-align: center;
