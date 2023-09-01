@@ -243,7 +243,6 @@ header .button.white:active {
 
 
 
-
 .banner {
     position: relative;
     margin-top: 109px;
@@ -253,13 +252,13 @@ header .button.white:active {
 }
 
 .banner img {
-    width: 1064px;
+    width: 1055px;
     height: 706px;
     margin-left: 29em;
     object-fit: cover;
 }
 
-.banner-overlay {
+/* .banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -271,6 +270,39 @@ header .button.white:active {
     align-items: center;
     color: white;
     text-align: center;
+} */
+
+.slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+width: 1440px;
+    height: 706px;
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+.overlay-content {
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+/* Add hover effect to display the overlay */
+.banner-overlay {
+  opacity: 1;
 }
 
 .overlay-content {
@@ -408,6 +440,93 @@ header .button.white:active {
   
 }
 
+/* Keep your existing CSS for the banner and overlay */
+
+/* Add styles for the banner-slider and slide */
+.banner-slider {
+  display: flex;
+  width: 100%; /* Set the width to 100% for responsiveness */
+  transition: transform 0.5s ease;
+}
+
+/* .slide {
+  flex: 0 0 100%;
+} */
+
+/* .banner-slider img {
+  width: 100%;
+  height: auto;
+} */
+
+/* Add styles for the slider navigation */
+.slider-nav {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.prev-slide,
+.next-slide {
+  background: #fff; /* Background color for navigation buttons */
+  background-repeat: no-repeat;
+  color : transparent;
+  border: none;
+  width: 33px;
+  height: 33px;
+  /* font-size: 24px; */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+/* .prev-slide,
+.next-slide {
+  background: rgba(255, 255, 255, 0.5); 
+  color : transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+} */
+
+
+
+.prev-slide {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+.next-slide {
+  margin-right: 20px;
+}
+.prev-slide svg{
+  width: 12px;
+  height: 14px;
+  /* margin-left: px; */
+  /* margin-top: -5px; */
+}
+.next-slide svg{
+ width: 12px;
+  height: 14px;
+  /* margin-left: 8px; */
+  /* margin-top: -5px; */
+}
+
+
+
+
+
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Darker background when hovered */
+}
 
 
 
