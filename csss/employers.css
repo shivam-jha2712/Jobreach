@@ -1,15 +1,77 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satoshi&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif, "Satoshi", "Urbanist";
+  font-family: "Poppins", sans-serif, "Urbanist";
 }
 body {
   background: #ffffff;
   min-height: 100vh;
+}
+
+/* Your existing CSS code */
+
+/* Loader Styles */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-hand {
+  width: 6px;
+  height: 50px;
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 100%;
+  transform: translateX(-50%) rotate(0deg);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+/* Your existing CSS code continues */
+
+
+.message-container {
+  display: none; /* Hide the message initially */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 17, 0, 0.9);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 9999; /* Ensures the message is above other content */
+}
+
+/* Media Query for screens less than 720px */
+@media (max-width: 719px) {
+  .message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 header {
   position: absolute;
@@ -99,30 +161,51 @@ header ul li a {
   border-radius: 10px;
 }
 
-/* Styling for the buttons */
+/* Styling for the buttons in the header */
 header .button {
-    background-color: #4CAF50; /* Light green color for "Hire Talent" */
-    color: white;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin: 10px 5px;
-    cursor: pointer;
+  background-color: #4CAF50; /* Light green color for "Hire Talent" */
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
 
 header .button.white {
-    background-color: white; /* White color for "Get Hired" */
-    color: #4CAF50;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin: 10px 5px;
-    font-size: 16px;
-    font-weight: 500;
-    border: 2px solid #4CAF50;
-    cursor: pointer;
+  background-color: white; /* White color for "Get Hired" */
+  color: #4CAF50;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
+
+/* Add :hover styles */
+header .button:hover,
+header .button.white:hover {
+  transform: translateY(-2px); /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+header .button:active {
+  background-color: #3e8e41; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
+header .button.white:active {
+  background-color: #3e8e41; /* Darker green for button when pressed */
+  color: #ffffff; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
 
 /* Add media query for mobile devices */
 @media screen and (max-width: 768px) {
@@ -160,23 +243,24 @@ header .button.white {
 
 
 
-
 .banner {
     position: relative;
     margin-top: 109px;
     width: 100%;
     height: 1064px; /* Set the desired height for the banner */
     overflow: hidden;
-}
-
-.banner img {
-    width: 1064px;
+  }
+  
+  .banner img {
+    width: 1055px;
     height: 706px;
-    margin-left: 29em;
+    /* width: 90%;
+    height: 60%; */
+    margin-left: 38%;
     object-fit: cover;
-}
+  }
 
-.banner-overlay {
+/* .banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -188,6 +272,41 @@ header .button.white {
     align-items: center;
     color: white;
     text-align: center;
+  } */
+  
+  .slide {
+  overflow: hidden;
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+/* width: 1440px; */
+    width: 90%;
+    height: 706px;
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+.overlay-content {
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+/* Add hover effect to display the overlay */
+.banner-overlay {
+  opacity: 1;
 }
 
 .overlay-content {
@@ -223,16 +342,29 @@ header .button.white {
     margin-bottom: 20px; /* Add margin to create spacing between elements */
 }
 
+/* [Pressing button */
+
 .overlay-content .button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
 }
+
+/* Add :active styles */
+.overlay-content .button:active {
+  background-color: #3e8e41; /* Darker green for button when pressed */
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
+
+
+
 
 .banner-overlay h1 {
     font-size: 36px;
@@ -312,6 +444,129 @@ header .button.white {
   
 }
 
+/* Keep your existing CSS for the banner and overlay */
+
+/* Add styles for the banner-slider and slide */
+.banner-slider {
+  display: flex;
+  width: 100%; /* Set the width to 100% for responsiveness */
+  transition: transform 0.5s ease;
+}
+
+/* .slide {
+  flex: 0 0 100%;
+} */
+
+/* .banner-slider img {
+  width: 100%;
+  height: auto;
+} */
+
+/* Add styles for the slider navigation */
+.slider-nav {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.prev-slide,
+.next-slide {
+  background: #fff; /* Background color for navigation buttons */
+  background-repeat: no-repeat;
+  color : transparent;
+  border: none;
+  width: 33px;
+  height: 33px;
+  /* font-size: 24px; */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+/* .prev-slide,
+.next-slide {
+  background: rgba(255, 255, 255, 0.5); 
+  color : transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+} */
+
+
+
+.prev-slide {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+.next-slide {
+  margin-right: 20px;
+}
+.prev-slide svg{
+  width: 12px;
+  height: 14px;
+  /* margin-left: px; */
+  /* margin-top: -5px; */
+}
+.next-slide svg{
+ width: 12px;
+  height: 14px;
+  /* margin-left: 8px; */
+  /* margin-top: -5px; */
+}
+
+
+
+
+
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Darker background when hovered */
+}
+
+
+
+@media (max-width: 768px) {
+    .banner {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .banner-overlay {
+        width: 100%; /* Make the overlay full width on smaller screens */
+    }
+
+    .overlay-content {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+        align-items: center; /* Center align content vertically */
+    }
+
+    .overlay-content button {
+        font-size: 14px; /* Reduce button font size for smaller screens */
+        padding: 8px 10px; /* Adjust button padding */
+    }
+
+    .overlay-content h1 {
+        font-size: 28px; /* Reduce heading font size for smaller screens */
+    }
+
+    /* Additional responsive styles can be added here */
+}
+
 
 .container {
     display: grid;
@@ -334,7 +589,7 @@ header .button.white {
     gap: 20px; /* Spacing between cards */
     max-width: 1064px;
     /* margin: 0 35px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 .container4 {
     display: grid;
@@ -775,9 +1030,11 @@ letter-spacing: -0.6px;
 
 .blue-box4 {
     background-color: #4C40F7;
-    width: 1352px;
+    /* width: 1352px; */
+    width: 90%;
     height: 476px;
-    margin-left: 75px;
+    /* margin-left: 75px; */
+    margin-left: 5%;
     margin-bottom: 75px;
     margin-top: 75px;
     border-radius: 25px;
@@ -1073,11 +1330,14 @@ letter-spacing: -0.25px;
 
 
 .content{
-    margin-bottom: 10%;
+    margin-bottom: -5%;
+    margin-top: -15%;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .content .heading{
-    margin-top: -17%;
+    margin-top: -15%;
     margin-bottom: 5%;
     margin-left: 25%;
 }

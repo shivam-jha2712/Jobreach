@@ -243,23 +243,24 @@ header .button.white:active {
 
 
 
-
 .banner {
     position: relative;
     margin-top: 109px;
     width: 100%;
     height: 1064px; /* Set the desired height for the banner */
     overflow: hidden;
-}
-
-.banner img {
-    width: 1064px;
+  }
+  
+  .banner img {
+    width: 1055px;
     height: 706px;
-    margin-left: 29em;
+    /* width: 90%;
+    height: 60%; */
+    margin-left: 38%;
     object-fit: cover;
-}
+  }
 
-.banner-overlay {
+/* .banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -271,6 +272,41 @@ header .button.white:active {
     align-items: center;
     color: white;
     text-align: center;
+  } */
+  
+  .slide {
+  overflow: hidden;
+  flex: 0 0 100%;
+  position: relative;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+/* width: 1440px; */
+    width: 90%;
+    height: 706px;
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+.overlay-content {
+  padding: 20px;
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+/* Add hover effect to display the overlay */
+.banner-overlay {
+  opacity: 1;
 }
 
 .overlay-content {
@@ -408,24 +444,144 @@ header .button.white:active {
   
 }
 
+/* Keep your existing CSS for the banner and overlay */
+
+/* Add styles for the banner-slider and slide */
+.banner-slider {
+  display: flex;
+  width: 100%; /* Set the width to 100% for responsiveness */
+  transition: transform 0.5s ease;
+}
+
+/* .slide {
+  flex: 0 0 100%;
+} */
+
+/* .banner-slider img {
+  width: 100%;
+  height: auto;
+} */
+
+/* Add styles for the slider navigation */
+.slider-nav {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.prev-slide,
+.next-slide {
+  background: #fff; /* Background color for navigation buttons */
+  background-repeat: no-repeat;
+  color : transparent;
+  border: none;
+  width: 33px;
+  height: 33px;
+  /* font-size: 24px; */
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+}
+/* .prev-slide,
+.next-slide {
+  background: rgba(255, 255, 255, 0.5); 
+  color : transparent;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+} */
+
+
+
+.prev-slide {
+  transform: rotate(180deg);
+  margin-left: 20px;
+}
+.next-slide {
+  margin-right: 20px;
+}
+.prev-slide svg{
+  width: 12px;
+  height: 14px;
+  /* margin-left: px; */
+  /* margin-top: -5px; */
+}
+.next-slide svg{
+ width: 12px;
+  height: 14px;
+  /* margin-left: 8px; */
+  /* margin-top: -5px; */
+}
 
 
 
 
-.blue-box2 {
-    background-color: #4C40F7;
-    width: 1352px;
-    height: 944px;
-    margin-left: 75px;
-    border-radius: 25px;
-    padding: 40px;
-    color: white;
-    text-align: center;
+
+
+.prev-slide:hover,
+.next-slide:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Darker background when hovered */
+}
+
+
+
+@media (max-width: 768px) {
+    .banner {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .banner img {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .banner-overlay {
+        width: 100%; /* Make the overlay full width on smaller screens */
+    }
+
+    .overlay-content {
+        margin-left: 0; /* Remove negative margin on smaller screens */
+        align-items: center; /* Center align content vertically */
+    }
+
+    .overlay-content button {
+        font-size: 14px; /* Reduce button font size for smaller screens */
+        padding: 8px 10px; /* Adjust button padding */
+    }
+
+    .overlay-content h1 {
+        font-size: 28px; /* Reduce heading font size for smaller screens */
+    }
+
+    /* Additional responsive styles can be added here */
+}
+
+
+
+
+
+
+
+.content{
+  width: 90%;
+  margin-left: 5%;
 }
 
 
 .content-top {
-  width: 803px;
+  /* width: 803px; */
+  width: 90%;
   color: var(--mindful-gray-white, #FFF);
 text-align: center;
 font-size: 52px;
@@ -440,7 +596,8 @@ margin-bottom: 160px;
 
 
 .content-next{
-  width: 573px;
+  /* width: 573px; */
+  width: 90%;
   text-align: center;
 font-size: 20px;
 font-style: normal;
@@ -669,12 +826,10 @@ line-height: 34.6px; /* 138.4% */
 
 
 
-
-
-
 .blue-box2 {
     background-color: #4C40F7;
-    width: 1352px;
+    /* width: 1352px; */
+    width: 90%;
     height: 944px;
     margin-left: 75px;
     border-radius: 25px;
@@ -732,7 +887,7 @@ margin-left: 30%;
     /* margin-left: 75px; */
     margin-bottom: 75px;
     /* margin-top: 75px; */
-    margin-top: -24%;
+    margin-top: -22.3em;
     border-radius: 25px;
     padding: 40px;
     color: white;
@@ -809,14 +964,16 @@ margin-left: 30%;
 
 
 .content{
+  width: 90%;
     margin-bottom: 10%;
-    /* margin-left: -%; */
+    margin-left: 5%;
 }
 
 .content .heading{
     /* margin-top: 0%; */
+    /* width: 100%; */
     margin-bottom: 8%;
-    margin-left: 25%;
+    margin-left: 16em;
 }
 
 
@@ -826,10 +983,11 @@ margin-left: 30%;
     flex-direction: row;
     /* grid-template-columns: repeat(3, 1fr); 3 columns in the grid */
     gap: 20px; /* Spacing between cards */
-    max-width: 1064px;
+    /* max-width: 1064px; */
+    max-width: 80%;
     /* margin: 0 35px; */
     /* margin: 0 auto; */
-    margin-left: 17% ;
+    margin-left: 10% ;
     margin-top: -10% ;
     margin-bottom: -10% ;
 }
@@ -891,7 +1049,8 @@ letter-spacing: -0.3px;
 
 .blue-box4 {
     background-color: #4C40F7;
-    width: 1352px;
+    /* width: 1352px; */
+    width: 90%;
     height: 516px;
     margin-left: 75px;
     margin-bottom: 75px;
@@ -904,7 +1063,7 @@ letter-spacing: -0.3px;
 }
 
 .blue-box4 img{
-  margin-top:-151.3%;
+  margin-top:-151.0%;
   margin-left: -45%;
   width: 150.4%;
 }
