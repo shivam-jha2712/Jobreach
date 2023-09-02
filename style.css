@@ -249,14 +249,16 @@ header .button.white:active {
     width: 100%;
     height: 1064px; /* Set the desired height for the banner */
     overflow: hidden;
-}
-
-.banner img {
+  }
+  
+  .banner img {
     width: 1055px;
     height: 706px;
-    margin-left: 29em;
+    /* width: 90%;
+    height: 60%; */
+    margin-left: 35%;
     object-fit: cover;
-}
+  }
 
 /* .banner-overlay {
     position: absolute;
@@ -270,9 +272,10 @@ header .button.white:active {
     align-items: center;
     color: white;
     text-align: center;
-} */
-
-.slide {
+  } */
+  
+  .slide {
+  overflow: hidden;
   flex: 0 0 100%;
   position: relative;
 }
@@ -281,7 +284,8 @@ header .button.white:active {
   position: absolute;
   top: 0;
   left: 0;
-width: 1440px;
+/* width: 1440px; */
+    width: 90%;
     height: 706px;
     background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
   display: flex;
