@@ -1504,3 +1504,165 @@ line-height: 65px;
     line-height: 172%; 
     margin-top: 10px;
 }
+
+
+
+
+
+.cards-section {
+    width: 100%;
+    background: linear-gradient(180deg, #F2F1FF 0%, rgba(242, 241, 255, 0.00) 100%);
+    margin-top: 0.5em;
+    margin-bottom: 10em;
+}
+
+.container4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.container5 {
+    display: flex; /* Change to flex for a single row layout */
+    max-width: 100%;
+    margin-left: -6em;
+}
+
+/* .container5 .content-top {
+    flex: 1; 
+    text-align: center;
+    color: #000000;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: -1.56px;
+    margin-left: 1em;
+    margin-right: -2em;
+} */
+.container5 h2 {
+    /* Add your specific styles for .content-top */
+    flex: 1; /* Distribute available space evenly */
+    text-align: center;
+    color: #000000;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: -1.56px;
+    margin-left: 1em;
+    margin-right: 2em;
+    margin-top: 2em;
+    /* margin-bottom: 160px; */
+}
+
+.container5 p{
+  /* flex: 1; */
+  left: 0;
+  width: 573px;
+  text-align: left;
+font-size: 20px;
+font-style: normal;
+margin-top: 2.5em;
+margin-left: -1em;
+}
+
+.container5 img {
+    /* width: 2px;
+    height: 314px; */
+    left: 0;
+    margin-left: -9em;
+    margin-top: 6em;
+    color: #000000;
+    z-index: 2;
+}
+
+
+
+
+.container5 .content-next{
+  width: 573px;
+  text-align: left;
+font-size: 20px;
+font-style: normal;
+margin-top: 3em;
+margin-left: -3em;
+}
+#card-1
+{
+  box-shadow: none;
+  background: transparent;
+}
+
+.card3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjusted alignment to left */
+    justify-content: center;
+    background-color: white;
+    width: 36em;
+    height: 16em;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.circle {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.circle img {
+    margin-top: -1em;
+    margin-left: 1.5em;
+}
+
+.card3 h3 {
+    font-size: 25px;
+    position: relative;
+    margin-top: 1em;
+    margin-left: 8em;
+    color: #000000;
+    text-align: left;
+}
+
+.card3 .text {
+    margin-top: -0.1em;
+    margin-left: 4em;
+    width: 6em;
+    height: 2em;
+    text-align: left;
+    line-height: 32px;
+    letter-spacing: -0.54px;
+}
+
+.card3 p {
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+}
+
+.card3:hover {
+    background: #EFFFF9;
+    color: #ffffff;
+}
+
+
+/* .card3:hover h3 {
+  color: #ffffff; 
+}
+.card3:hover p {
+  color: #ffffff; 
+} */
