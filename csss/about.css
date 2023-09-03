@@ -1064,8 +1064,9 @@ letter-spacing: -0.3px;
 
 .blue-box4 img{
   margin-top:-151.0%;
-  margin-left: -45%;
+  margin-left: -30%;
   width: 150.4%;
+  transform: scaleX(-1);
 }
 
 .blue-box4 .button {
