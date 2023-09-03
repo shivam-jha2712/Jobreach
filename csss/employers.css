@@ -1028,13 +1028,13 @@ letter-spacing: -0.6px;
 
 
 
+
 .blue-box4 {
     background-color: #4C40F7;
     /* width: 1352px; */
     width: 90%;
-    height: 476px;
-    /* margin-left: 75px; */
-    margin-left: 5%;
+    height: 456px;
+    margin-left: 75px;
     margin-bottom: 75px;
     margin-top: 75px;
     border-radius: 25px;
@@ -1044,6 +1044,12 @@ letter-spacing: -0.6px;
     list-style: none;
 }
 
+.blue-box4 img{
+  margin-top:-110.5%;
+  margin-left: -10%;
+  width: 108%;
+  /* transform: scaleX(-1); */
+}
 
 .blue-box4 .button {
     background-color: #4CAF50; /* Light green color for "Hire Talent" */
@@ -1052,23 +1058,114 @@ letter-spacing: -0.6px;
     width: 242px;
     height: 67px;
     font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 160%; /* 40px */
-    letter-spacing: -0.25px;
+font-style: normal;
+font-weight: 600;
+line-height: 160%; /* 40px */
+letter-spacing: -0.25px;
     border-radius: 50px;
     padding: 10px 35px;
-    /* margin-top: 10px; */
-    margin-left: 135%;
+    margin-top: 10px;
+    margin-left: 20%;
     cursor: pointer;
 }
 
-.blue-box4 .container2 img {
-    margin-top: 7%;
+.blue-box4 .button.white {
+    background-color: white; 
+    color: #4CAF50;
+    width: 242px;
+    height: 67px;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin-top: -10px;
+    margin-left: -40%;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%; 
+    letter-spacing: -0.25px;
+    border: 2px solid #4CAF50;
+    cursor: pointer;
 }
-.blue-box4 .container2 button {
-    margin-top: 10%;
+
+
+/* Pressed Buttons */
+
+.blue-box4 .button,
+.blue-box4 .button.white {
+  /* Common styles for both buttons */
+  width: 242px;
+  height: 67px;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 40px */
+  letter-spacing: -0.25px;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
 }
+
+.blue-box4 .button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-left: 20%;
+}
+
+.blue-box4 .button.white {
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  margin-left: -40%;
+}
+
+/* Add :active styles */
+.blue-box4 .button:active,
+.blue-box4 .button.white:active {
+  background-color: #3e8e41; /* Darker green for "Hire Talent" button when pressed */
+  color: #f2f2f2;
+  transform: scale(0.95); /* Scale down the button slightly when pressed */
+}
+
+.blue-box4 .button.white:active {
+  background-color: #f2f2f2; /* Light gray for "Get Hired" button when pressed */
+  color: #3e8e41;
+}
+
+
+
+.blue-box4 .content-top {
+  width: 803px;
+  color: var(--mindful-gray-white, #FFF);
+  text-align: left; /* Align text to the left */
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px; /* 153.846% */
+  letter-spacing: -1.56px;
+  margin-left: 10em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#green{
+  color: #1CC382;
+}
+
+
+.blue-box4 .content-next{
+  width: 573px;
+  text-align: left;
+font-size: 20px;
+font-style: normal;
+margin-top: -90px;
+margin-bottom: 25px;
+margin-left: 26em;
+}
+
+
 
 
 
