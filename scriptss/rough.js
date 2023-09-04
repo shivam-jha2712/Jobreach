@@ -15,3 +15,29 @@ document.addEventListener("DOMContentLoaded", function () {
         closeMenu.classList.remove("active");
     });
 });
+
+
+let currentCard = 1;
+
+function prevCard() {
+    if (currentCard > 1) {
+        currentCard--;
+        updateCardPosition();
+    }
+}
+
+function nextCard() {
+    if (currentCard < 5) { // Adjust the number of cards
+        currentCard++;
+        updateCardPosition();
+    }
+}
+
+function updateCardPosition() {
+    const cardSlider = document.querySelector(".card-slider");
+    const cardWidth = document.querySelector(".card").offsetWidth;
+    const translateX = -(currentCard - 1) * cardWidth;
+    cardSlider.style.transform = `translateX(${translateX}px)`;
+}
+
+updateCardPosition();

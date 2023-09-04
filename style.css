@@ -165,7 +165,7 @@ header .button.white:active {
     height: 3px;
     background-color: #000;
     margin: 4px 0;
-    margin-left: -22em;
+    margin-left: -18em;
     transition: 0.4s;
 }
 .close-bar {
@@ -585,6 +585,8 @@ header .button.white:active {
 
 
 
+
+
 .blue-box {
     background-color: #F0EFFF;
     position: relative;
@@ -697,6 +699,9 @@ header .button.white:active {
 
 
 
+
+
+
 .cards-section {
     padding: 40px 0;
     background-color: #fff;
@@ -796,6 +801,119 @@ text-align: center;
 .card:hover p {
   color: #ffffff; /* Change the color of the heading text on hover */
 }
+
+.card-top-content{
+  display: hidden;
+  color: #ffffff;
+  font-size:0px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .card-top-content {
+        width: 373px;
+        color: var(--mindful-gray-white, #000000);
+        text-align: left;
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 37px;
+        letter-spacing: -1.56px;
+        margin-left: 2em;
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+
+    .card1 {
+        position: relative;
+        font-size: 0px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 68px;
+        letter-spacing: -1.68px;
+        width: 0px;
+        height: 0px;
+        flex-shrink: 0;
+        border-radius: 27px;
+        animation: fadeIn 1s ease-in-out 1s forwards;
+    }
+
+    .card1 img {
+        display: none;
+    }
+
+    #green {
+        color: #1CC382;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 365px;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    .circle {
+        width: 90px;
+        height: 90px;
+        top: 2em;
+    }
+
+    .circle img {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-top: 7em;
+    }
+
+    .text {
+        margin-top: 4px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -1015,6 +1133,100 @@ height: 46px;
   background-color: #4C40F7; /* Blue background color on hover */
   color: #ffffff; /* White text color on hover */
 }
+
+
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+    .blue-box3 {
+        width: 100%; /* Adjust the width for smaller screens */
+        height: 100%;
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 30px; /* Adjust margin for smaller screens */
+    }
+
+    .blue-box3 .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .blue-box3 .apply {
+        margin-left: 0; /* Remove left margin */
+    }
+
+       .blue-box3  .card3 {
+        width: 100%;
+        max-width: 365px;
+        margin-bottom: 20px;
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+
+
+.content-top {
+  width: 100%;
+  color: var(--mindful-gray-white, #FFF);
+text-align: center;
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: 57px; /* 153.846% */
+letter-spacing: -1.56px;
+text-align: center;
+margin-left: 5%;
+margin-bottom: 160px;
+}
+
+
+.content-next{
+  width: 100%;
+  text-align: center;
+font-size: 20px;
+font-style: normal;
+margin-top: -120px;
+margin-bottom: 25px;
+margin-left: 5%;
+}
+
+
+.card3 .line{
+  width: 217px;
+  height: 1px;
+  background-color: #000000;
+  margin: 20px;
+}
+
+    .union{
+      display: none;
+    }
+
+    .card3 h4 {
+        margin-left: 10%; /* Remove left margin */
+    }
+
+    .card3 h5 {
+        margin-left: 10%; /* Remove left margin */
+    }
+
+    .blue-box3 .apply-direct {
+        width: 90%; /* Make the button full width on smaller screens */
+        margin: 0 5%; /* Remove left margin */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1609,6 +1821,19 @@ z-index: -1;
   margin: -5% 10%;
 }
 
+@media screen and (min-width: 769px) {
+    .data-1-heading1 {
+        display: none;
+    }
+
+    .data-3 {
+        display: none;
+    }
+}
+
+
+
+
 .data-1-img{
   margin-top: 5%;
   margin-left: -5%;
@@ -1654,14 +1879,120 @@ z-index: -1;
 
 
 
+.data-3 .contact-reach {
+  margin-left: 10%;
+  width: 700px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Add margin between the two divs */
+}
+
+
+.data-3 .contact-reach ul {
+    list-style: none; /* Remove list style */
+    padding-left: 0; /* Remove default padding */
+    margin-top: 10%; /* Remove default margin */
+}
+
+.data-3 .contact-reach ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 195%; /* 39px */
+    letter-spacing: 1.4px;
+    text-align: left; 
+    display: flex;
+    align-items: center; /* Align items vertically within each list item */
+}
+
+.data-3 .contact-reach ul li img {  
+  margin-right: 20px; /* Add space between image and content */
+}
+
+.data-3 .contact-reach a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+    .data-1-content button {
+        margin-left: 2.5em;
+        margin-bottom: -0.3em;
+    }
+
+    .data-1-heading {
+        margin: -5% 4%; /* Adjust heading margin for smaller screens */
+        display: none;
+    }
+    .data-1-heading1 {
+        width: 373px;
+        color: var(--mindful-gray-white, #000000);
+        text-align: left;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 37px;
+        letter-spacing: -1.56px;
+        margin-left: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+
+
+    #green {
+        color: #1CC382;
+    }
+
+    
+
+    .data-1-img {
+        margin-top: 2%;
+        margin-left: 7%;
+        margin-right: auto;
+        /* display: block; */
+        width: 70%; /* Adjust image width for smaller screens */
+        height: 10%; /* Adjust image width for smaller screens */
+    }
+
+    .data-1 .contact-reach {
+        margin-left: 14%; /* Adjust container margin for smaller screens */
+        width: 62%; /* Adjust container width for smaller screens */
+    }
+
+    .data-1 .contact-reach ul li {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+  }
 
 .data-2{
   margin-top: 5%;
   margin-bottom: 10%;
   background: linear-gradient(180deg, #F3F3FF 0%, rgba(248, 248, 255, 0.00) 100%);
 }
+.data-3{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background: linear-gradient(180deg, #F3F3FF 0%, rgba(248, 248, 255, 0.00) 100%);
+}
 
 .data-2-content button {
+    background-color: transparent;
+    color: #4C40F7;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 60px 8%;
+    cursor: pointer;
+}
+.data-3-content button {
     background-color: transparent;
     color: #4C40F7;
     border: none;
@@ -1720,15 +2051,60 @@ z-index: -1;
     color: #000000;
 }
 
-/* .banner {
-width: 1064px;
-height: 710px;
-flex-shrink: 0;
-background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 100%);
-} */
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+  .data-2{
+    display: none;
+  }
+
+    .data-3-content button {
+        margin-left: 2.5em;
+        margin-bottom: -0.3em;
+    }
+
+    .data-3-heading {
+        margin: -5% 4%; /* Adjust heading margin for smaller screens */
+        display: none;
+    }
+    .data-3-heading1 {
+        width: 373px;
+        color: var(--mindful-gray-white, #000000);
+        text-align: left;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 37px;
+        letter-spacing: -1.56px;
+        margin-left: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
 
 
-        /* Styling for the active link */
-        /* .navbar a.active {
-            background-color: #4CAF50;
-        } */
+
+    #blue {
+        color: #4C40F7;
+    }
+
+    
+
+    .data-3-img {
+        margin-top: 2%;
+        margin-left: 15%;
+        margin-right: auto;
+        /* display: block; */
+        width: 100%; /* Adjust image width for smaller screens */
+        height: 10%; /* Adjust image width for smaller screens */
+    }
+
+    .data-3 .contact-reach {
+        margin-left: 14%; /* Adjust container margin for smaller screens */
+        width: 62%; /* Adjust container width for smaller screens */
+    }
+
+    .data-3 .contact-reach ul li {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+  }

@@ -56,7 +56,7 @@
                             <h1>Successful Career</h1>
 
                             <p>Find your perfect fit with our advanced job database and industry connections for
-                            exciting career opportunities.</p>
+                                exciting career opportunities.</p>
                         </div>
                         <button class="button">Get Hired</button>
 
@@ -186,11 +186,16 @@
     </section>
 
     <section class="cards-section">
+        <div class="card-top-content">
+            Industries <br>We Offer <span id="green">Job Openings In</span>
+        </div>
         <div class="container">
 
             <div class="card1" id="card-1">
                 <img src="/assets/Heading.png" alt="heading">
             </div>
+            <!-- <div class="marquee"> -->
+
             <div class="card">
                 <div class="circle">
                     <img src="/assets/medicine.svg" alt="medicine">
@@ -239,6 +244,7 @@
                     <p>Innovating with tech experts for seamless IT solutions</p>
                 </div>
             </div>
+            <!-- </div> -->
 
         </div>
 
@@ -315,6 +321,9 @@
                 <div class="data-1-heading">
                     <img src="/assets/Heading4.png" alt="">
                 </div>
+                <div class="data-1-heading1">
+                    Let Our Expert <br>Recruiters <span id="green">Find You <br> Ideal Job In No Time</span>
+                </div>
 
                 <div class="contact-reach">
                     <ul>
@@ -333,7 +342,41 @@
             <div class="data-1-img">
                 <div class="rect2">
                 </div>
-                <img src="/assets/business-man.png" alt="">
+                <img src="/assets/business-man-mobile.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="data-3">
+        <div class="container">
+            <div class="data-3-content">
+                <button class="btn-data">FOR COMPANIES</button>
+                <div class="data-3-heading">
+                    <img src="/assets/Heading4.png" alt="">
+                </div>
+                <div class="data-3-heading1">
+                    <span id="blue">Hire Top Talent <br>Faster</span> to Propel Your <br> Company Growth
+                </div>
+
+                <div class="contact-reach">
+                    <ul>
+                        <li><img src="/assets/check-round-blue.svg" alt="call"><a href="#"> Get personalised support
+                                till
+                                you get hired</a></li>
+                        <li><img src="/assets/check-round-blue.svg" alt="mail"><a href="#">
+                                Access to wide range of exclusive job openings</a></li>
+                        <li><img src="/assets/check-round-blue.svg" alt="location"><a href="#">Get hired in your dream
+                                job
+                                faster & hassle-free
+                            </a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="data-3-img">
+                <div class="rect2">
+                </div>
+                <img src="/assets/business-group-mobile.png" alt="">
             </div>
         </div>
     </section>
@@ -486,14 +529,14 @@
             <!-- <div class="union">
                             <img src="/assets/Union.png" alt="">
                         </div> -->
-    
+
             <div class="container">
                 <img src="/assets/business-woman.png" alt="" class="woman">
                 <li><button class="button">HIRE TALENT</button></li>
                 <li><button class="button white">GET HIRED</button></li>
             </div>
-    
-    
+
+
         </div>
     </section>
 
@@ -625,6 +668,28 @@
             goToSlide(currentIndex + 1);
         });
     });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const burgerMenu = document.getElementById("burger-menu");
+        const closeMenu = document.getElementById("close-menu");
+        const menu = document.getElementById("menu");
+
+        burgerMenu.addEventListener("click", function () {
+            menu.classList.add("active");
+            burgerMenu.classList.add("active");
+            closeMenu.classList.add("active");
+        });
+
+        closeMenu.addEventListener("click", function () {
+            menu.classList.remove("active");
+            burgerMenu.classList.remove("active");
+            closeMenu.classList.remove("active");
+        });
+    });
+
+
 </script>
 
 </html>

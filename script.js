@@ -1,9 +1,3 @@
-function toggleMenu() {
-    var menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-
-
 document.addEventListener("DOMContentLoaded", function () {
     const toggleButtons = document.querySelectorAll(".toggle");
 
