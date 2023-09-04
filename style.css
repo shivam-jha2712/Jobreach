@@ -2305,6 +2305,13 @@ letter-spacing: -0.25px;
     flex-direction: column;
     width: 100%;
   }
+  .contact-reach {
+    margin-right: 0px;
+    align-items: center;
+}
+  .contact-heading >img{
+    width: 80vw;
+  }
   .data-content{
     width: 100vw;
   }
