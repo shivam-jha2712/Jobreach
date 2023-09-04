@@ -15,4 +15,3 @@ document.addEventListener("DOMContentLoaded", function () {
         closeMenu.classList.remove("active");
     });
 });
-

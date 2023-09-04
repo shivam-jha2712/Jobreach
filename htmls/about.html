@@ -10,13 +10,19 @@
 
 <body>
     <header>
-        <a href="#" class="logo"></a> <!-- place left for logo -->
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <a href="#" class="logo"></a>
+        <div class="mobile-menu">
+            <div id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="close-menu" class="hidden">
+                <div class="close-bar"></div>
+                <div class="close-bar"></div>
+            </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="hidden">
             <li><a href="../index.html">Home</a></li>
             <li><a href="/htmls/jobseekers.html">For Job Seekers</a></li>
             <li><a href="/htmls/employers.html">For Employers</a></li>

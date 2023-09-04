@@ -18,13 +18,19 @@
         </div> -->
 
     <header>
-        <a href="#" class="logo"></a> <!-- place left for logo -->
-        <div class="menu-icon" onclick="toggleMenu()">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+        <a href="#" class="logo"></a>
+        <div class="mobile-menu">
+            <div id="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div id="close-menu" class="hidden">
+                <div class="close-bar"></div>
+                <div class="close-bar"></div>
+            </div>
         </div>
-        <ul id="menu">
+        <ul id="menu" class="hidden">
             <li><a href="../index.html">Home</a></li>
             <li><a href="/htmls/jobseekers.html">For Job Seekers</a></li>
             <li><a href="/htmls/employers.html">For Employers</a></li>
@@ -153,116 +159,118 @@
             </div>
         </div>
         <div class="slider-nav">
-            <button class="prev-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                <path d="M9 13L15 7M15 7L9 1M15 7H1" stroke="#4C40F7" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg></button>
-            <button class="next-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                <path d="M9 13L15 7M15 7L9 1M15 7H1" stroke="#4C40F7" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg></button>
+            <button class="prev-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    viewBox="0 0 16 14" fill="none">
+                    <path d="M9 13L15 7M15 7L9 1M15 7H1" stroke="#4C40F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg></button>
+            <button class="next-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    viewBox="0 0 16 14" fill="none">
+                    <path d="M9 13L15 7M15 7L9 1M15 7H1" stroke="#4C40F7" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg></button>
         </div>
     </section>
 
 
-<section class="contact">
-    <div class="container">
-        <div class="contact-content">
-            <div class="contact-heading">
-                <img src="/assets/heading2.svg" alt="heading">
-            </div>
-            <div class="contact-text">
-                We are here to help and answer any question you might have. We look forward to hearing from you.
-            </div>
-            <div class="contact-reach">
-                <ul>
-                    <li><img src="/assets/call.png" alt="call"><a href="#"> +1294934292</a></li>
-                    <li><img src="/assets/mail.png" alt="mail"><a href="#"> jobreach@investstaffing.com</a></li>
-                    <li><img src="/assets/location.png" alt="location"><a href="#"> USA : Intellectt Inc 517 US 1
-                            South, Suite 1115, Iselin, New Jersey 08830, US
-                        </a></li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <div class="rect2"></div>
-            <form action="#" method="post">
-                <div class="form-group">
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" class="form-control" required
-                        placeholder="Enter your name">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number*</label>
-                    <input type="tel" id="phone" name="phone" class="form-control" required
-                        placeholder="Enter your Number">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" class="form-control" required
-                        placeholder="Enter your email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="message" class="form-control" rows="5" required
-                        placeholder="Enter your "></textarea>
-                </div>
-                <button type="submit" class="btn btn-secondary">Submit</button>
-            </form>
-        </div>
-
-    </div>
-</section>
-
-<!-- FAQ Section -->
-
-
-<footer>
-    <div class="blue-box5">
+    <section class="contact">
         <div class="container">
-            <div class="reach">
-                <h3>Reach Us</h3>
-                <ul>
-                    <li><img src="/assets/call.svg" alt="call"><a href="#"> +1294934292</a></li>
-                    <li><img src="/assets/mail.svg" alt="mail"><a href="#"> jobreach@investstaffing.com</a></li>
-                    <li><img src="/assets/location.svg" alt="location"><a href="#"> USA : Intellectt Inc 517 US 1
-                            South, Suite 1115, Iselin, New Jersey 08830, US
-                        </a></li>
-                </ul>
+            <div class="contact-content">
+                <div class="contact-heading">
+                    <img src="/assets/heading2.svg" alt="heading">
+                </div>
+                <div class="contact-text">
+                    We are here to help and answer any question you might have. We look forward to hearing from you.
+                </div>
+                <div class="contact-reach">
+                    <ul>
+                        <li><img src="/assets/call.png" alt="call"><a href="#"> +1294934292</a></li>
+                        <li><img src="/assets/mail.png" alt="mail"><a href="#"> jobreach@investstaffing.com</a></li>
+                        <li><img src="/assets/location.png" alt="location"><a href="#"> USA : Intellectt Inc 517 US 1
+                                South, Suite 1115, Iselin, New Jersey 08830, US
+                            </a></li>
+                    </ul>
 
+                </div>
             </div>
 
-            <div class="quick">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <div class="rect2"></div>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" class="form-control" required
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required
+                            placeholder="Enter your Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message*</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required
+                            placeholder="Enter your "></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
             </div>
 
-            <div class="newsletter-footer">
-                <h2>Join Our Newsletter</h2>
+        </div>
+    </section>
 
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Enter your email">
-                    <button class="btn btn-primary">Subscribe</button>
+    <!-- FAQ Section -->
+
+
+    <footer>
+        <div class="blue-box5">
+            <div class="container">
+                <div class="reach">
+                    <h3>Reach Us</h3>
+                    <ul>
+                        <li><img src="/assets/call.svg" alt="call"><a href="#"> +1294934292</a></li>
+                        <li><img src="/assets/mail.svg" alt="mail"><a href="#"> jobreach@investstaffing.com</a></li>
+                        <li><img src="/assets/location.svg" alt="location"><a href="#"> USA : Intellectt Inc 517 US 1
+                                South, Suite 1115, Iselin, New Jersey 08830, US
+                            </a></li>
+                    </ul>
+
                 </div>
 
-                <div class="footer-social-icons">
+                <div class="quick">
+                    <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
-                        <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
-                        <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
-
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-            </div>
 
-        </div>
-</footer>
+                <div class="newsletter-footer">
+                    <h2>Join Our Newsletter</h2>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+
+                    <div class="footer-social-icons">
+                        <ul>
+                            <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
+                            <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
+                            <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+    </footer>
 
     <!-- <section class="banner">
         <div class="banner-slider">
@@ -445,7 +453,7 @@
     </section> -->
 </body>
 
-<!-- <script src="/scriptss/contact.js"></script> -->
+<script src="/scriptss/contact.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
