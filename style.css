@@ -297,25 +297,23 @@ header .button.white:active {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 1440px; */
-  width: 90%;
-  height: 706px;
-  background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
+/* width: 1440px; */
+    width: 90%;
+    height: 706px;
+    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
   opacity: 0;
-  z-index: 1;
-  /* Ensure overlay is above the image */
+  z-index: 1; /* Ensure overlay is above the image */
 }
 
 .overlay-content {
   padding: 20px;
   position: relative;
-  z-index: 2;
-  /* Ensure content is above the overlay */
+  z-index: 2; /* Ensure content is above the overlay */
 }
 
 /* Add hover effect to display the overlay */
@@ -324,11 +322,10 @@ header .button.white:active {
 }
 
 .overlay-content {
-  margin-left: -50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Align content to the left */
+  margin-left: -25em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
 }
 
 .overlay-content button {
