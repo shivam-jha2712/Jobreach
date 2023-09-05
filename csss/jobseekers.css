@@ -521,62 +521,809 @@ header .button.white:active {
 
 
 
-/* Styles for screens smaller than or equal to 768px */
-@media (max-width: 768px) {
-    .banner {
-        margin-top: 0;
-        height: auto; /* Adjust height for responsiveness */
-    }
 
-    .banner img {
-        width: 27em;
-        margin-left: 0;
-    }
-
-    .banner-overlay {
-        width: 100%;
-        background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 120%);
-    }
-
-    .overlay-content {
-        margin-left: 0;
-        align-items: center;
-    }
-
-    .overlay-content button {
-        font-size: 11px;
-        padding: 8px 10px;
-    }
-
-    .overlay-content h1 {
-        font-size: 20px;
-    }
-#banner-text {
-        text-align: center; /* Center-align text content */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%; /* Ensure the container takes up the full height of its parent */
-    }
-
-    #banner-text h1,
-    #banner-text p {
-        text-align: center; /* Center-align both heading and paragraph */
-        margin: 10px 0; /* Add margin for spacing between elements */
-    }
-    #banner-text p {
-        width: 400px;
-        font-size: 16px;
-        text-align: center; /* Center-align both heading and paragraph */
-        margin: 10px 0; /* Add margin for spacing between elements */
-    }
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
 
 
-    /* Additional responsive styles can be added here */
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    margin-left: -18em;
+    transition: 0.4s;
+  }
+
+  .close-bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+    transform-origin: center;
+  }
+
+  #close-menu.active .close-bar:first-child {
+    transform: rotate(45deg);
+    margin-top: -1em;
+  }
+
+  #close-menu.active .close-bar:last-child {
+    margin-top: -0.5em;
+    transform: rotate(-45deg);
+  }
+
+
+  #menu {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    /* position: fixed; */
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #fff;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: left 0.4s ease;
+    /* Add smooth left transition */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  header {
+    padding: 30px 20px;
+    /* Reduce padding for smaller screens */
+  }
+
+  header ul li {
+    margin: 15px 0;
+  }
+
+  #menu.active {
+    left: 0;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  #burger-menu.active~#close-menu {
+    display: block;
+  }
 }
 
 
+
+
+
+/* Styles for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 0;
+    height: auto;
+    /* Adjust height for responsiveness */
+  }
+
+  .banner img {
+    width: 27em;
+    margin-left: 0;
+  }
+
+  .banner-overlay {
+    width: 100%;
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 120%);
+  }
+
+  .overlay-content {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .overlay-content button {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+
+  .overlay-content h1 {
+    font-size: 20px;
+  }
+
+  #banner-text {
+    text-align: center;
+    /* Center-align text content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensure the container takes up the full height of its parent */
+  }
+
+  #banner-text h1,
+  #banner-text p {
+    text-align: center;
+    /* Center-align both heading and paragraph */
+    margin: 10px 0;
+    /* Add margin for spacing between elements */
+  }
+
+  #banner-text p {
+    width: 400px;
+    font-size: 16px;
+    text-align: center;
+    /* Center-align both heading and paragraph */
+    margin: 10px 0;
+    /* Add margin for spacing between elements */
+  }
+
+
+  /* Additional responsive styles can be added here */
+}
+
+
+/* Styles for screens smaller than or equal to 768px (typical mobile screens) */
+@media (max-width: 768px) {
+  .blue-box {
+    height: auto;
+    /* Adjust height to fit content */
+    padding: 20px 0;
+    /* Adjust padding for spacing */
+    margin-top: 0em;
+  }
+
+  .marquee {
+    width: 70em;
+    margin: 15px;
+    overflow-x: scroll;
+    /* Enable horizontal scrolling for logos */
+    white-space: nowrap;
+    animation: marquee-scroll 10s linear infinite;
+    /* Enable marquee animation for small screens */
+  }
+
+  .marquee img {
+    margin: 0 10px;
+    /* Adjust spacing between logos */
+    width: 100%;
+    /* Adjust logo size */
+    height: auto;
+  }
+
+
+  .blue-box-content h2 {
+    font-size: 24px;
+    /* Reduce heading font size for smaller screens */
+    margin-bottom: 10px;
+    /* Adjust margin for spacing */
+  }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) 
+{
+  .containerExpert{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+  .data-1-img{
+    display: flex;
+    width: 100%;
+    margin: 0rem !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .data-1 .contact-reach ul li {
+    font-size: 14px;
+    width: 343px;
+    margin-left: -3em;
+    /* Adjust font size for smaller screens */
+  }
+  .data-1 .contact-reach ul li img{
+    font-size: 14px;
+    margin-left: 1em;
+    /* width: 353px; */
+    /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  .card1{
+    display:none
+  }
+  .sliderBankingcard{
+    justify-content: flex-start !important;
+    padding: 0rem 1rem;
+  }
+
+  .card-top-content {
+    color: var(--mindful-gray-white, #000000);
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: -1.56px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .card1 {
+    position: relative;
+    font-size: 0px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -1.68px;
+    width: 0px;
+    height: 0px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+  }
+
+  .card1 img {
+    display: none;
+  }
+
+  #green {
+    color: #1CC382;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 365px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    top: 2em;
+  }
+
+  .circle img {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin-top: 7em;
+  }
+
+  .text {
+    margin-top: 4px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+  .blue-box3 {
+    width: 100%;
+    /* Adjust the width for smaller screens */
+    height: 100%;
+    margin-left: 0;
+    /* Remove left margin */
+    margin-bottom: 30px;
+    /* Adjust margin for smaller screens */
+  }
+
+  .blue-box3 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .blue-box3 .apply {
+    margin-left: 0;
+    /* Remove left margin */
+  }
+
+  .blue-box3 .card3 {
+    width: 100%;
+    max-width: 365px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  /* 
+.content-top {
+  width: 100%;
+  color: var(--mindful-gray-white, #FFF);
+text-align: center;
+font-size: 42px;
+font-style: normal;
+font-weight: 500;
+line-height: 57px; 
+letter-spacing: -1.56px;
+text-align: center;
+margin-left: 5%;
+margin-bottom: 160px;
+} */
+
+
+  .content-next {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: -120px;
+    margin-bottom: 25px;
+    margin-left: 5%;
+  }
+
+
+  .card3 .line {
+    width: 217px;
+    height: 1px;
+    background-color: #000000;
+    margin: 20px;
+  }
+
+  .union {
+    display: none;
+  }
+
+  .card3 h4 {
+    margin-left: 10%;
+    /* Remove left margin */
+  }
+
+  .card3 h5 {
+    margin-left: 10%;
+    /* Remove left margin */
+  }
+
+  .blue-box3 .apply-direct {
+    width: 90%;
+    /* Make the button full width on smaller screens */
+    margin: 0 5%;
+    /* Remove left margin */
+  }
+}
+
+
+
+
+@media screen and (min-width: 769px) {
+  .data-1-heading1 {
+    display: none;
+  }
+
+  .data-3 {
+    display: none;
+  }
+
+}
+
+
+
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+  .data-3-heading1 {
+    width: 100%;
+
+  }
+  .data-1-content button {
+    margin-left: 2.5em;
+    margin-bottom: -0.3em;
+  }
+  .data-1-content{
+    width: 100%;
+  }
+  .data-img img {
+    position: absolute;
+    /* margin-left: 0em;*/
+    margin-top: -1em;
+    width: 100% !important;
+  
+  }
+
+  .data-1-heading {
+    margin: -5% 4%;
+    /* Adjust heading margin for smaller screens */
+    display: none;
+  }
+
+  .data-1-heading1 {
+    /* width: 100%; */
+    color: var(--mindful-gray-white, #000000);
+    text-align: left;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: -1.56px;
+    margin-left: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+
+
+  #green {
+    color: #1CC382;
+  }
+
+
+
+  .data-1-img {
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: auto;
+    /* display: block; */
+    width: 70%;
+    /* Adjust image width for smaller screens */
+    height: 10%;
+    /* Adjust image width for smaller screens */
+  }
+
+  .data-1 .contact-reach {
+    margin-left: 14%;
+    /* Adjust container margin for smaller screens */
+    width: 62%;
+    /* Adjust container width for smaller screens */
+  }
+
+  .data-1 .contact-reach ul li {
+    font-size: 14px;
+    /* Adjust font size for smaller screens */
+  }
+
+}
+
+.data-2 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background: linear-gradient(180deg, #F3F3FF 0%, rgba(248, 248, 255, 0.00) 100%);
+}
+
+.data-3 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  background: linear-gradient(180deg, #F3F3FF 0%, rgba(248, 248, 255, 0.00) 100%);
+}
+
+.data-2-content button {
+  background-color: transparent;
+  color: #4C40F7;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 12px;
+  margin: 60px 8%;
+  cursor: pointer;
+}
+
+.data-3-content button {
+  background-color: transparent;
+  color: #4C40F7;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 12px;
+  margin: 60px 8%;
+  cursor: pointer;
+}
+
+.data-2-heading {
+  margin: -5% 10%;
+}
+
+.data-2-img {
+  margin-top: 5%;
+  margin-left: -5%;
+  margin-right: 5%;
+}
+
+
+.data-2 .contact-reach {
+  margin-left: 10%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  /* Add margin between the two divs */
+}
+
+/* .dataDream-job-wrapper{
+  
+} */
+
+.data-2 .contact-reach ul {
+  list-style: none;
+  /* Remove list style */
+  padding-left: 0;
+  /* Remove default padding */
+  margin-top: 10%;
+  /* Remove default margin */
+}
+
+.data-2 .contact-reach ul li {
+  margin-bottom: 15px;
+  font-size: 20px;
+  width: 803px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 195%;
+  /* 39px */
+  letter-spacing: 1.4px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* Align items vertically within each list item */
+}
+
+.data-2 .contact-reach ul li img {
+  margin-right: 20px;
+  /* Add space between image and content */
+}
+
+.data-2 .contact-reach a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.containerHireTalent{
+  display: flex;
+  width: 100vh;
+}
+.content-top> span{
+  color: #1eef9f;
+}
+
+.data-content{
+  width: 30vw;
+}
+.data-heading > h2{
+  font-size:3rem;
+}
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+
+  .contact-form {
+    width: 90vw;
+  }
+  .formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-reach {
+    margin-right: 0px;
+    align-items: center;
+}
+  .contact-heading >img{
+    width: 80vw;
+  }
+  .data-content{
+    width: 100vw;
+  }
+  
+
+  .contact-content
+  {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  #contact-text{
+  width:373px;
+  margin-left: 3%;
+ }
+  .content-top{
+    font-size:2rem;
+    padding: 0 0.5rem;
+    line-height: 2rem;
+  }
+  .data .input-group {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .circle2{
+    margin-top:25rem;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #4C40F7;
+      position: absolute;
+      left: calc(20% - 53px);
+      z-index: 1;
+    
+  }
+  .cards-container{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .circle2> img{
+    width: 100%;
+  }
+  .card2{
+    min-width: 80vw !important;
+    height: 28rem;
+  }
+
+  
+  .blue-box2 {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    padding: 1rem;
+    }
+  .containerHireTalent{
+    display: flex;
+    flex-direction: column !important;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .content-next{
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+  .data-2 {
+    display: none;
+  }
+
+  .data-3-content button {
+    margin-left: 2.5em;
+    margin-bottom: -0.3em;
+  }
+
+  .data-3-heading {
+    margin: -5% 4%;
+    /* Adjust heading margin for smaller screens */
+    display: none;
+  }
+
+  .data-3-heading1 {
+    width: 373px;
+    color: var(--mindful-gray-white, #000000);
+    text-align: left;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: -1.56px;
+    margin-left: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+
+
+  #blue {
+    color: #4C40F7;
+  }
+
+
+
+  .data-3-img {
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: auto;
+    /* display: block; */
+    width: 100%;
+    /* Adjust image width for smaller screens */
+    height: 10%;
+    /* Adjust image width for smaller screens */
+  }
+  .data-img img {
+    position: relative;
+  }
+
+  .data-3 .contact-reach {
+    margin-left: 14%;
+    /* Adjust container margin for smaller screens */
+    width: 62%;
+    /* Adjust container width for smaller screens */
+  }
+
+  .data-3 .contact-reach ul li {
+    font-size: 14px;
+    width: 333px;
+    margin-left: -2em;
+    /* Adjust font size for smaller screens */
+  }
+  .data-3 .contact-reach ul li img{
+    font-size: 14px;
+    margin-left: -0.5em;
+    /* width: 353px; */
+    /* Adjust font size for smaller screens */
+  }
+  .dataDream-job-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* align-items: ; */
+  }
+
+  .card2 > h3 {
+    font-size: 20px;
+    position: relative;
+    margin-top: 10px;
+    color: #555;
+  }
+  .data .data-heading 
+  {
+    text-align: center;
+}
+.data-text{
+  text-align: center;
+}
+
+}
 
 
 
@@ -592,10 +1339,12 @@ header .button.white:active {
 }
 
 .container2 {
-    max-width: 1200px;
-    /* margin: 0 auto; */
-    margin: 0 -2%;
+  max-width: 1200px;
+  align-items: center;
+  /* margin: 0 auto; */
+  /* margin: 0 -2%; */
 }
+
 
 
 .container3 {
@@ -612,7 +1361,7 @@ header .button.white:active {
 
 
 
-.union{
+/* .union{
   position: absolute;
   width: 894.692px;
 height: 885.225px;
@@ -620,159 +1369,127 @@ margin-top: -350px;
 margin-left: -230px;
 transform: rotate(180.291deg);
 overflow-y: hidden;
+} */
+
+
+.blue-box2-wrapper{
+  display: flex;
+  justify-content: center;
 }
 
-
-
-
-
-
-
 .blue-box2 {
-    background: #DBFFF2;
-    /* width: 1352px; */
-    width: 90%;
-    height: 944px;
-    margin-left: 75px;
-    border-radius: 25px;
-    padding: 40px;
-    color: rgb(0, 0, 0);
-    text-align: center;
+  display: flex;
+  justify-content:center;
+  background: linear-gradient(180deg, #DBFFF2 0%, rgba(219, 255, 242, 0.00) 100%);
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  color: white;
+  text-align: center;
 }
 
 
 .content-top {
-  width: 803px;
-  color: var(--mindful-gray-white, #FFF);
-text-align: center;
-font-size: 52px;
-font-style: normal;
-font-weight: 500;
+  width: 100%;
+  text-align: center;
+  color: var(--mindful-gray-white, #000000);
+  text-align: center;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
 line-height: 80px; /* 153.846% */
-letter-spacing: -1.56px;
-text-align: center;
-margin-left: 270px;
-margin-bottom: 160px;
+letter-spacing: -1.0px;
+  margin-bottom: 4rem;
 }
 
 
-.content-next{
-  width: 573px;
+.content-next {
+  width: 100%;
   text-align: center;
-font-size: 20px;
-font-style: normal;
-margin-top: -120px;
-margin-bottom: 25px;
-margin-left: 30%;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  font-style: normal;
 }
 
 
 .container2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    /* margin: 0 -2%; */
+  max-width: 1200px;
+  align-items: center;
+  /* margin: 0 auto; */
+  /* margin: 0 -2%; */
 }
-
-
 
 .blue-box2 h2 {
-    font-size: 36px;
-    margin-bottom: 140px;
+  font-size: 36px;
+  margin-bottom: 140px;
 }
+
 
 
 
 .cards-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .card2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    width: 374px;
-    height: 479px;
-    border-radius: 27px;
-    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
-    padding: 20px;
-    position: relative;
-    transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 374px;
+  height: 479px;
+  border-radius: 27px;
+  box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+  padding: 20px;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.union{
+
+.union {
   position: absolute;
   width: 894.692px;
-height: 885.225px;
-margin-top: -350px;
-margin-left: -230px;
-transform: rotate(180.291deg);
-overflow-y: hidden;
+  height: 885.225px;
+  margin-top: -350px;
+  margin-left: -230px;
+  transform: rotate(180.291deg);
+  overflow-y: hidden;
 }
 
 
 
 .circle2 {
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    background-color: #DBFFF2;
-    position: absolute;
-    top: -53px;
-    left: calc(50% - 53px);
-    z-index: 1;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: -53px;
+  left: calc(50% - 53px);
+  z-index: 1;
 }
 
 
 .card2 h3 {
-    font-size: 20px;
-    position: relative;
-    margin-top: 65px;
-    color: #555;
+  font-size: 20px;
+  position: relative;
+  margin-top: 65px;
+  color: #555;
 }
 
 .card2 p {
-    font-size: 16px;
-    color: #555;
+  font-size: 16px;
+  color: #555;
 }
+
 .card2 .service {
-    font-size: 16px;
-    color: #555;
-    margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+  margin-top: 15px;
 }
 
-
-.content-top {
-  width: 803px;
-  color: var(--mindful-gray-white, #FFF);
-text-align: center;
-font-size: 52px;
-font-style: normal;
-font-weight: 500;
-line-height: 80px; /* 153.846% */
-letter-spacing: -1.56px;
-text-align: center;
-margin-left: 270px;
-margin-bottom: 160px;
-}
-
-.content-top img {
-    margin-top:8%;
-    margin-bottom:-5% ;
-}
-
-
-.content-next{
-  width: 573px;
-  text-align: center;
-font-size: 20px;
-font-style: normal;
-margin-top: -120px;
-margin-bottom: 25px;
-margin-left: 30%;
-}
 
 
 
@@ -1470,3 +2187,8 @@ text-align: center;
     width: 30px;
     height: 30px;
 }
+
+
+
+
+
