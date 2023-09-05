@@ -915,6 +915,19 @@ header .button.white:active {
     justify-content: center;
   }
 
+    .data-1 .contact-reach ul li {
+    font-size: 14px;
+    width: 343px;
+    margin-left: -3em;
+    /* Adjust font size for smaller screens */
+  }
+  .data-1 .contact-reach ul li img{
+    font-size: 14px;
+    margin-left: 1em;
+    /* width: 353px; */
+    /* Adjust font size for smaller screens */
+  }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -2255,6 +2268,7 @@ letter-spacing: -0.25px;
 .data-2 .contact-reach ul li {
   margin-bottom: 15px;
   font-size: 20px;
+  width: 803px;
   font-style: normal;
   font-weight: 600;
   line-height: 195%;
@@ -2433,6 +2447,14 @@ letter-spacing: -0.25px;
 
   .data-3 .contact-reach ul li {
     font-size: 14px;
+    width: 333px;
+    margin-left: -2em;
+    /* Adjust font size for smaller screens */
+  }
+  .data-3 .contact-reach ul li img{
+    font-size: 14px;
+    margin-left: -0.5em;
+    /* width: 353px; */
     /* Adjust font size for smaller screens */
   }
   .dataDream-job-wrapper{
