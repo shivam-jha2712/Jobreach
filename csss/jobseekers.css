@@ -1493,6 +1493,13 @@ letter-spacing: -1.0px;
 
 
 
+
+.blue-box-3-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
 .blue-box3 {
     background-color: #ffffff;
     /* width: 1352px; */
@@ -1652,7 +1659,7 @@ height: 46px;
 
 
 
-.blue-box3 .card3-top {
+ .card3-top {
     display: flex;
     width: 100%;
     align-items: flex-start;
@@ -1663,16 +1670,16 @@ font-weight: 500;
 line-height: 23.189px; /* 100% */
 }
 
-.blue-box3 .card3-top .name {
+ .card3-top .name {
     margin-left: 5%;
     margin-right: 5%;
     align-items: left;
 }
-.blue-box3 .card3-top .price {
+ .card3-top .price {
     margin-left: 30%;
 }
 
-.blue-box3 .card3-data {
+.card3-data {
     display: grid;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -1682,10 +1689,10 @@ line-height: 23.189px; /* 100% */
     max-width: 100%;
 }
 
-.blue-box3 .card3-data .wfh{
+ .card3-data .wfh{
     margin-left: 130%;
 }
-.blue-box3 .card3-data .ns{
+ .card3-data .ns{
     margin-left: 50%;
 }
 
@@ -1746,6 +1753,109 @@ margin-top: -15px;
 line-height: 60px; /* 340% */
 letter-spacing: -0.6px;
 }
+
+
+
+
+
+/* Media Query for 768px screen width */
+@media screen and (max-width: 768px) {
+  .blue-box3 {
+    width: 100%;
+    /* Adjust the width for smaller screens */
+    height: 100%;
+    margin-left: 0;
+    /* Remove left margin */
+    margin-bottom: 30px;
+    margin-top: 8em;
+    /* Adjust margin for smaller screens */
+  }
+
+  .blue-box3 .container3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .blue-box3 .apply {
+    margin-left: 0;
+    /* Remove left margin */
+  }
+
+  .blue-box3 .card3 {
+    width: 100%;
+    max-width: 375px;
+    height: 30em;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+.card3-data{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+  .content-next {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: -120px;
+    margin-bottom: 25px;
+    margin-left: 5%;
+  }
+
+
+
+  .union {
+    display: none;
+  }
+
+  .card3-top{
+    color: #1C1134;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 13.322px;
+  }
+
+
+   .card3-top .name {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: left;
+}
+ .card3-top .price {
+    margin-left: 10%;
+}
+
+  .card3 h4 {
+    margin-left: 10%;
+    /* Remove left margin */
+  }
+
+  .card3 h5 {
+    margin-left: 10%;
+    /* Remove left margin */
+  }
+
+  .blue-box3 .apply-direct {
+    width: 90%;
+    /* Make the button full width on smaller screens */
+    margin: 0 5%;
+    /* Remove left margin */
+  }
+}
+
+
+
 
 
 
