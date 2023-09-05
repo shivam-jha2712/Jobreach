@@ -1490,6 +1490,7 @@ letter-spacing: -1.0px;
 
 
 
+
 .blue-box-3-wrapper {
   display: flex;
   justify-content: center;
@@ -1497,14 +1498,16 @@ letter-spacing: -1.0px;
 
 
 .blue-box3 {
+      display: flex;
+  justify-content:center;
     background-color: #ffffff;
     /* width: 1352px; */
     width: 90%;
     height: 1134px;
     margin-top: -22.3em;
-    margin-bottom: -10em;
+    margin-bottom: -20em;
     /* margin-top: -25%; */
-    margin-left: 75px;
+    /* margin-left: 75px; */
     border-radius: 25px;
     padding: 40px;
     color: rgb(0, 0, 0);
@@ -1809,12 +1812,13 @@ letter-spacing: -0.6px;
   }
 
 
-
   .union {
     display: none;
   }
 
   .card3-top{
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: #1C1134;
 font-size: 15px;
 font-style: normal;
@@ -1862,11 +1866,13 @@ line-height: 13.322px;
 
 
 .blue-box4 {
+      display: flex;
+  justify-content:center;
     background-color: #4C40F7;
     /* width: 1352px; */
     width: 90%;
     height: 516px;
-    margin-left: 75px;
+    /* margin-left: 75px; */
     margin-bottom: 75px;
     margin-top: 75px;
     border-radius: 25px;
@@ -2002,9 +2008,16 @@ margin-left: 26em;
 
 
 
+/*  */
 
+.green-box-wrapper{
+  display: flex;
+  justify-content: center;
+}
 
 .green-box {
+    display: flex;
+  justify-content:center;
     background-color: #4C40F7;
     width: 100%;
     height: 1100px;
