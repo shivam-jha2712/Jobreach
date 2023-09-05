@@ -19,7 +19,7 @@
     </div> -->
 
     <header>
-        <a href="#" class="logo"></a>
+        <!-- <a href="#" class="logo"></a> -->
         <div class="mobile-menu">
             <div id="burger-menu">
                 <div class="bar"></div>
@@ -39,7 +39,7 @@
             <li><a href="/htmls/contact.html">Contact us</a></li>
             <li><a class="active" href="/htmls/rough.html">Rough</a></li>
             <li><button class="button">Hire Talent</button></li>
-            <li><button class="button white">Get Hired</button></li>
+            <li><button class="button white button-onClick-gethired" >Get Hired</button></li>
         </ul>
     </header>
 
@@ -673,25 +673,29 @@
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const burgerMenu = document.getElementById("burger-menu");
-        const closeMenu = document.getElementById("close-menu");
-        const menu = document.getElementById("menu");
+document.addEventListener("DOMContentLoaded", function () {
+    const burgerMenu = document.getElementById("burger-menu");
+    const closeMenu = document.getElementById("close-menu");
+    const menu = document.getElementById("menu");
 
-        burgerMenu.addEventListener("click", function () {
-            menu.classList.add("active");
-            burgerMenu.classList.add("active");
-            closeMenu.classList.add("active");
-        });
-
-        closeMenu.addEventListener("click", function () {
-            menu.classList.remove("active");
-            burgerMenu.classList.remove("active");
-            closeMenu.classList.remove("active");
-        });
+    burgerMenu.addEventListener("click", function () {
+        menu.classList.add("active");
+        burgerMenu.classList.add("active");
+        closeMenu.classList.add("active");
+        burgerMenu.style.opacity=0
     });
+    
+    closeMenu.addEventListener("click", function () {
+        menu.classList.remove("active");
+        burgerMenu.classList.remove("active");
+        burgerMenu.style.opacity=1
+        closeMenu.classList.remove("active");
+    });
+});
+
+
 
 
 </script>
-
+<script src="./scriptss/form.js" ></script>
 </html>
