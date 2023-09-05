@@ -889,20 +889,14 @@ header .button.white:active {
     animation: fadeIn 1s ease-in-out forwards;
   }
 
-  /* 
-.content-top {
-  width: 100%;
-  color: var(--mindful-gray-white, #FFF);
-text-align: center;
-font-size: 42px;
-font-style: normal;
-font-weight: 500;
-line-height: 57px; 
-letter-spacing: -1.56px;
-text-align: center;
-margin-left: 5%;
-margin-bottom: 160px;
-} */
+  .blue-box3   .content-top{
+    font-size:2rem;
+    /* padding: 0 0.5rem; */
+    line-height: 2rem;
+    margin-top: -2.5em;
+  }
+
+
 
 
   .content-next {
@@ -1191,7 +1185,7 @@ margin-bottom: 160px;
     justify-content: center;
 }
   .circle2{
-    margin-top:25rem;
+      margin-top:25rem;
       width: 80px;
       height: 80px;
       border-radius: 50%;
@@ -1209,7 +1203,9 @@ margin-bottom: 160px;
   }
 
   .circle2> img{
-    width: 100%;
+    width: 60%;
+    margin-left: -10em;
+    margin-top: 2em;
   }
   .card2{
     min-width: 80vw !important;
