@@ -1,0 +1,22 @@
+.pop-up-Positioning{
+    display: none;
+    position: fixed;
+    bottom:0rem;
+    top:0rem;
+    right:0rem;
+    left:0rem;
+    z-index: 100;
+}
+.closebutton{
+    width: 100%;
+    text-align: right;
+    font-size: 2rem;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    
+}
+.closebutton:hover{
+    cursor: pointer;
+}
+.heighting{
+    height:100%
+}

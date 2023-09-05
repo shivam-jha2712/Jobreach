@@ -1456,26 +1456,29 @@ margin-bottom: 160px;
 }
 
 
+
+.blue-box-wrapper4{
+  display: flex;
+  justify-content: center;
+}
+
 .blue-box4 {
   background-color: #4C40F7;
   /* width: 1352px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 90%;
   height: 476px;
-  margin-left: 75px;
   margin-bottom: 75px;
   margin-top: 75px;
   border-radius: 25px;
   padding: 40px;
   color: white;
   text-align: center;
-  list-style: none;
+  height: 100%;
 }
 
-.blue-box4 > img {
-  margin-top: -151.3%;
-  margin-left: -45%;
-  width: 150.4%;
-}
 
 /* .blue-box4 .button {
     background-color: #4CAF50; 
@@ -1516,8 +1519,8 @@ letter-spacing: -0.25px;
 
 /* Pressed Buttons */
 
-.blue-box4 > .button,
-.blue-box4 >.button.white {
+.blue-box4  .button,
+.blue-box4 .button.white {
   /* Common styles for both buttons */
   width: 242px;
   height: 67px;
@@ -1534,14 +1537,14 @@ letter-spacing: -0.25px;
   transition: background-color 0.2s, color 0.2s, transform 0.2s;
 }
 
-.blue-box4 > .button {
+.blue-box4 .button {
   background-color: #4CAF50;
   color: white;
   border: none;
   margin-left: 90%;
 }
 
-.blue-box4 > .button.white {
+.blue-box4  .button.white {
   background-color: white;
   color: #4CAF50;
   border: 2px solid #4CAF50;
@@ -1549,8 +1552,8 @@ letter-spacing: -0.25px;
 }
 
 /* Add :active styles */
-.blue-box4 >.button:active,
-.blue-box4 >.button.white:active {
+.blue-box4 .button:active,
+.blue-box4 .button.white:active {
   background-color: #3e8e41;
   /* Darker green for "Hire Talent" button when pressed */
   color: #f2f2f2;
@@ -1558,7 +1561,7 @@ letter-spacing: -0.25px;
   /* Scale down the button slightly when pressed */
 }
 
-.blue-box4 > .button.white:active {
+.blue-box4  .button.white:active {
   background-color: #f2f2f2;
   /* Light gray for "Get Hired" button when pressed */
   color: #3e8e41;
@@ -1566,7 +1569,7 @@ letter-spacing: -0.25px;
 
 
 
-.blue-box4 > .content-top {
+.blue-box4  .content-top {
   width: 803px;
   color: var(--mindful-gray-white, #FFF);
   text-align: center;
@@ -1580,18 +1583,15 @@ letter-spacing: -0.25px;
   text-align: center;
   margin-left: 12%;
   margin-top: 20px;
-  margin-bottom: 120px;
+  margin-bottom: 4rem;
 }
 
 
-.blue-box4 > .content-next {
-  width: 673px;
+.blue-box4 .content-next {
   text-align: center;
   font-size: 20px;
   font-style: normal;
-  margin-top: -90px;
   margin-bottom: 25px;
-  margin-left: 25%;
 }
 
 
@@ -1610,7 +1610,7 @@ letter-spacing: -0.25px;
   margin-bottom: 5%;
 }
 
-.contact >.contact-text {
+.contact .contact-text {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -2312,6 +2312,37 @@ letter-spacing: -0.25px;
 
 /* Media Query for 768px screen width */
 @media screen and (max-width: 768px) {
+  .button-wrapper-job{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blue-box4 .button{
+    margin-left:0;
+  }
+  .blue-box4 .content-top {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 1.56px;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+  }
+  
+.blue-box4 .content-next {
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+  
+
+  .blue-box4 .button.white{
+    margin-left:0;
+  }
+
   .contact-text{
     width: 90vw;
   }
