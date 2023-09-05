@@ -1614,7 +1614,7 @@ letter-spacing: -0.25px;
   /* 138.4% */
 }
 .contact-text{
-  max-width: 30vw;
+  width: 28em;
 }
 .contact-reach {
   display: inline-block;
@@ -2326,12 +2326,18 @@ letter-spacing: -0.25px;
   .data-content{
     width: 100vw;
   }
-  .contact-text,
+  
+
   .contact-content
   {
     padding: 0 2rem;
     max-width: 100%;
   }
+
+  #contact-text{
+  width:373px;
+  margin-left: 3%;
+ }
   .content-top{
     font-size:2rem;
     padding: 0 0.5rem;
