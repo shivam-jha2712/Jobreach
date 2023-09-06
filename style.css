@@ -2321,10 +2321,8 @@ letter-spacing: -0.25px;
   .contact-form{
     width: 90vw;
     max-height: 715px;
-    /* display: flex; */
-    /* flex-direction: row; */
-    margin: 0 auto;
-    overflow: scroll;
+    /* margin: 0 auto; */
+    overflow-y: scroll;
   }
 form{overflow-y: scroll;}
 
