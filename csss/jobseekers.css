@@ -2308,7 +2308,7 @@ line-height: 13.322px;
     height: 90%;
   }
   .blue-box4 .button{
-    margin-left:0;
+    margin-left:8em;
     width: 155px;
 height: 37px;
 font-size: 14px;
@@ -2334,7 +2334,7 @@ letter-spacing: -0.84px;
 .blue-box4 .content-next {
   align-items: center;
       display: flex;
-         width: 353px;
+         width: 90%;
     margin-left: 5%;
     flex-direction: column;
 font-size: 14px;
@@ -2361,14 +2361,14 @@ letter-spacing: -0.28px;
   .blue-box4 img{
   margin-top: -6.5%;
 
-  margin-left: 10%;
-  width: 60.4%;
+  margin-left: 7.5em;
+  width: 45.4%;
   /* transform: scaleX(-1); */
 }
 
 .button-wrapper-job-container
 {
-  margin-bottom: -47px;
+  margin-bottom: 1.1em;
 }
 
 }

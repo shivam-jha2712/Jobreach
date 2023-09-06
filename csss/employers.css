@@ -769,13 +769,15 @@ header .button.white:active {
 
 /* FORM COMPLETE CSS */
 
- .formContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: scroll;
-  }
-
+.formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+}
 
 .contact-form {
   text-align: center;
