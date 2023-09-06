@@ -2326,7 +2326,7 @@ letter-spacing: -0.25px;
     margin: 0 auto;
     overflow: scroll;
   }
-form{overflow: scroll;}
+form{overflow-y: scroll;}
 
   .pop-up-Positioning1{
     margin-top:8em;
