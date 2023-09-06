@@ -625,6 +625,139 @@ header .button.white:active {
 }
 
 
+/* FORM COMPLETE CSS */
+
+ .formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+  }
+
+
+.contact-form {
+  text-align: center;
+  padding: 20px;
+  width: 459px;
+  height: 651px;
+  background-color: #fffdfd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  text-align: left;
+  color: #333;
+}
+
+.contact-form .rect2 {
+  width: 40%;
+  height: 5px;
+  background: #1CC382;
+  border-radius: 3px;
+  margin-top: -4%;
+  margin-bottom: 4%;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  margin-left: 0%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 90%;
+  height: 43px;
+  margin-left: -10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
+}
+
+/* Add :hover styles */
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+.btn-secondary:active {
+  background-color: #159b60;
+  /* Darker green for button when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
+}
+
+
+
+/* Media for Forms in Mobile */
+@media screen and (max-width: 768px)
+{
+
+
+  .contact-form{
+    width: 90vw;
+    max-height: 715px;
+    /* margin: 0 auto; */
+    overflow-y: scroll;
+  }
+form{overflow-y: scroll;}
+
+  .pop-up-Positioning1{
+    margin-top:8em;
+  }
+  .pop-up-Positioning{
+    margin-top:8em;
+  }
+
+      .contact-text{
+    width: 90vw;
+  }
+
+  .contact-form {
+    width: 90vw;
+  }
+ 
+
+
+  .formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+}
+
+
+}
 
 
 
@@ -1385,77 +1518,7 @@ margin-bottom: 160px;
 
 
 
-
-.faq-section .heading {
-  text-align: center;
-  margin: 40px;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 65px;
-}
-
-
-.container-faq {
-  /* display: grid; */
-  grid-template-columns: repeat(3, 1fr);
-  /* 3 columns in the grid */
-  gap: 20px;
-  /* Spacing between cards */
-  max-width: 1064px;
-  /* margin: 0 35px; */
-  margin: 35px auto;
-}
-
-.container-faq .line2 {
-  width: 90%;
-  height: 1px;
-  background: #E8E8E8;
-  margin: 0 5%;
-}
-
-.faq-item {
-  margin-bottom: 10px;
-  width: 90%;
-  margin-left: 5%;
-  border: none;
-  padding: 10px;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 172%;
-  position: relative;
-  cursor: pointer;
-}
-
-.faq-item .answer {
-  display: none;
-  margin-top: 10px;
-}
-
-.faq-item.open .answer {
-  display: block;
-}
-
-
-.answer {
-  display: none;
-  color: rgba(60, 60, 67, 0.85);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 172%;
-  margin-top: 10px;
-}
-
-.toggle {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-
-
+/* Blue-Box4 - LADKI WALA BLUE DABBA */
 
 .blue-box-wrapper4{
   display: flex;
@@ -1479,42 +1542,6 @@ margin-bottom: 160px;
   height: 100%;
 }
 
-
-/* .blue-box4 .button {
-    background-color: #4CAF50; 
-    color: white;
-    border: none;
-    width: 242px;
-    height: 67px;
-    font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: 160%;
-letter-spacing: -0.25px;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin-top: 10px;
-    margin-left: 40%;
-    cursor: pointer;
-}
-
-.blue-box4 .button.white {
-    background-color: white; 
-    color: #4CAF50;
-    width: 242px;
-height: 67px;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin-top: 10px;
-    margin-left: 40%;
-    font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: 160%; 
-letter-spacing: -0.25px;
-    border: 2px solid #4CAF50;
-    cursor: pointer;
-} */
 
 
 /* Pressed Buttons */
@@ -1596,6 +1623,9 @@ letter-spacing: -0.25px;
 
 
 
+
+/* Contact Form */
+
 .contact {
   display: flex;
   flex-direction: row;
@@ -1659,89 +1689,13 @@ letter-spacing: -0.25px;
 .contact-content {
   max-width: 50vw;
 }
-.contact-form {
-  text-align: center;
-  padding: 20px;
-  width: 459px;
-  height: 651px;
-  background-color: #fffdfd;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  /* Adjust the font size as needed */
-  text-align: left;
-  color: #333;
-}
-
-.contact-form .rect2 {
-  width: 40%;
-  height: 5px;
-  background: #1CC382;
-  border-radius: 3px;
-  margin-top: -4%;
-  margin-bottom: 4%;
-}
-
-.contact-form label {
-  display: block;
-  text-align: left;
-  margin-bottom: 3px;
-  font-size: 14px;
-  color: #333;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.contact-form .form-control {
-  width: 100%;
-  margin-left: 0%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  background-color: #1CC382;
-  color: #fff;
-  border: none;
-  width: 90%;
-  height: 43px;
-  margin-left: -10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.4s, transform 0.4s;
-  /* Slower transition */
-}
-
-/* Add :hover styles */
-.btn-secondary:hover {
-  transform: translateY(-2px);
-  /* Move the button slightly upwards on hover */
-}
-
-/* Add :active styles */
-.btn-secondary:active {
-  background-color: #159b60;
-  /* Darker green for button when pressed */
-  transform: scale(0.95);
-  /* Scale down the button slightly when pressed */
-}
 
 
 
 
 
+
+/* FOOTER WALA BLUE DABBA */
 
 .blue-box5 {
   width: 100%;
@@ -1981,7 +1935,7 @@ letter-spacing: -0.25px;
 
 
 
-
+/* BUSINESS MAN AND BUSINESS GROUP WALA DABBAS */
 
 
 .data-1 {
@@ -2298,10 +2252,10 @@ letter-spacing: -0.25px;
   color: #000000;
 }
 
-.containerHireTalent{
+/* .containerHireTalent{
   display: flex;
   width: 100vh;
-}
+} */
 .content-top> span{
   color: #1eef9f;
 }
@@ -2316,26 +2270,7 @@ letter-spacing: -0.25px;
 
 
 
-/* Media for Forms in Mobile */
-@media screen and (max-width: 768px)
-{
 
-
-  .contact-form{
-    width: 90vw;
-    max-height: 715px;
-    /* margin: 0 auto; */
-    overflow-y: scroll;
-  }
-form{overflow-y: scroll;}
-
-  .pop-up-Positioning1{
-    margin-top:8em;
-  }
-  .pop-up-Positioning{
-    margin-top:8em;
-  }
-}
 
 /* Media Query for 768px screen width */
 @media screen and (max-width: 768px) {
@@ -2389,54 +2324,7 @@ form{overflow-y: scroll;}
 }
 
 
-  .contact-text{
-    width: 90vw;
-  }
 
-  .contact-form {
-    width: 90vw;
-  }
-  /* .formContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    overflow: scroll;
-  } */
-
-
-  .formContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: scroll;
-}
-
-  .contact-reach {
-    margin-right: 0px;
-    align-items: center;
-}
-  .contact-heading >img{
-    width: 80vw;
-  }
-  .data-content{
-    width: 100vw;
-  }
-  
-
-
-  .contact-content
-  {
-    padding: 0 2rem;
-    max-width: 100%;
-  }
-
-  #contact-text{
-  width:373px;
-  margin-left: 3%;
- }
   .content-top{
     font-size:2rem;
     padding: 0 0.5rem;
@@ -2582,4 +2470,56 @@ form{overflow-y: scroll;}
   text-align: center;
 }
 
+}
+
+
+@media screen and (max-width: 768px) {
+    .contact-text{
+    width: 90vw;
+  }
+
+  .contact-form {
+    width: 90vw;
+  }
+  /* .formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+  } */
+
+
+  .formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: scroll;
+}
+
+  .contact-reach {
+    margin-right: 0px;
+    align-items: center;
+}
+  .contact-heading >img{
+    width: 80vw;
+  }
+  .data-content{
+    width: 100vw;
+  }
+  
+
+
+  .contact-content
+  {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  #contact-text{
+  width:373px;
+  margin-left: 3%;
+ }
 }
