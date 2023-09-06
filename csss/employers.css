@@ -1595,106 +1595,268 @@ margin-left: 26em;
 
 
 
-
+/* Cards Medical Devices */
 
 .cards-section {
-    padding: 40px 0;
-    background-color: #fff;
+  padding: 40px 0;
+  background-color: #fff;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns in the grid */
-    gap: 20px; /* Spacing between cards */
-    max-width: 1064px;
-    /* margin: 0 35px; */
-    margin: 0 auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns in the grid */
+  gap: 20px;
+  /* Spacing between cards */
+  max-width: 1064px;
+  /* margin: 0 35px; */
+  margin: 0 auto;
 }
 
+#card-1 {
+  box-shadow: none;
+}
 
 .card {
-    position: relative; /* Set position to relative for circle positioning */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 365px;
-    height: 327px;
-    flex-shrink: 0;
-    border-radius: 27px;
-    background: #FFF;
-    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
-    transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  /* Set position to relative for circle positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 365px;
+  height: 327px;
+  flex-shrink: 0;
+  border-radius: 27px;
+  background: #FFF;
+  box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.10);
+  transition: background-color 0.3s, color 0.3s;
 }
-/* .card1 {
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 68px; 
-    letter-spacing: -1.68px;
-    width: 365px;
-    height: 327px;
-    flex-shrink: 0;
-    border-radius: 27px;
-} */
 
+.card1 {
+  position: relative;
+  /* Set position to relative for circle positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 68px;
+  /* 121.429% */
+  letter-spacing: -1.68px;
+  width: 365px;
+  height: 327px;
+  flex-shrink: 0;
+  border-radius: 27px;
+}
 
 .circle {
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    background-color: #ffffff; /* Change the circle's background color */
-    position: absolute;
-    top: 43px; /* Position the circle above the card */
-    left: 50%; /* Move the circle to the center horizontally */
-    transform: translateX(-50%); /* Center the circle */
-    z-index: 1; /* Place circle above the card */
-    /* border: 1px solid #15956F; */
-    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.10))
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  /* Change the circle's background color */
+  position: absolute;
+  top: 43px;
+  /* Position the circle above the card */
+  left: 50%;
+  /* Move the circle to the center horizontally */
+  transform: translateX(-50%);
+  /* Center the circle */
+  z-index: 1;
+  /* Place circle above the card */
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.10))
 }
 
-.circle img{
+.circle img {
   margin-top: 25px;
   margin-left: 27px;
 }
 
 .card h3 {
-    font-size: 20px;
-    position: relative;
-    margin-top: 125px;
-    color: #555;
+  font-size: 20px;
+  position: relative;
+  margin-top: 125px;
+  color: #555;
 }
 
 .text {
   margin-top: 10px;
   width: 265px;
-height: 85px;
-text-align: center;
+  height: 85px;
+  text-align: center;
 }
 
 .card p {
-    font-size: 16px;
-    color: #555;
+  font-size: 16px;
+  color: #555;
 }
-/* Existing CSS */
 
 .card:hover {
-  background-color: #4C40F7; /* Blue background color on hover */
-  color: #ffffff; /* Text color on hover */
+  background-color: #4C40F7;
+  /* Blue background color on hover */
+  color: #ffffff;
+  /* Text color on hover */
 }
 
 .card:hover h3 {
-  color: #ffffff; /* Change the color of the heading text on hover */
+  color: #ffffff;
+  /* Change the color of the heading text on hover */
 }
+
 .card:hover p {
-  color: #ffffff; /* Change the color of the heading text on hover */
+  color: #ffffff;
+  /* Change the color of the heading text on hover */
+}
+
+.card-top-content {
+  display: hidden;
+  color: #ffffff;
+  font-size: 0px;
+}
+
+.containerExpert{
+  display:flex;
+  justify-content:space-around;
+}
+
+@media (max-width: 768px) 
+{
+  .containerExpert{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+  }
+  .data-1-img{
+    display: flex;
+    width: 100%;
+    margin: 0rem !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .data-1 .contact-reach ul li {
+    font-size: 14px;
+    width: 343px;
+    margin-left: -3em;
+    /* Adjust font size for smaller screens */
+  }
+  .data-1 .contact-reach ul li img{
+    font-size: 14px;
+    margin-left: 1em;
+    /* width: 353px; */
+    /* Adjust font size for smaller screens */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    overflow: scroll;
+  }
+  .card1{
+    display:none
+  }
+  .sliderBankingcard{
+    justify-content: flex-start !important;
+    padding: 0rem 1rem;
+  }
+
+  .card-top-content {
+    color: var(--mindful-gray-white, #000000);
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: -1.56px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .card1 {
+    position: relative;
+    font-size: 0px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px;
+    letter-spacing: -1.68px;
+    width: 0px;
+    height: 0px;
+    flex-shrink: 0;
+    border-radius: 27px;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+  }
+
+  .card1 img {
+    display: none;
+  }
+
+  #green {
+    color: #1CC382;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 365px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .circle {
+    width: 90px;
+    height: 90px;
+    top: 2em;
+  }
+
+  .circle img {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+    margin-top: 7em;
+  }
+
+  .text {
+    margin-top: 4px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card1 {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 
@@ -2187,58 +2349,116 @@ text-align: center;
 }
 
 .blue-box-content {
-    max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .blue-box h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .marquee {
-    display: flex;
-    margin: 55px;
-    overflow: hidden; /* Hide any overflowing content */
-    white-space: nowrap;
-    animation: marquee-scroll 20s linear infinite; /* Animation for marquee */
+  display: flex;
+  width: 100em;
+  margin: 55px;
+  overflow: hidden;
+  /* Hide any overflowing content */
+  white-space: nowrap;
+  animation: marquee-scroll 20s linear infinite;
+  /* Animation for marquee */
 }
 
 .marquee img {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 20px; /* Adjust spacing between logos */
-    width: 100px; /* Adjust logo size */
-    height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+  /* Adjust spacing between logos */
+  width: 100px;
+  /* Adjust logo size */
+  height: auto;
 }
 
-#johnson{
+#johnson {
   width: 200px;
   height: 40px;
 }
 
-#edwards{
+#edwards {
   width: 290px;
   height: 40px;
 }
 
-#abbott{
+#abbott {
   width: 120px;
   height: 42px;
 }
-#bd{
+
+#bd {
   width: 120px;
   height: 42px;
+}
+
+#pfizer {
+  width: 120px;
+  height: 52px;
+}
+
+#moderna {
+  width: 120px;
+  height: 52px;
 }
 
 
 @keyframes marquee-scroll {
-    from {
-        transform: translateX(100%); /* Start from the right side */
-    }
-    to {
-        transform: translateX(-100%); /* Move to the left side */
-    }
+  from {
+    transform: translateX(100%);
+    /* Start from the right side */
+  }
+
+  to {
+    transform: translateX(-100%);
+    /* Move to the left side */
+  }
+}
+
+/* Styles for screens smaller than or equal to 768px (typical mobile screens) */
+@media (max-width: 768px) {
+  .blue-box {
+    height: auto;
+    /* Adjust height to fit content */
+    padding: 20px 0;
+    /* Adjust padding for spacing */
+    margin-top: 0em;
+  }
+
+  .marquee {
+    width: 70em;
+    margin: 15px;
+    overflow-x: scroll;
+    /* Enable horizontal scrolling for logos */
+    white-space: nowrap;
+    animation: marquee-scroll 10s linear infinite;
+    /* Enable marquee animation for small screens */
+  }
+
+  .marquee img {
+    margin: 0 10px;
+    /* Adjust spacing between logos */
+    width: 100%;
+    /* Adjust logo size */
+    height: auto;
+  }
+
+
+  .blue-box-content h2 {
+    font-size: 24px;
+    /* Reduce heading font size for smaller screens */
+    margin-bottom: 10px;
+    /* Adjust margin for spacing */
+  }
+
+
 }
