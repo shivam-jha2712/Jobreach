@@ -2174,7 +2174,7 @@ line-height: 13.322px;
 
 .blue-box4 img{
   margin-top:-116.5%;
-  margin-left: -65%;
+  margin-left: -50%;
   width: 30.4%;
     margin-bottom: -64px;
   /* transform: scaleX(-1); */
@@ -2234,7 +2234,7 @@ line-height: 13.322px;
   background-color: #4CAF50;
   color: white;
   border: none;
-  /* margin-left: -60%; */
+  margin-left: -0.5em;
 }
 
 .blue-box4  .button.white {
@@ -2265,7 +2265,7 @@ line-height: 13.322px;
 .blue-box4  .content-top {
   width: 803px;
   color: var(--mindful-gray-white, #FFF);
-  text-align: center;
+  text-align: left;
   font-size: 52px;
   width: 80%;
   font-style: normal;
@@ -2273,10 +2273,9 @@ line-height: 13.322px;
   line-height: 80px;
   /* 153.846% */
   letter-spacing: -1.56px;
-  text-align: center;
-  margin-left: 12%;
+  margin-left: 7em;
   margin-top: 20px;
-  margin-bottom: 4rem;
+  margin-bottom: -1.5rem;
 }
 
 
@@ -2289,9 +2288,10 @@ line-height: 13.322px;
 
 
 .blue-box4 .content-next {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-style: normal;
+  margin-left: 18em;
   margin-bottom: 25px;
 }
 
@@ -2325,6 +2325,7 @@ font-style: normal;
 font-weight: 700;
 line-height: 37px; /* 132.143% */
 letter-spacing: -0.84px;
+text-align: center;
     width: 373px;
     margin-left: 1%;
     margin-top: 20px;
@@ -2341,6 +2342,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 160%; /* 22.4px */
+text-align: center;
 letter-spacing: -0.14px;
     margin-bottom: 25px;
 }
