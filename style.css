@@ -2310,6 +2310,32 @@ letter-spacing: -0.25px;
   font-size:3rem;
 }
 
+
+
+
+/* Media for Forms in Mobile */
+@media screen and (max-width: 768px)
+{
+
+
+  .contact-form{
+    width: 90vw;
+    max-height: 715px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin: 0 auto;
+    overflow: scroll;
+  }
+form{overflow: scroll;}
+
+  .pop-up-Positioning1{
+    margin-top:8em;
+  }
+  .pop-up-Positioning{
+    margin-top:8em;
+  }
+}
+
 /* Media Query for 768px screen width */
 @media screen and (max-width: 768px) {
   .button-wrapper-job{
@@ -2354,6 +2380,7 @@ letter-spacing: -0.25px;
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow: scroll;
   }
   .contact-reach {
     margin-right: 0px;
@@ -2366,6 +2393,7 @@ letter-spacing: -0.25px;
     width: 100vw;
   }
   
+
 
   .contact-content
   {

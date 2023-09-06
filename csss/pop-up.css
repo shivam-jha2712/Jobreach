@@ -36,7 +36,7 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
     display: none;
     position: fixed;
     bottom: 0rem;
-    top: -12rem;
+    top: -13rem;
     right: 0rem;
     left: 0rem;
     z-index: 100;
@@ -45,6 +45,7 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 .closebutton1{
     width: 100%;
     text-align: right;
+    margin-bottom: -1em;
     font-size: 2rem;
     font-family: "Helvetica Neue",Helvetica,Arial;
     
@@ -55,4 +56,27 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 
 .getHired{
     height:100%
+}
+
+
+@media screen and (max-width: 768px)
+{
+  .contact-form{
+    width: 90vw;
+    max-height: 765px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin: 0 auto;
+    overflow: scroll;
+  }
+
+  .pop-up-Positioning1{
+    margin-top:8em;
+    overflow: scroll;
+  }
+
+    .pop-up-Positioning{
+    margin-top:8em;
+    overflow: scroll;
+  }
 }
