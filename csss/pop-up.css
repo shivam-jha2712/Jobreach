@@ -1,8 +1,11 @@
 .pop-up-Positioning{
+    background-color: black;
+    width: 100%;
+    height: 110vh;
     display: none;
     position: fixed;
     bottom:0rem;
-    top:0rem;
+    top:-12rem;
     right:0rem;
     left:0rem;
     z-index: 100;
@@ -17,6 +20,36 @@
 .closebutton:hover{
     cursor: pointer;
 }
-.heighting{
+.hiring{
+    height:100%
+}
+
+
+/* Second Form */
+.pop-up-Positioning1{
+    background-color: black;
+    width: 100%;
+    height: 110vh;
+    display: none;
+    position: fixed;
+    bottom:0rem;
+    top:-12rem;
+    right:0rem;
+    left:0rem;
+    z-index: 100;
+}
+
+.closebutton1{
+    width: 100%;
+    text-align: right;
+    font-size: 2rem;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    
+}
+.closebutton1:hover{
+    cursor: pointer;
+}
+
+.getHired{
     height:100%
 }
