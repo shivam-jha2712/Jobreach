@@ -991,12 +991,12 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 }
 
 
+/* FROM CSS ENDS HERE */
 
 
 
 
-
-
+/* MARQUEE CSS STARTS */
 
 /* Styles for screens smaller than or equal to 768px (typical mobile screens) */
 @media (max-width: 768px) {
@@ -2173,9 +2173,10 @@ line-height: 13.322px;
 
 
 .blue-box4 img{
-  margin-top:-136.5%;
-  margin-left: -10%;
-  width: 120.4%;
+  margin-top:-116.5%;
+  margin-left: -65%;
+  width: 30.4%;
+    margin-bottom: -64px;
   /* transform: scaleX(-1); */
 }
 
@@ -2183,6 +2184,7 @@ line-height: 13.322px;
   color: #1CC382;
 }
 
+/* Blue-Box4 - LADKI WALA BLUE DABBA */
 
 .blue-box-wrapper4{
   display: flex;
@@ -2205,8 +2207,6 @@ line-height: 13.322px;
   text-align: center;
   height: 100%;
 }
-
-
 
 
 
@@ -2234,7 +2234,7 @@ line-height: 13.322px;
   background-color: #4CAF50;
   color: white;
   border: none;
-  margin-left: 90%;
+  /* margin-left: -60%; */
 }
 
 .blue-box4  .button.white {
@@ -2280,13 +2280,20 @@ line-height: 13.322px;
 }
 
 
+.button-wrapper-job-container
+{
+  /* display: flex;
+  flex-direction: row; */
+  margin-left: -30%;
+}
+
+
 .blue-box4 .content-next {
   text-align: center;
   font-size: 20px;
   font-style: normal;
   margin-bottom: 25px;
 }
-
 
 @media screen and (max-width: 768px) {
     .button-wrapper-job{
