@@ -1717,31 +1717,33 @@ form{overflow-y: scroll;}
 
 
 
+
 /* FOOTER WALA BLUE DABBA */
 
-
-.footer{
-  width: 100%;
-}
-
-.blue-box5 {
-  width: 100vw;
-  height: 341px;
+.blue-box5-wrapper {
+  display: flex;
+  flex-direction: row;
+   width: 100%;
+  height: 100%;
   border-radius: 56px 56px 0px 0px;
   margin-top: 7%;
   background: #4C40F7;
   padding: 40px;
   color: white;
   text-align: center;
-  justify-content: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1064px;
-   margin: 0 auto;
-  
 }
 
-
+.blue-box5 {
+  width: 70%;
+  border-radius: 56px 56px 0px 0px;
+  /* margin-top: 7%; */
+  margin-top: -2em;
+  margin-left: -3em;
+  background: #4C40F7;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
 
 .reach,
 .quick {
@@ -1751,11 +1753,15 @@ form{overflow-y: scroll;}
   /* Add margin between the two divs */
 }
 
-.reach h3,
-.quick h3 {
-  margin-left: -65%;
+.reach h3 {
+  margin-left: -83%;
   margin-bottom: 15px;
 }
+.quick h3 {
+  margin-left: -15%;
+  margin-bottom: 15px;
+}
+
 
 .reach ul,
 .quick ul {
@@ -1792,6 +1798,7 @@ form{overflow-y: scroll;}
 .newsletter-footer {
   text-align: center;
   padding: 20px;
+  margin-top: -1em;
 }
 
 .newsletter-footer h2 {
@@ -1805,7 +1812,7 @@ form{overflow-y: scroll;}
 }
 
 .form-control {
-  width: 70%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -1819,28 +1826,13 @@ form{overflow-y: scroll;}
   border: none;
   width: 105px;
   height: 43px;
-  margin-left: -10px;
-  border-radius: 0 5px 5px 0;
+  margin-top: 2em;
+  margin-left: 1em;
+  /* border-radius: 0 5px 5px 0; */
+  border-radius:  5px 5px ;
   cursor: pointer;
   font-size: 14px;
-  transition: background-color 0.4s, transform 0.4s;
-  /* Slower transition */
 }
-
-/* Add :hover styles */
-.btn-primary:hover {
-  transform: translateY(-2px);
-  /* Move the button slightly upwards on hover */
-}
-
-/* Add :active styles */
-.btn-primary:active {
-  background-color: #159b60;
-  /* Darker green for button when pressed */
-  transform: scale(0.95);
-  /* Scale down the button slightly when pressed */
-}
-
 
 .footer-social-icons ul {
   list-style: none;
@@ -1859,6 +1851,111 @@ form{overflow-y: scroll;}
   height: 30px;
 }
 
+@media screen and (max-width:768px)
+{
+  .blue-box5-wrapper {
+  display: flex;
+  flex-direction: column;
+   width: 100%;
+  height: 100%;
+  border-radius: 56px 56px 0px 0px;
+  margin-top: 7%;
+  background: #4C40F7;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+  .blue-box5 {
+  display: flex;
+  flex-direction: column;
+   width: 100%;
+  height: 80%;
+  border-radius: 56px 56px 0px 0px;
+  margin-top: 7%;
+  margin-left: 1.2em;
+  background: #4C40F7;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.reach h3 {
+  margin-left: -65%;
+  margin-bottom: 15px;
+}
+.quick h3 {
+  margin-left: -15%;
+  margin-bottom: 15px;
+}
+
+.quick ul li {
+  margin-bottom: 25px;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  /* align-items: center; */
+  /* Align items vertically within each list item */
+}
+
+.newsletter-footer{
+  margin-top:-2em;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.newsletter-footer h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #ffffff;
+   justify-content: center;
+}
+
+.input-group {
+  /* margin-bottom: 20px;
+  */
+  margin-left: 0.5em; 
+  justify-content: center;
+}
+
+.form-control {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 105px;
+  height: 43px;
+  margin-top: 1em;
+  justify-content: center;
+  /* margin-left: -10px; */
+  /* border-radius: 0 5px 5px 0; */
+  border-radius:  5px 5px ;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+
+.footer-social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+}
 
 
 
