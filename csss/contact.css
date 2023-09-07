@@ -1089,6 +1089,48 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 }
 
 
+@media screen and (max-width: 768px) {
+    .contact-text{
+    width: 90vw;
+  }
+
+  .contact-form {
+    width: 90vw;
+  }
+  /* .formContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll;
+  } */
+
+
+  .contact-reach {
+    margin-right: 0px;
+    align-items: center;
+}
+  .contact-heading >img{
+    margin-top: 10vw;
+    width: 80vw;
+  }
+  .data-content{
+    width: 100vw;
+  }
+  
+
+
+  .contact-content
+  {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  #contact-text{
+  width:373px;
+  margin-left: 3%;
+ }
+}
+
 
 /* 
 .contact{
