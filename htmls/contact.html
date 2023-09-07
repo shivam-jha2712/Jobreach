@@ -10,20 +10,111 @@
 </head>
 
 <body>
-    <!-- <div class="message-container">
-        <h1>This website is not optimized for phones</h1>
-    </div> -->
-
-    <!-- <div class="loader">
-            <div class="loader-hand"></div>
-        </div> -->
 
 
-
-
-
-
-
+    <!-- popup form to Hiring -->
+    <section class="contact pop-up-Positioning">
+        <div class="formContainer">
+    
+            <div class="contact-form hiring">
+                <p class="closebutton">X</p>
+                <h2>Hire Quickly with Invest Staffing</h2>
+                <div class="rect2"></div>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" class="form-control" required
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" name="job-title" class="form-control"
+                            placeholder="Enter your job title">
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization</label>
+                        <input type="text" id="organization" name="organization" class="form-control"
+                            placeholder="Enter your organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="requirement">Requirement*</label>
+                        <textarea id="requirement" name="requirement" class="form-control" rows="5" required
+                            placeholder="Enter your requirement"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Submit</button>
+                </form>
+            </div>
+    
+    
+        </div>
+    </section>
+    
+    
+    <!-- Pop up form for Applying/getting hired -->
+    <section class="contact pop-up-Positioning1">
+        <div class="formContainer">
+    
+            <div class="contact-form getHired">
+                <p class="closebutton1">X</p>
+                <h2>Apply for a Job</h2>
+                <div class="rect2"></div>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name">Name*</label>
+                        <input type="text" id="name" name="name" class="form-control" required
+                            placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required
+                            placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="job-title">Job Title</label>
+                        <input type="text" id="job-title" name="job-title" class="form-control"
+                            placeholder="Enter the job title you are applying for">
+                    </div>
+                    <div class="form-group">
+                        <label for="job-location">Job Location</label>
+                        <input type="text" id="job-location" name="job-location" class="form-control"
+                            placeholder="Enter the job location">
+                    </div>
+                    <div class="form-group">
+                        <label for="salary-range">Salary Range</label>
+                        <select id="salary-range" name="salary-range" class="form-control">
+                            <option value="0-50000">$0 - $50,000</option>
+                            <option value="50001-100000">$50,001 - $100,000</option>
+                            <option value="100001-150000">$100,001 - $150,000</option>
+                            <option value="150001-200000">$150,001 - $200,000</option>
+                            <option value="200001+">$200,000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Resume/CV*</label>
+                        <input type="file" id="resume" name="resume" class="form-control-file" required
+                            accept=".pdf, .doc, .docx">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Apply</button>
+                </form>
+            </div>
+    
+    
+        </div>
+    </section>
+    
+    
+    
+    
     <header>
         <!-- <a href="#" class="logo"></a> -->
         <div class="mobile-menu">
@@ -38,22 +129,21 @@
             </div>
         </div>
         <ul id="menu" class="hidden">
-            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="">Home</a></li>
             <li><a href="/htmls/jobseekers.html">For Job Seekers</a></li>
             <li><a href="/htmls/employers.html">For Employers</a></li>
             <li><a href="/htmls/about.html">About us</a></li>
-            <li><a class="active" href="/htmls/contact.html">Contact us</a></li>
-            <li><button class="button">Hire Talent</button></li>
-            <li><button class="button white button-onClick-gethired">Get Hired</button></li>
+            <li><a href="/htmls/contact.html">Contact us</a></li>
+            <li><a class="active" href="/htmls/rough.html">Rough</a></li>
+            <li><button class="button button-onClick-gethired">Hire Talent</button></li>
+            <li><button class="button white button-onClick-hireTalent">Get Hired</button></li>
         </ul>
     </header>
-
-
-
-    <section class="banner">
+    
+    <!-- <section class="banner">
         <div class="banner-slider">
             <div class="slide">
-                <img src="/assets/home-photo.webp" alt="Banner Image 1">
+                <img src="/assets/home-photo.webp" alt="Banner Image 1" class="Banner-Image-1">
                 <div class="banner-overlay">
                     <div class="overlay-content">
                         <button class="btn-data">For Candidates</button>
@@ -61,16 +151,14 @@
                             <h1>Land Your Dream</h1>
                             <h1>Job Today And Start Your</h1>
                             <h1>Successful Career</h1>
-
-                            <p>Find your perfect fit with our advanced job database and <br>industry connections for
-                                exciting
-                                career
-                                opportunities.</p>
+    
+                            <p>Find your perfect fit with our advanced job database and industry connections for
+                                exciting career opportunities.</p>
                         </div>
-                        <button class="button">Get Hired</button>
-
+                        <button class="button button-onClick-gethired">Get Hired</button>
+    
                         <div class="rating">
-
+    
                             <div class="rating-section">
                                 <img src="/assets/captera2.png" alt="Company Logo 1" class="company-logo">
                                 <h2 class="company-name">Capterra 4.8</h2>
@@ -82,8 +170,8 @@
                                     <span class="star">&#9733;</span>
                                 </div>
                             </div>
-
-
+    
+    
                             <div class="separator">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2" height="35" viewBox="0 0 2 35"
                                     fill="#D6D6D6">
@@ -91,8 +179,8 @@
                                         d="M1.5 1C1.5 0.723858 1.27614 0.5 1 0.5C0.723858 0.5 0.5 0.723858 0.5 1L1.5 1ZM0.5 1L0.499999 35L1.5 35L1.5 1L0.5 1Z" />
                                 </svg>
                             </div>
-
-
+    
+    
                             <div class="rating-section">
                                 <img src="/assets/google.png" alt="Company Logo 2" class="company-logo">
                                 <h2 class="company-name">Google 4.9</h2>
@@ -109,7 +197,7 @@
                 </div>
             </div>
             <div class="slide">
-                <img src="/assets/photo2.webp" alt="Banner Image 2">
+                <img src="/assets/photo-3.png" alt="Banner Image 2" class="Banner-Image-2">
                 <div class="banner-overlay">
                     <div class="overlay-content">
                         <button class="btn-data">For Candidates</button>
@@ -117,16 +205,16 @@
                             <h1>Land Your Dream</h1>
                             <h1>Job Today And Start Your</h1>
                             <h1>Successful Career</h1>
-
+    
                             <p>Find your perfect fit with our advanced job database and <br>industry connections for
                                 exciting
                                 career
                                 opportunities.</p>
                         </div>
-                        <button class="button">Get Hired</button>
-
+                        <button class="button button-onClick-gethired">Get Hired</button>
+    
                         <div class="rating">
-
+    
                             <div class="rating-section">
                                 <img src="/assets/captera2.png" alt="Company Logo 1" class="company-logo">
                                 <h2 class="company-name">Capterra 4.8</h2>
@@ -138,8 +226,8 @@
                                     <span class="star">&#9733;</span>
                                 </div>
                             </div>
-
-
+    
+    
                             <div class="separator">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="2" height="35" viewBox="0 0 2 35"
                                     fill="#D6D6D6">
@@ -147,8 +235,8 @@
                                         d="M1.5 1C1.5 0.723858 1.27614 0.5 1 0.5C0.723858 0.5 0.5 0.723858 0.5 1L1.5 1ZM0.5 1L0.499999 35L1.5 35L1.5 1L0.5 1Z" />
                                 </svg>
                             </div>
-
-
+    
+    
                             <div class="rating-section">
                                 <img src="/assets/google.png" alt="Company Logo 2" class="company-logo">
                                 <h2 class="company-name">Google 4.9</h2>
@@ -166,18 +254,18 @@
             </div>
         </div>
         <div class="slider-nav">
-            <button class="prev-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                    viewBox="0 0 16 14" fill="none">
+            <button class="prev-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                    fill="none">
                     <path d="M9 13L15 7M15 7L9 1M15 7H1" stroke="#4C40F7" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                 </svg></button>
-            <button class="next-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14"
-                    viewBox="0 0 16 14" fill="none">
+            <button class="next-slide"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14"
+                    fill="none">
                     <path d="M9 13L15 7M15 7L9 1M15 7H1" stroke="#4C40F7" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
                 </svg></button>
         </div>
-    </section>
+    </section> -->
 
 
     <section class="contact">
