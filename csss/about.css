@@ -2010,6 +2010,10 @@ line-height: 65px;
     color: #ffffff;
 }
 
+.content-top > span {
+  color: #159b60;
+}
+
 @media screen and (max-width: 768px) {
 
   .cards-section{
@@ -2030,10 +2034,25 @@ line-height: 65px;
     display: flex;
     flex-direction: row;
   }
-  .container55{
+  /* .container5{
     display: flex;
     flex-direction: column;
+  } */
+  .container5 .content-top{
+    color: #000;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+font-style: normal;
+font-weight: 900;
+line-height: 38px;
+letter-spacing: -0.84px;
   }
+
+
 .card3 {
     position: relative;
     display: flex;
