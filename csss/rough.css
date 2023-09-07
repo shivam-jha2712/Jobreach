@@ -1278,3 +1278,127 @@ z-index: -1;
     width: 90vw;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER WALA BLUE DABBA */
+
+.blue-box5 {
+  width: 100%;
+  height: 341px;
+  border-radius: 56px 56px 0px 0px;
+  margin-top: 7%;
+  background: #4C40F7;
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.reach,
+.quick {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  /* Add margin between the two divs */
+}
+
+.reach h3,
+.quick h3 {
+  margin-left: -65%;
+  margin-bottom: 15px;
+}
+
+.reach ul,
+.quick ul {
+  list-style: none;
+  /* Remove list style */
+  padding-left: 0;
+  /* Remove default padding */
+  margin: 0;
+  /* Remove default margin */
+}
+
+.reach ul li,
+.quick ul li {
+  margin-bottom: 25px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* Align items vertically within each list item */
+}
+
+.reach ul li img {
+  margin-right: 20px;
+  /* Add space between image and content */
+}
+
+.reach a,
+.quick a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.newsletter-footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.newsletter-footer h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  margin-left: -30px;
+}
+
+.form-control {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 105px;
+  height: 43px;
+  margin-left: -10px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-social-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-icons li {
+  margin: 0 10px;
+}
+
+.footer-social-icons img {
+  width: 30px;
+  height: 30px;
+}
