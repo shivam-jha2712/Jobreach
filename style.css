@@ -2428,16 +2428,22 @@ form{overflow-y: scroll;}
   }
   .blue-box4 .button{
     margin-left:0;
+
   }
   .blue-box4 .content-top {
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: 1.56px;
-    width: 100%;
-    margin-left: 0%;
-    margin-top: 20px;
-    margin-bottom: 2rem;
+color: #FFF;
+text-align: center;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: 37px; /* 132.143% */
+letter-spacing: -0.84px;
+width: 100%;
+margin-left: 0%;
+margin-bottom: -1rem;
+
   }
+
   
 .blue-box4 .content-next {
     text-align: center;
@@ -2454,7 +2460,7 @@ form{overflow-y: scroll;}
   .blue-box4  .button,
 .blue-box4 .button.white {
   /* Common styles for both buttons */
-  width: 142px;
+  width: 182px;
   height: 47px;
   font-size: 15px;
   font-style: normal;
@@ -2515,6 +2521,11 @@ form{overflow-y: scroll;}
     flex-direction: column;
     width: 99%;
     padding: 1rem;
+    }
+  
+  .blue-box2 .container2 {
+    margin-top: 2em;
+    margin-bottom: 2em;
     }
   .containerHireTalent{
     display: flex;
