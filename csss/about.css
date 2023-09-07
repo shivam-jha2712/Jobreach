@@ -1994,7 +1994,6 @@ line-height: 65px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
   }
 }
 
@@ -2159,9 +2158,6 @@ margin-left: -3em;
 
 @media screen and (max-width: 768px) {
 
-  .resiing-wbout{
-    overflow-x: hidden;
-  }
   .container5 {
     display: flex; /* Change to flex for a single row layout */
     max-width: 100%;
