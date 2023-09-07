@@ -1881,7 +1881,7 @@ color: #fff;
 .data-2-content{
     width: 110%;
     height:110%;
-    margin-left: -20%;
+    /* margin-left: -20%; */
     border: 1px solid #fff;
     border-radius: 62px;
     background: linear-gradient(0.5deg, hsla(162, 75%, 33%, 1) 0%, rgba(70, 206, 153, 0.00) 100%);
@@ -1918,7 +1918,7 @@ color: #fff;
 /* .data-2-content  */
 
 .data-2-img{
-  margin-left: -30%;
+  margin-left: 5%;
   margin-top: 25%;
   margin-right: 5%;
 }
