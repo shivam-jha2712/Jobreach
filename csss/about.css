@@ -1947,6 +1947,69 @@ line-height: 65px;
 }
 
 
+.card3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjusted alignment to left */
+    justify-content: center;
+    background-color: white;
+    width: 36em;
+    height: 16em;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.circle {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.circle img {
+    margin-top: -1em;
+    margin-left: 1.5em;
+}
+
+.card3 h3 {
+    font-size: 25px;
+    position: relative;
+    margin-top: 1em;
+    margin-left: 8em;
+    color: #000000;
+    text-align: left;
+}
+
+.card3 .text {
+    margin-top: -0.1em;
+    margin-left: 4em;
+    width: 6em;
+    height: 2em;
+    text-align: left;
+    line-height: 32px;
+    letter-spacing: -0.54px;
+}
+
+.card3 p {
+    font-size: 16px;
+    color: #000000;
+    text-align: left;
+}
+
+.card3:hover {
+    background: #EFFFF9;
+    color: #ffffff;
+}
+
 @media screen and (max-width: 768px) {
 
   .cards-section{
@@ -1971,10 +2034,86 @@ line-height: 65px;
     display: flex;
     flex-direction: column;
   }
-  .card3{
-    max-width: 373px;
-    width: 90%;
+.card3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Adjusted alignment to left */
+    justify-content: center;
+    background-color: white;
+    width: 373px;
+    height: 10em;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.circle {
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 5em;
+    left: 5em;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.circle img {
+  width: 52px;
+height: 52px;
+    margin-top: -1em;
+    margin-left: 1.5em;
+}
+
+.card3 h3 {
+    /* font-size: 25px;
+    position: relative;
+    margin-left: 8em;
+    color: #000000;
+    */
+    text-align: left; 
+    margin-top: -1em;
+    font-size: 17.614px;
+    font-style: normal;
+font-weight: 700;
+line-height: 17.614px; /* 100% */
+letter-spacing: -0.528px;
+}
+
+.card3 .text {
+    /* 
+    margin-top: -0.1em;
+    height: 2em;
+    line-height: 32px;
+    letter-spacing: -0.54px; */
+    font-size: 9.908px;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 9em;
+    width: 273px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17.614px; /* 177.778% */
+    letter-spacing: -0.297px;
   }
+  
+  .card3 p {
+  margin-left: 4em;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
+}
+
+.card3:hover {
+    background: #EFFFF9;
+    color: #ffffff;
+}
+
+
   
 }
 /* .container5 .content-top {
@@ -2043,73 +2182,7 @@ margin-left: -3em;
   background: transparent;
 }
 
-.card3 {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Adjusted alignment to left */
-    justify-content: center;
-    background-color: white;
-    width: 36em;
-    height: 16em;
-    flex-shrink: 0;
-    border-radius: 30px;
-    background: #FFF;
-    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.10);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.circle {
-    width: 106px;
-    height: 106px;
-    border-radius: 50%;
-    background-color: transparent;
-    position: absolute;
-    top: 5em;
-    left: 5em;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.circle img {
-    margin-top: -1em;
-    margin-left: 1.5em;
-}
-
-.card3 h3 {
-    font-size: 25px;
-    position: relative;
-    margin-top: 1em;
-    margin-left: 8em;
-    color: #000000;
-    text-align: left;
-}
-
-.card3 .text {
-    margin-top: -0.1em;
-    margin-left: 4em;
-    width: 6em;
-    height: 2em;
-    text-align: left;
-    line-height: 32px;
-    letter-spacing: -0.54px;
-}
-
-.card3 p {
-    font-size: 16px;
-    color: #000000;
-    text-align: left;
-}
-
-.card3:hover {
-    background: #EFFFF9;
-    color: #ffffff;
-}
 
 
-/* .card3:hover h3 {
-  color: #ffffff; 
-}
-.card3:hover p {
-  color: #ffffff; 
-} */
+
+
