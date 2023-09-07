@@ -1719,8 +1719,13 @@ form{overflow-y: scroll;}
 
 /* FOOTER WALA BLUE DABBA */
 
-.blue-box5 {
+
+.footer{
   width: 100%;
+}
+
+.blue-box5 {
+  width: 100vw;
   height: 341px;
   border-radius: 56px 56px 0px 0px;
   margin-top: 7%;
@@ -1728,7 +1733,15 @@ form{overflow-y: scroll;}
   padding: 40px;
   color: white;
   text-align: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1064px;
+   margin: 0 auto;
+  
 }
+
+
 
 .reach,
 .quick {
@@ -2548,4 +2561,14 @@ form{overflow-y: scroll;}
   width:373px;
   margin-left: 3%;
  }
+}
+
+
+
+
+@media screen and (max-width: 768px){
+  .blue-box5{
+    display: flex;
+    flex-direction: column;
+  }
 }
