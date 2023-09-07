@@ -23,6 +23,7 @@ header {
   align-items: center;
   z-index: 12;
 }
+
 header .logo {
   font-weight: 700;
   color: rgb(0, 0, 0);
@@ -31,22 +32,26 @@ header .logo {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 header ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 header ul li {
   list-style: none;
   margin-left: 20px;
   font-weight: 700;
 }
+
 header ul li a {
   text-decoration: none;
   padding: 6px 15px;
   color: rgb(0, 0, 0);
   border-radius: 15px;
 }
+
 /* header ul li a:hover {
   background-color: #ddd;
     color: black;
@@ -101,7 +106,8 @@ header ul li a {
 
 /* Styling for the buttons in the header */
 header .button {
-  background-color: #4CAF50; /* Light green color for "Hire Talent" */
+  background-color: #4CAF50;
+  /* Light green color for "Hire Talent" */
   color: white;
   border: none;
   font-size: 16px;
@@ -110,11 +116,13 @@ header .button {
   padding: 10px 35px;
   margin: 10px 5px;
   cursor: pointer;
-  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
 }
 
 header .button.white {
-  background-color: white; /* White color for "Get Hired" */
+  background-color: white;
+  /* White color for "Get Hired" */
   color: #4CAF50;
   border-radius: 50px;
   padding: 10px 35px;
@@ -123,25 +131,32 @@ header .button.white {
   font-weight: 500;
   border: 2px solid #4CAF50;
   cursor: pointer;
-  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
 }
 
 /* Add :hover styles */
 header .button:hover,
 header .button.white:hover {
-  transform: translateY(-2px); /* Move the button slightly upwards on hover */
+  transform: translateY(-2px);
+  /* Move the button slightly upwards on hover */
 }
 
 /* Add :active styles */
 header .button:active {
-  background-color: #3e8e41; /* Darker green for button when pressed */
-  transform: scale(0.95); /* Scale down the button slightly when pressed */
+  background-color: #3e8e41;
+  /* Darker green for button when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
 }
 
 header .button.white:active {
-  background-color: #3e8e41; /* Darker green for button when pressed */
-  color: #ffffff; /* Darker green for button when pressed */
-  transform: scale(0.95); /* Scale down the button slightly when pressed */
+  background-color: #3e8e41;
+  /* Darker green for button when pressed */
+  color: #ffffff;
+  /* Darker green for button when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
 }
 
 
@@ -152,7 +167,7 @@ header .button.white:active {
 
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
-  .mobile-menu {
+    .mobile-menu {
     display: flex ;
     justify-content: space-between;
   }
@@ -204,28 +219,30 @@ header .button.white:active {
     transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
     /* Add smooth left transition */
   }
-.hidden {
+  .hidden {
     display: none;
-}
-    header {
-        padding: 30px 20px; /* Reduce padding for smaller screens */
-    }
+  }
 
-    header ul li {
+  header {
+    padding: 30px 20px;
+    /* Reduce padding for smaller screens */
+  }
+
+  header ul li {
     margin: 15px 0;
   }
 
-    #menu.active {
-        left: 0;
-    }
+  #menu.active {
+    left: 0;
+  }
 
-    .mobile-menu {
-        display: block;
-    }
-    
-    #burger-menu.active ~ #close-menu {
-        display: block;
-    }
+  .mobile-menu {
+    display: block;
+  }
+
+  #burger-menu.active~#close-menu {
+    display: block;
+  }
 }
 
 
@@ -234,21 +251,22 @@ header .button.white:active {
 
 
 .banner {
-    position: relative;
-    margin-top: 109px;
-    width: 100%;
-    height: 1064px; /* Set the desired height for the banner */
-    overflow: hidden;
-  }
-  
-  .banner img {
-    width: 1055px;
-    height: 706px;
-    /* width: 90%;
+  position: relative;
+  margin-top: 109px;
+  width: 100%;
+  height: 1064px;
+  /* Set the desired height for the banner */
+  overflow: hidden;
+}
+
+.banner img {
+  width: 1055px;
+  height: 706px;
+  /* width: 90%;
     height: 60%; */
-    margin-left: 38%;
-    object-fit: cover;
-  }
+  margin-left: 38%;
+  object-fit: cover;
+}
 
 /* .banner-overlay {
     position: absolute;
@@ -263,8 +281,8 @@ header .button.white:active {
     color: white;
     text-align: center;
   } */
-  
-  .slide {
+
+.slide {
   overflow: hidden;
   flex: 0 0 100%;
   position: relative;
@@ -306,30 +324,34 @@ header .button.white:active {
 }
 
 .overlay-content button {
-    background-color: #3ceca8;
-    color: #4CAF50;
-    border: none;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 10px 12px;
-    margin: 10px 5px;
-    cursor: pointer;
+  background-color: #3ceca8;
+  color: #4CAF50;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 12px;
+  margin: 10px 5px;
+  cursor: pointer;
 }
 
 .overlay-content #banner-text {
-    text-align: left; /* Align text content to the left */
+  text-align: left;
+  /* Align text content to the left */
 }
 
 .overlay-content h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 10px; /* Add margin to create spacing between elements */
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* Add margin to create spacing between elements */
 }
 
 .overlay-content p {
-    text-align: left; /* Align paragraph to the left */
-    width: 500px;
-    margin-bottom: 20px; /* Add margin to create spacing between elements */
+  text-align: left;
+  /* Align paragraph to the left */
+  width: 500px;
+  margin-bottom: 20px;
+  /* Add margin to create spacing between elements */
 }
 
 /* [Pressing button */
@@ -343,13 +365,16 @@ header .button.white:active {
   padding: 10px 20px;
   margin: 10px 5px;
   cursor: pointer;
-  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
 }
 
 /* Add :active styles */
 .overlay-content .button:active {
-  background-color: #3e8e41; /* Darker green for button when pressed */
-  transform: scale(0.95); /* Scale down the button slightly when pressed */
+  background-color: #3e8e41;
+  /* Darker green for button when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
 }
 
 
@@ -357,81 +382,87 @@ header .button.white:active {
 
 
 .banner-overlay h1 {
-    font-size: 36px;
-    font-weight: bold;
+  font-size: 36px;
+  font-weight: bold;
 }
 
 .banner .button {
-    background-color: #4CAF50; /* Light green color for "Hire Talent" */
-    color: white;
-    border: none;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 9px 40px;
-    margin: 10px 5px;
-    cursor: pointer;
-}
-.banner .btn-data{
-    background-color: transparent; /* Light green color for "Hire Talent" */
-    color: #ffffff;
-    border: 1px solid white;
-    border-radius: 5px;
-    font-size: 16px;
-    border-radius: 50px;
-    padding: 10px 12px;
-    margin: 10px 5px;
-    cursor: pointer;
+  background-color: #4CAF50;
+  /* Light green color for "Hire Talent" */
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 9px 40px;
+  margin: 10px 5px;
+  cursor: pointer;
 }
 
-.rating{
+.banner .btn-data {
+  background-color: transparent;
+  /* Light green color for "Hire Talent" */
+  color: #ffffff;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 12px;
+  margin: 10px 5px;
+  cursor: pointer;
+}
+
+.rating {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
+
 .star-rating .star {
-    color: #FDC639;
+  color: #FDC639;
 }
 
-        /* Additional styles */
+/* Additional styles */
 .rating-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .rating-section .company-name {
-    color: #FFFBFB;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 160%;
-    letter-spacing: -0.15px;
-    margin-left: 10px; /* Adjust the margin as needed */
+  color: #FFFBFB;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: -0.15px;
+  margin-left: 10px;
+  /* Adjust the margin as needed */
 }
 
 .rating-section .company-logo {
   margin-left: -115px;
   margin-bottom: -20px;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
 }
 
 .star-rating {
-    display: flex;
-    align-items: center;
-    margin-top: 5px; /* Adjust the spacing as needed */
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  /* Adjust the spacing as needed */
 }
 
 .separator {
   width: 50px;
-  padding-right:20px ;
+  padding-right: 20px;
   height: 50px;
   color: #fff;
-  
+
 }
 
 /* Keep your existing CSS for the banner and overlay */
@@ -439,7 +470,8 @@ header .button.white:active {
 /* Add styles for the banner-slider and slide */
 .banner-slider {
   display: flex;
-  width: 100%; /* Set the width to 100% for responsiveness */
+  width: 100%;
+  /* Set the width to 100% for responsiveness */
   transition: transform 0.5s ease;
 }
 
@@ -467,9 +499,10 @@ header .button.white:active {
 
 .prev-slide,
 .next-slide {
-  background: #fff; /* Background color for navigation buttons */
+  background: #fff;
+  /* Background color for navigation buttons */
   background-repeat: no-repeat;
-  color : transparent;
+  color: transparent;
   border: none;
   width: 33px;
   height: 33px;
@@ -478,6 +511,7 @@ header .button.white:active {
   padding: 10px;
   border-radius: 50%;
 }
+
 /* .prev-slide,
 .next-slide {
   background: rgba(255, 255, 255, 0.5); 
@@ -496,17 +530,20 @@ header .button.white:active {
   transform: rotate(180deg);
   margin-left: 20px;
 }
+
 .next-slide {
   margin-right: 20px;
 }
-.prev-slide svg{
+
+.prev-slide svg {
   width: 12px;
   height: 14px;
   /* margin-left: px; */
   /* margin-top: -5px; */
 }
-.next-slide svg{
- width: 12px;
+
+.next-slide svg {
+  width: 12px;
   height: 14px;
   /* margin-left: 8px; */
   /* margin-top: -5px; */
@@ -515,68 +552,444 @@ header .button.white:active {
 
 .prev-slide:hover,
 .next-slide:hover {
-  background-color: rgba(255, 255, 255, 0.8); /* Darker background when hovered */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* Darker background when hovered */
 }
 
 
 
 /* Styles for screens smaller than or equal to 768px */
 @media (max-width: 768px) {
-    .banner {
-        margin-top: 0;
-        height: auto; /* Adjust height for responsiveness */
-    }
+  .banner {
+    margin-top: 0;
+    height: auto;
+    /* Adjust height for responsiveness */
+  }
 
-    .banner img {
-        width: 27em;
-        margin-left: 0;
-    }
+  .banner img {
+    width: 27em;
+    margin-left: 0;
+  }
 
-    .banner-overlay {
-        width: 100%;
-        background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 120%);
-    }
+  .banner-overlay {
+    width: 100%;
+    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 120%);
+  }
 
-    .overlay-content {
-        margin-left: 0;
-        align-items: center;
-    }
+  .overlay-content {
+    margin-left: 0;
+    align-items: center;
+  }
 
-    .overlay-content button {
-        font-size: 11px;
-        padding: 8px 10px;
-    }
+  .overlay-content button {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
 
-    .overlay-content h1 {
-        font-size: 20px;
-    }
-#banner-text {
-        text-align: center; /* Center-align text content */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%; /* Ensure the container takes up the full height of its parent */
-    }
+  .overlay-content h1 {
+    font-size: 20px;
+  }
 
-    #banner-text h1,
-    #banner-text p {
-        text-align: center; /* Center-align both heading and paragraph */
-        margin: 10px 0; /* Add margin for spacing between elements */
-    }
-    #banner-text p {
-        width: 400px;
-        font-size: 16px;
-        text-align: center; /* Center-align both heading and paragraph */
-        margin: 10px 0; /* Add margin for spacing between elements */
-    }
+  #banner-text {
+    text-align: center;
+    /* Center-align text content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Ensure the container takes up the full height of its parent */
+  }
+
+  #banner-text h1,
+  #banner-text p {
+    text-align: center;
+    /* Center-align both heading and paragraph */
+    margin: 10px 0;
+    /* Add margin for spacing between elements */
+  }
+
+  #banner-text p {
+    width: 400px;
+    font-size: 16px;
+    text-align: center;
+    /* Center-align both heading and paragraph */
+    margin: 10px 0;
+    /* Add margin for spacing between elements */
+  }
 
 
-    /* Additional responsive styles can be added here */
+  /* Additional responsive styles can be added here */
+}
+
+
+  
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  list-style: none;
+}
+
+.contact .contact-heading {
+  margin-bottom: 5%;
+}
+
+.contact >.contact-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.6px;
+
+  /* 138.4% */
+}
+.contact-text{
+  width: 28em;
+}
+.contact-reach {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  /* Add margin between the two divs */
+}
+
+
+.contact-reach ul {
+  list-style: none;
+  /* Remove list style */
+  padding-left: 0;
+  /* Remove default padding */
+  margin-top: 15px;
+  /* Remove default margin */
+}
+
+.contact-reach ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* Align items vertically within each list item */
+}
+
+.contact-reach ul li img {
+  margin-right: 20px;
+  /* Add space between image and content */
+}
+
+.contact-reach a {
+  text-decoration: none;
+  color: #000000;
+}
+.contact-content {
+  max-width: 50vw;
+}
+.contact-form {
+  text-align: center;
+  padding: 20px;
+  width: 459px;
+  height: 150%;
+  background-color: #fffdfd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  text-align: left;
+  color: #333;
+}
+
+.contact-form .rect2 {
+  width: 40%;
+  height: 5px;
+  background: #1CC382;
+  border-radius: 3px;
+  margin-top: -4%;
+  margin-bottom: 4%;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  margin-left: 0%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 90%;
+  height: 43px;
+  margin-left: -10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
+}
+
+/* Add :hover styles */
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+.btn-secondary:active {
+  background-color: #159b60;
+  /* Darker green for button when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
+}
+
+
+/* FORM COMPLETE CSS */
+
+ .formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+
+.contact-form {
+  text-align: center;
+  padding: 20px;
+  width: 459px;
+  height: 651px;
+  background-color: #fffdfd;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  text-align: left;
+  color: #333;
+}
+
+.contact-form .rect2 {
+  width: 40%;
+  height: 5px;
+  background: #1CC382;
+  border-radius: 3px;
+  margin-top: -4%;
+  margin-bottom: 4%;
+}
+
+.contact-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 3px;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  margin-left: 0%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  background-color: #1CC382;
+  color: #fff;
+  border: none;
+  width: 90%;
+  height: 43px;
+  margin-left: -10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
+}
+
+/* Add :hover styles */
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  /* Move the button slightly upwards on hover */
+}
+
+/* Add :active styles */
+.btn-secondary:active {
+  background-color: #159b60;
+  /* Darker green for button when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
 }
 
 
 
+/* Media for Forms in Mobile */
+@media screen and (max-width: 768px)
+{
+
+
+  .contact-form{
+    width: 90vw;
+    /* height: 100%; */
+    max-height: 715px;
+    /* margin: 0 auto; */
+    overflow-y: scroll;
+  }
+form{overflow-y: scroll;}
+
+  .pop-up-Positioning1{
+    margin-top:8em;
+  }
+  .pop-up-Positioning{
+    margin-top:8em;
+  }
+
+      .contact-text{
+    width: 90vw;
+  }
+
+
+
+  .formContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* overflow: scroll; */
+}
+
+
+
+  .contact-reach {
+    margin-right: 0px;
+    align-items: center;
+}
+  .contact-heading >img{
+    width: 80vw;
+  }
+
+}
+
+
+.pop-up-Positioning {
+background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    width: 100%;
+    height: 110vh;
+    display: none;
+    position: fixed;
+    bottom: 0rem;
+    top: -12rem;
+    right: 0rem;
+    left: 0rem;
+    z-index: 100;
+}
+
+.closebutton{
+    width: 100%;
+    text-align: right;
+    font-size: 2rem;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    
+}
+.closebutton:hover{
+    cursor: pointer;
+}
+.hiring{
+    height:100%
+}
+
+
+/* Second Form */
+.pop-up-Positioning1{
+background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
+    width: 100%;
+    height: 110vh;
+    display: none;
+    position: fixed;
+    bottom: 0rem;
+    top: -13rem;
+    right: 0rem;
+    left: 0rem;
+    z-index: 100;
+}
+
+.closebutton1{
+    width: 100%;
+    text-align: right;
+    margin-bottom: -1em;
+    font-size: 2rem;
+    font-family: "Helvetica Neue",Helvetica,Arial;
+    
+}
+.closebutton1:hover{
+    cursor: pointer;
+}
+
+.getHired{
+    height:100%
+}
+
+
+@media screen and (max-width: 768px)
+{
+  .contact-form{
+    width: 90vw;
+    max-height: 765px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    margin: 0 auto;
+    overflow: scroll;
+  }
+
+  .pop-up-Positioning1{
+    margin-top:8em;
+    overflow: scroll;
+  }
+
+    .pop-up-Positioning{
+    margin-top:8em;
+    overflow: scroll;
+  }
+}
 
 
 
@@ -702,134 +1115,6 @@ overflow-y: hidden;
     max-width: 1064px;
     /* margin: 0 35px; */
     margin: 0 auto;
-}
-
-.contact{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  list-style: none;
-}
-
-.contact .contact-heading {
-  margin-bottom: 5%;
-}
-
-.contact .contact-text {
-  font-size: 20px;
-  margin-left: 3%;
-font-style: normal;
-font-weight: 400;
-line-height: 34.6px; /* 138.4% */
-}
-
-.contact-reach {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px; /* Add margin between the two divs */
-}
-
-
-.contact-reach ul {
-    list-style: none; /* Remove list style */
-    padding-left: 0; /* Remove default padding */
-    margin-top: 15px; /* Remove default margin */
-}
-
-.contact-reach ul li {
-    margin-bottom: 15px;
-    font-size: 18px;
-    text-align: left; 
-    display: flex;
-    align-items: center; /* Align items vertically within each list item */
-}
-
-.contact-reach ul li img {  
-  margin-right: 20px; /* Add space between image and content */
-}
-
-.contact-reach a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.contact-form {
-    text-align: center;
-    padding: 20px;
-    margin-left: 40%;
-    width: 459px;
-    height: 651px;
-    background-color: #fffdfd;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .contact-form h2 {
-    margin-bottom: 20px;
-    font-size: 24px; /* Adjust the font size as needed */
-  text-align: left;
-    color: #333;
-  }
-
-  .contact-form .rect2{
-    width: 40%;
-    height: 5px;
-    background: #1CC382;
-    border-radius: 3px;
-    margin-top:-4%;
-    margin-bottom: 4%;
-  }
-  
-.contact-form label {
-    display: block;
-    text-align: left;
-    margin-bottom: 3px;
-    font-size: 14px;
-    color: #333;
-}
-
-  .form-group {
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  
-.contact-form .form-control
-{
-  width: 100%;
-  margin-left: 0%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  background-color: #1CC382;
-  color: #fff;
-  border: none;
-  width: 90%;
-  height: 43px;
-  margin-left: -10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.4s, transform 0.4s; /* Slower transition */
-}
-
-/* Add :hover styles */
-.btn-secondary:hover {
-  transform: translateY(-2px); /* Move the button slightly upwards on hover */
-}
-
-/* Add :active styles */
-.btn-secondary:active {
-  background-color: #159b60; /* Darker green for button when pressed */
-  transform: scale(0.95); /* Scale down the button slightly when pressed */
 }
 
 
