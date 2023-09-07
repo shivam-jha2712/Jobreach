@@ -991,6 +991,105 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 }
 
 
+/* Contact Form */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  list-style: none;
+}
+.contact-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  list-style: none;
+}
+
+  .contact-1  .formContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+  margin-bottom: 10%;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-1 .formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  /* overflow: scroll; */
+}
+}
+
+.contact .contact-heading {
+  margin-bottom: 5%;
+}
+
+.contact .contact-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.6px;
+
+  /* 138.4% */
+}
+.contact-text{
+  width: 28em;
+}
+.contact-reach {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  /* Add margin between the two divs */
+}
+
+
+.contact-reach ul {
+  list-style: none;
+  /* Remove list style */
+  padding-left: 0;
+  /* Remove default padding */
+  margin-top: 15px;
+  /* Remove default margin */
+}
+
+.contact-reach ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* Align items vertically within each list item */
+}
+
+.contact-reach ul li img {
+  margin-right: 20px;
+  /* Add space between image and content */
+}
+
+.contact-reach a {
+  text-decoration: none;
+  color: #000000;
+}
+.contact-content {
+  max-width: 50vw;
+}
+
+
+
 /* 
 .contact{
   display: flex;

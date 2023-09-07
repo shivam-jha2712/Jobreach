@@ -625,18 +625,19 @@ header .button.white:active {
 }
 
 
+
+
+
+
 /* FORM COMPLETE CSS */
 
 
-  .contact  .formContainer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: -10%;
-  margin-bottom: 10%;
-  list-style: none;
-}
+ .formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
 .contact-form {
   text-align: center;
@@ -748,6 +749,7 @@ form{overflow-y: scroll;}
   }
  
 
+
   .contact .formContainer{
   display: flex;
   justify-content: center;
@@ -755,7 +757,7 @@ form{overflow-y: scroll;}
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 
@@ -1637,6 +1639,37 @@ margin-bottom: 160px;
   margin-bottom: 10%;
   list-style: none;
 }
+.contact-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  list-style: none;
+}
+
+  .contact-1  .formContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10%;
+  margin-bottom: 10%;
+  list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-1 .formContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  /* overflow: scroll; */
+}
+}
 
 .contact .contact-heading {
   margin-bottom: 5%;
@@ -2074,6 +2107,11 @@ margin-bottom: 160px;
   text-decoration: none;
   color: #000000;
 }
+
+
+
+
+
 
 .formContainer{
   display: flex;
