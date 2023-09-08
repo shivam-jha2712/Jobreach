@@ -1718,6 +1718,7 @@ form{overflow-y: scroll;}
 
 
 
+
 /* FOOTER WALA BLUE DABBA */
 
 .blue-box5-wrapper {
@@ -1792,6 +1793,7 @@ form{overflow-y: scroll;}
   text-decoration: none;
   color: #ffffff;
 }
+
 
 
 .newsletter-footer {
@@ -1871,7 +1873,7 @@ form{overflow-y: scroll;}
   height: 80%;
   border-radius: 56px 56px 0px 0px;
   margin-top: 7%;
-  margin-left: 1.2em;
+  /* margin-left: 1.em; */
   background: #4C40F7;
   padding: 40px;
   color: white;
@@ -1879,7 +1881,7 @@ form{overflow-y: scroll;}
 }
 
 .reach h3 {
-  margin-left: -65%;
+  margin-left: 5%;
   margin-bottom: 15px;
 }
 .quick h3 {
@@ -1891,6 +1893,7 @@ form{overflow-y: scroll;}
   margin-bottom: 25px;
   text-align: left;
   display: flex;
+  margin-left: 15%;
   justify-content: left;
   /* align-items: center; */
   /* Align items vertically within each list item */
