@@ -1571,66 +1571,48 @@ letter-spacing: -0.21px;
 
 
 
-.blue-box4 {
-    background-color: #4C40F7;
-    /* width: 1352px; */
-    width: 90%;
-    height: 516px;
-    margin-left: 75px;
-    margin-bottom: 75px;
-    margin-top: 75px;
-    border-radius: 25px;
-    padding: 40px;
-    color: white;
-    text-align: center;
-    list-style: none;
-}
+/* BLUE-BOX4 LADKI AND BUTTON */
 
-.blue-box4 img{
-  margin-top:-151.0%;
-  margin-left: -30%;
-  width: 150.4%;
+.blue-box4 img {
+  margin-top: -36.5%;
+  margin-left: -75%;
+  width: 35.4%;
+  margin-bottom: -66px;
   transform: scaleX(-1);
 }
 
-.blue-box4 .button {
-    background-color: #4CAF50; /* Light green color for "Hire Talent" */
-    color: white;
-    border: none;
-    width: 242px;
-    height: 67px;
-    font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: 160%; /* 40px */
-letter-spacing: -0.25px;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin-top: 10px;
-    margin-left: 20%;
-    cursor: pointer;
+#green {
+  color: #1CC382;
 }
 
-.blue-box4 .button.white {
-    background-color: white; /* White color for "Get Hired" */
-    color: #4CAF50;
-    width: 242px;
-height: 67px;
-    border-radius: 50px;
-    padding: 10px 35px;
-    margin-top: 10px;
-    margin-left: -40%;
-    font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: 160%; /* 40px */
-letter-spacing: -0.25px;
-    border: 2px solid #4CAF50;
-    cursor: pointer;
+/* Blue-Box4 - LADKI WALA BLUE DABBA */
+
+.blue-box-wrapper4 {
+  display: flex;
+  justify-content: center;
 }
+
+.blue-box4 {
+  background-color: #4C40F7;
+  /* width: 1352px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 476px;
+  margin-bottom: 75px;
+  margin-top: 75px;
+  border-radius: 25px;
+  padding: 40px;
+  color: white;
+  text-align: center;
+  height: 100%;
+}
+
 
 
 /* Pressed Buttons */
+
 
 .blue-box4 .button,
 .blue-box4 .button.white {
@@ -1640,7 +1622,8 @@ letter-spacing: -0.25px;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;
-  line-height: 160%; /* 40px */
+  line-height: 160%;
+  /* 40px */
   letter-spacing: -0.25px;
   border-radius: 50px;
   padding: 10px 35px;
@@ -1653,55 +1636,159 @@ letter-spacing: -0.25px;
   background-color: #4CAF50;
   color: white;
   border: none;
-  margin-left: 20%;
+  margin-left: -0.5em;
 }
 
 .blue-box4 .button.white {
   background-color: white;
   color: #4CAF50;
   border: 2px solid #4CAF50;
-  margin-left: -40%;
+  /* margin-left: 70%; */
+  margin-left: 0.5em;
 }
 
 /* Add :active styles */
 .blue-box4 .button:active,
 .blue-box4 .button.white:active {
-  background-color: #3e8e41; /* Darker green for "Hire Talent" button when pressed */
+  background-color: #3e8e41;
+  /* Darker green for "Hire Talent" button when pressed */
   color: #f2f2f2;
-  transform: scale(0.95); /* Scale down the button slightly when pressed */
+  transform: scale(0.95);
+  /* Scale down the button slightly when pressed */
 }
 
 .blue-box4 .button.white:active {
-  background-color: #f2f2f2; /* Light gray for "Get Hired" button when pressed */
+  background-color: #f2f2f2;
+  /* Light gray for "Get Hired" button when pressed */
   color: #3e8e41;
 }
 
 
 
 .blue-box4 .content-top {
-  width: 803px;
+  max-width: 652px;
   color: var(--mindful-gray-white, #FFF);
-text-align: center;
-font-size: 52px;
-font-style: normal;
-font-weight: 500;
-line-height: 80px; /* 153.846% */
-letter-spacing: -1.56px;
-text-align: center;
-margin-left: 390px;
-margin-top: -20px;
-margin-bottom: 120px;
+  text-align: left;
+  font-size: 52px;
+  width: 80%;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px;
+  /* 153.846% */
+  letter-spacing: -1.56px;
+  margin-left: 7em;
+  margin-top: 20px;
+  margin-bottom: -1.5rem;
 }
 
 
-.blue-box4 .content-next{
-  width: 573px;
-  text-align: center;
-font-size: 20px;
-font-style: normal;
-margin-top: -90px;
-margin-bottom: 25px;
-margin-left: 40%;
+.button-wrapper-job-container {
+  /* display: flex;
+  flex-direction: row; */
+  margin-left: -40%;
+  /* margin-top: %; */
+}
+
+
+.blue-box4 .content-next {
+  max-width: 592px;
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 1em;
+  margin-left: 18em;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .button-wrapper-job {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blue-box4 {
+    width: 90%;
+    height: 90%;
+  }
+
+  .blue-box4 .button {
+    margin-left: 8em;
+    width: 155px;
+    height: 37px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+  .blue-box4 .button.white {
+    margin-left: 8em;
+    width: 155px;
+    height: 37px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .blue-box4 .content-top {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 37px;
+    /* 132.143% */
+    letter-spacing: -0.84px;
+    text-align: center;
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .blue-box4 .content-next {
+    align-items: center;
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    flex-direction: column;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 22.4px */
+    text-align: center;
+    letter-spacing: -0.14px;
+    margin-bottom: 25px;
+  }
+
+
+  .blue-box4 .woman {
+    transform: scaleX(-1);  
+    /* overflow: hidden; */
+  }
+
+  .blue-box4 img {
+    margin-top: -6.5%;
+    margin-left: 5.5em;
+    width: 85.4%;
+    
+    /* overflow: hidden; */
+  }
+
+
+
+  .button-wrapper-job-container {
+    margin-bottom: 1.1em;
+    /* margin-left: -9.1em; */
+  }
+
 }
 
 
