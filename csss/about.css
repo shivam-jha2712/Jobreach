@@ -1368,7 +1368,7 @@ margin-left: 30%;
 
   .green-box2 .woman-group{
   margin-top:-8em;
-  margin-left: -3em;
+  margin-left: -1.5em;
   z-index: 1;
   max-width: 90vw;
   /* width: 150.4%; */
@@ -1380,12 +1380,13 @@ margin-left: 30%;
   color: var(--mindful-gray-white, #000000);
   text-align: left; /* Updated to left */
 font-size: 28px;
+justify-content: center;
 font-style: normal;
 font-weight: 700;
 line-height: 68px;
 letter-spacing: -0.84px;
   text-align: left; /* Updated to left */
-  margin-left: 3vw;
+  margin-left: 10vw;
   margin-top: 5%;
   margin-bottom: 120px;
 }
@@ -1713,6 +1714,7 @@ letter-spacing: -0.21px;
   .blue-box4 {
     width: 90%;
     height: 90%;
+    margin-top: 1em;
   }
 
   .blue-box4 .button {
