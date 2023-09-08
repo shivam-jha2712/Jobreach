@@ -449,6 +449,7 @@ header .button.white:active {
   width: 16px;
   height: 16px;
   vertical-align: middle;
+  transform: scaleX(1);
 }
 
 .star-rating {
