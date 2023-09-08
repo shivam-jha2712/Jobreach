@@ -1293,7 +1293,7 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
   height: 80%;
   border-radius: 56px 56px 0px 0px;
   margin-top: 7%;
-  margin-left: 1.2em;
+  /* margin-left: 1.em; */
   background: #4C40F7;
   padding: 40px;
   color: white;
@@ -1301,7 +1301,7 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 }
 
 .reach h3 {
-  margin-left: -65%;
+  margin-left: 5%;
   margin-bottom: 15px;
 }
 .quick h3 {
@@ -1313,6 +1313,7 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
   margin-bottom: 25px;
   text-align: left;
   display: flex;
+  margin-left: 15%;
   justify-content: left;
   /* align-items: center; */
   /* Align items vertically within each list item */
