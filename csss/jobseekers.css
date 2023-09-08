@@ -2720,14 +2720,15 @@ overflow-y: hidden;
   }
 
   .data-2-img>img {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    margin-left: -2em;
     margin-right: 0%;
   }
 
   .content-next {
     width: 100%;
     margin-left: 0 !important;
+    font-size: 14px;
   }
 
   .card4 {

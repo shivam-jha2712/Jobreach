@@ -2796,6 +2796,7 @@ text-align: center;
   .content-next{
     width: 100%;
     margin-left:0 !important;
+    font-size: 14px;
   }
   .card2{
     display: flex;
