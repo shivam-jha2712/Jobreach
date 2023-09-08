@@ -2218,6 +2218,7 @@ text-align: center;
   .content{
     margin-top: 5em;
     width: 90%;
+    height: 90em;
     overflow-x: hidden;
     overflow-y: scroll;
 }
