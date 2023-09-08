@@ -514,17 +514,7 @@ header .button.white:active {
   border-radius: 50%;
 }
 
-/* .prev-slide,
-.next-slide {
-  background: rgba(255, 255, 255, 0.5); 
-  color : transparent;
-  border: none;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-} */
+
 
 
 
@@ -621,7 +611,11 @@ header .button.white:active {
   }
 
 
-  /* Additional responsive styles can be added here */
+  .slider-nav {
+   margin-top: 5em;
+}
+  
+
 }
 
 
