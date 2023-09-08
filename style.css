@@ -266,23 +266,11 @@ header .button.white:active {
   height: 706px;
   /* width: 90%;
     height: 60%; */
-  margin-left: 38%;
+    background-size: 68% auto;
+  margin-left: 40%;
   object-fit: cover;
 }
 
-/* .banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1440px;
-    height: 706px;
-    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  } */
 
 .slide {
   overflow: hidden;
@@ -477,14 +465,6 @@ header .button.white:active {
   transition: transform 0.5s ease;
 }
 
-/* .slide {
-  flex: 0 0 100%;
-} */
-
-/* .banner-slider img {
-  width: 100%;
-  height: auto;
-} */
 
 /* Add styles for the slider navigation */
 .slider-nav {
@@ -560,7 +540,9 @@ header .button.white:active {
 
   .banner img {
     width: 27em;
-    margin-left: 0;
+    /* margin-left: 0; */
+    margin-left: -68%;
+    overflow-x: visible;
   }
 
   .banner-overlay {
@@ -591,6 +573,16 @@ header .button.white:active {
     align-items: center;
     height: 100%;
     /* Ensure the container takes up the full height of its parent */
+  }
+
+    #banner-text h1{
+    text-align: center;
+/* font-family: Satoshi; */
+font-size: 27.741px;
+font-style: normal;
+font-weight: 700;
+line-height: 36.658px; /* 132.143% */
+letter-spacing: -1.11px;
   }
 
   #banner-text h1,

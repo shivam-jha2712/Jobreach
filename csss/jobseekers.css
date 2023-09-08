@@ -576,7 +576,9 @@ header .button.white:active {
 
   .banner img {
     width: 27em;
-    margin-left: 0;
+        margin-left: -68%;
+    overflow-x: visible;
+    /* margin-left: 0; */
   }
 
   .banner-overlay {
@@ -606,15 +608,26 @@ header .button.white:active {
     justify-content: center;
     align-items: center;
     height: 100%;
+    
     /* Ensure the container takes up the full height of its parent */
   }
 
+  #banner-text h1{
+    text-align: center;
+/* font-family: Satoshi; */
+font-size: 27.741px;
+font-style: normal;
+font-weight: 700;
+line-height: 36.658px; /* 132.143% */
+letter-spacing: -1.11px;
+  }
   #banner-text h1,
   #banner-text p {
     text-align: center;
     /* Center-align both heading and paragraph */
     margin: 10px 0;
     /* Add margin for spacing between elements */
+    
   }
 
   #banner-text p {
