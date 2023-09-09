@@ -1635,15 +1635,13 @@ letter-spacing: -0.6px;
     letter-spacing: -0.28px;
   }
 
-
   .blue-box4 img {
-    margin-top: -6.5%;
-
-    margin-left: 5.0em;
+    margin-top: -0.5%;
+    margin-left: 5.5em;
     width: 65.4%;
     transform: scaleX(-1);
   }
-
+  
   .button-wrapper-job-container {
     margin-bottom: 1.1em;
   }
