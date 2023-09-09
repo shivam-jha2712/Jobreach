@@ -896,13 +896,14 @@ letter-spacing: -1.11px;
     overflow-y: scroll;
   } */
 
+  .pop-up-Positioning {
+    margin-top: 8em;
+  }
+
   .pop-up-Positioning1 {
     margin-top: 8em;
   }
 
-  .pop-up-Positioning {
-    margin-top: 8em;
-  }
 
   .contact-text {
     width: 90vw;
@@ -1811,7 +1812,7 @@ letter-spacing: -0.21px;
   }
 
   .blue-box4 img {
-    margin-top: -6.5%;
+    margin-top: -1.5%;
     margin-left: 5.5em;
     width: 85.4%;
     
