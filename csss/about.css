@@ -167,11 +167,12 @@ header .button.white:active {
 
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
-    .mobile-menu {
-    display: flex ;
+  .mobile-menu {
+    display: flex;
     justify-content: space-between;
   }
-  header{
+
+  header {
     background-color: white;
   }
 
@@ -219,6 +220,7 @@ header .button.white:active {
     transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
     /* Add smooth left transition */
   }
+
   .hidden {
     display: none;
   }
@@ -292,23 +294,25 @@ header .button.white:active {
   position: absolute;
   top: 0;
   left: 0;
-/* width: 1440px; */
-    width: 90%;
-    height: 706px;
-    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
+  /* width: 1440px; */
+  width: 90%;
+  height: 706px;
+  background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
   opacity: 0;
-  z-index: 1; /* Ensure overlay is above the image */
+  z-index: 1;
+  /* Ensure overlay is above the image */
 }
 
 .overlay-content {
   padding: 20px;
   position: relative;
-  z-index: 2; /* Ensure content is above the overlay */
+  z-index: 2;
+  /* Ensure content is above the overlay */
 }
 
 /* Add hover effect to display the overlay */
@@ -318,9 +322,10 @@ header .button.white:active {
 
 .overlay-content {
   margin-left: -25em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align content to the left */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Align content to the left */
 }
 
 .overlay-content button {
@@ -568,7 +573,9 @@ header .button.white:active {
 
   .banner img {
     width: 27em;
-    margin-left: 0;
+        margin-left: 1%;
+    overflow-x: visible;
+    /* margin-left: 0; */
   }
 
   .banner-overlay {
@@ -598,6 +605,7 @@ header .button.white:active {
     justify-content: center;
     align-items: center;
     height: 100%;
+    
     /* Ensure the container takes up the full height of its parent */
   }
 
@@ -610,13 +618,13 @@ font-weight: 700;
 line-height: 36.658px; /* 132.143% */
 letter-spacing: -1.11px;
   }
-
   #banner-text h1,
   #banner-text p {
     text-align: center;
     /* Center-align both heading and paragraph */
     margin: 10px 0;
     /* Add margin for spacing between elements */
+    
   }
 
   #banner-text p {
@@ -633,7 +641,7 @@ letter-spacing: -1.11px;
 }
 
 
-  
+
 .contact {
   display: flex;
   flex-direction: row;
@@ -648,7 +656,7 @@ letter-spacing: -1.11px;
   margin-bottom: 5%;
 }
 
-.contact >.contact-text {
+.contact>.contact-text {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -656,9 +664,11 @@ letter-spacing: -1.11px;
 
   /* 138.4% */
 }
-.contact-text{
+
+.contact-text {
   width: 28em;
 }
+
 .contact-reach {
   display: inline-block;
   vertical-align: top;
@@ -694,9 +704,11 @@ letter-spacing: -1.11px;
   text-decoration: none;
   color: #000000;
 }
+
 .contact-content {
   max-width: 50vw;
 }
+
 .contact-form {
   text-align: center;
   padding: 20px;
@@ -779,13 +791,12 @@ letter-spacing: -1.11px;
 
 /* FORM COMPLETE CSS */
 
- .formContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 25em;
-  }
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
 
 .contact-form {
@@ -870,50 +881,53 @@ letter-spacing: -1.11px;
 
 
 /* Media for Forms in Mobile */
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
 
 
-  .contact-form{
+  .contact-form {
     width: 90vw;
+    /* height: 100%; */
     max-height: 715px;
     /* margin: 0 auto; */
+    /* overflow-y: scroll; */
+  }
+
+  /* form {
     overflow-y: scroll;
-  }
-form{overflow-y: scroll;}
+  } */
 
-  .pop-up-Positioning1{
-    margin-top:8em;
-  }
-  .pop-up-Positioning{
-    margin-top:8em;
+  .pop-up-Positioning1 {
+    margin-top: 8em;
   }
 
-      .contact-text{
+  .pop-up-Positioning {
+    margin-top: 8em;
+  }
+
+  .contact-text {
     width: 90vw;
   }
 
 
 
-  .formContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 62em;
-  margin-top: 15em;
-  /* overflow: scroll; */
-}
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* overflow: scroll; */
+  }
 
 
 
   .contact-reach {
     margin-right: 0px;
     align-items: center;
-}
-  .contact-heading >img{
+  }
+
+  .contact-heading>img {
     width: 80vw;
   }
 
@@ -921,87 +935,96 @@ form{overflow-y: scroll;}
 
 
 .pop-up-Positioning {
-background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-    width: 100%;
-    height: 110vh;
-    display: none;
-    position: fixed;
-    bottom: 0rem;
-    top: -12rem;
-    right: 0rem;
-    left: 0rem;
-    z-index: 100;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(5px);
+  /* Apply a blur effect to the background */
+  width: 100%;
+  height: 110vh;
+  display: none;
+  position: fixed;
+  bottom: 0rem;
+  top: -12rem;
+  right: 0rem;
+  left: 0rem;
+  z-index: 100;
 }
 
-.closebutton{
-    width: 100%;
-    text-align: right;
-    font-size: 2rem;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    
+.closebutton {
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+
 }
-.closebutton:hover{
-    cursor: pointer;
+
+.closebutton:hover {
+  cursor: pointer;
 }
-.hiring{
-    height:100%
+
+.hiring {
+  height: 100%
 }
 
 
 /* Second Form */
-.pop-up-Positioning1{
-background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-    width: 100%;
-    height: 110vh;
-    display: none;
-    position: fixed;
-    bottom: 0rem;
-    top: -13rem;
-    right: 0rem;
-    left: 0rem;
-    z-index: 100;
+.pop-up-Positioning1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(5px);
+  /* Apply a blur effect to the background */
+  width: 100%;
+  height: 110vh;
+  display: none;
+  position: fixed;
+  bottom: 0rem;
+  top: -13rem;
+  right: 0rem;
+  left: 0rem;
+  z-index: 100;
 }
 
-.closebutton1{
-    width: 100%;
-    text-align: right;
-    margin-bottom: -1em;
-    font-size: 2rem;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    
-}
-.closebutton1:hover{
-    cursor: pointer;
+.closebutton1 {
+  width: 100%;
+  text-align: right;
+  margin-bottom: -1em;
+  font-size: 2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+
 }
 
-.getHired{
-    height:100%
+.closebutton1:hover {
+  cursor: pointer;
+}
+
+.getHired {
+  height: 100%
 }
 
 
-@media screen and (max-width: 768px)
-{
-  .contact-form{
+@media screen and (max-width: 768px) {
+  .contact-form {
     width: 90vw;
     max-height: 765px;
     /* display: flex; */
     /* flex-direction: row; */
     margin: 0 auto;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 
-  .pop-up-Positioning1{
-    margin-top:8em;
-    overflow: scroll;
+  .pop-up-Positioning1 {
+    margin-top: 8em;
+    /* overflow: scroll; */
   }
 
-    .pop-up-Positioning{
-    margin-top:8em;
-    overflow: scroll;
+  .pop-up-Positioning {
+    margin-top: 8em;
+    /* overflow: scroll; */
   }
 }
+
+
+/* FROM CSS ENDS HERE */
 
 
 /* Contact Form */
