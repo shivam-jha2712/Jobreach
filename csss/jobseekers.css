@@ -892,12 +892,12 @@ letter-spacing: -1.11px;
     /* height: 100%; */
     max-height: 715px;
     /* margin: 0 auto; */
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 
-  form {
+  /* form {
     overflow-y: scroll;
-  }
+  } */
 
   .pop-up-Positioning1 {
     margin-top: 8em;
@@ -1012,17 +1012,17 @@ letter-spacing: -1.11px;
     /* display: flex; */
     /* flex-direction: row; */
     margin: 0 auto;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 
   .pop-up-Positioning1 {
     margin-top: 8em;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 
   .pop-up-Positioning {
     margin-top: 8em;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 }
 
