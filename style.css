@@ -274,7 +274,7 @@ header .button.white:active {
   object-fit: cover;
   width: 95%;
   height: 75%;
-  margin-left: 90%;
+  margin-left: 85%;
   transform: translateX(-50%);
 }
 
@@ -294,7 +294,7 @@ header .button.white:active {
 /* width: 1440px; */
     width: 90%;
     height: 706px;
-    background: linear-gradient(87deg, #4C40F7 55.86%, rgba(76, 64, 247, 0.00) 87.89%);
+    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -557,12 +557,19 @@ header .button.white:active {
     /* Adjust height for responsiveness */
   }
 
-  .banner img {
+  /* .banner img {
     width: 27em;
-    /* margin-left: 0; */
     margin-left: -68%;
     overflow-x: visible;
-  }
+  } */
+
+.banner img {
+  width: 1055px;
+  height: 706px;
+    background-size: 68% auto;
+  margin-left: 50%;
+  object-fit: cover;
+}
 
   .banner-overlay {
     width: 100%;
