@@ -267,7 +267,7 @@ header .button.white:active {
   /* width: 90%;
     height: 60%; */
     background-size: 68% auto;
-  margin-left: 40%;
+  margin-left: 50%;
   object-fit: cover;
 }
 
@@ -285,7 +285,7 @@ header .button.white:active {
 /* width: 1440px; */
     width: 90%;
     height: 706px;
-    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
+    background: linear-gradient(87deg, #4C40F7 55.86%, rgba(76, 64, 247, 0.00) 87.89%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,6 +326,16 @@ header .button.white:active {
 
 .overlay-content #banner-text {
   text-align: left;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > h1{
+  text-align: left;
+  font-size: 52px;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > p{
+  text-align: left;
+  font-size: 20px;
   /* Align text content to the left */
 }
 
