@@ -1017,7 +1017,8 @@ form{overflow-y: scroll;}
 
 .containerExpert{
   display:flex;
-  justify-content:space-around;
+  margin-left: 10%;
+  /* justify-content:space-around; */
 }
 
 @media (max-width: 768px) 
@@ -1297,7 +1298,7 @@ form{overflow-y: scroll;}
 .blue-box3 {
   padding: 3rem 0rem;
   background-color: #4C40F7;
-  width: 75%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -2102,15 +2103,50 @@ form{overflow-y: scroll;}
   font-size: 16px;
   border-radius: 50px;
   padding: 10px 12px;
-  margin: 60px 8%;
+  margin: 60px 10%;
   cursor: pointer;
 }
 
-.data-1-heading {
+  .data-1-heading > span{
+    color: #1CC382;
+  }
+
+  .data-2-heading > span{
+    color: #4C40F7;
+  }
+
+  .data-1-heading {
+    color: var(--mindful-gray-white, #000000);
+    text-align: left;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px;
+  /* 153.846% */
+  letter-spacing: -1.56px;
+  margin-bottom: -4rem;
+  margin-top: -5rem;
+  margin-left: 5rem;
+  }
+  .data-2-heading {
+    width: 100%;
+    color: var(--mindful-gray-white, #000000);
+    text-align: left;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 80px;
+  /* 153.846% */
+  letter-spacing: -1.56px;
+  margin-bottom: 2rem;
+  }
+
+/* .data-1-heading {
   margin: -5% 10%;
-}
+} */
 
 @media screen and (min-width: 769px) {
+
   .data-1-heading1 {
     display: none;
   }
@@ -2238,6 +2274,10 @@ form{overflow-y: scroll;}
 
 /* Media Query for 768px screen width */
 @media screen and (max-width: 768px) {
+    .data-1-heading {
+    margin: -5% 4%;
+    display: none;
+  }
   .data-3-heading1 {
     width: 100%;
 
@@ -2257,11 +2297,8 @@ form{overflow-y: scroll;}
   
   }
 
-  .data-1-heading {
-    margin: -5% 4%;
-    /* Adjust heading margin for smaller screens */
-    display: none;
-  }
+
+
 
   .data-1-heading1 {
     /* width: 100%; */
@@ -2500,7 +2537,7 @@ margin-bottom: -1rem;
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background-color: #4C40F7;
+      background-color: transparent;
       position: absolute;
       left: calc(20% - 53px);
       z-index: 1;
@@ -2515,10 +2552,11 @@ margin-bottom: -1rem;
 
   .circle2> img{
     width: 100%;
+    margin-top: 6rem;
   }
   .card2{
     min-width: 80vw !important;
-    height: 28rem;
+    height: 35rem;
   }
 
   
