@@ -261,15 +261,24 @@ header .button.white:active {
   overflow: hidden;
 }
 
-.banner img {
+/* .banner img {
   width: 1055px;
   height: 706px;
-  /* width: 90%;
-    height: 60%; */
     background-size: 68% auto;
   margin-left: 50%;
   object-fit: cover;
+} */
+
+
+.banner img {
+  object-fit: cover;
+  width: 95%;
+  height: 75%;
+  margin-left: 90%;
+  transform: translateX(-50%);
 }
+
+
 
 
 .slide {
