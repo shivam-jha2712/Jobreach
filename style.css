@@ -585,6 +585,23 @@ header .button.white:active {
     /* Ensure the container takes up the full height of its parent */
   }
 
+
+  .overlay-content #banner-text > h1{
+  text-align: left;
+  font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 132.143% */
+letter-spacing: -1.12px;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > p{
+  text-align: center;
+  font-size: 18px;
+  width: 90%;
+  /* Align text content to the left */
+}
+
     #banner-text h1{
     text-align: center;
 /* font-family: Satoshi; */
@@ -2397,6 +2414,9 @@ form{overflow-y: scroll;}
   margin-right: 5%;
 }
 
+.data-2-content .btn-data{
+  margin-bottom: 1.5em;
+}
 
 .data-2 .contact-reach {
   margin-left: 10%;
@@ -2404,6 +2424,7 @@ form{overflow-y: scroll;}
   display: inline-block;
   vertical-align: top;
   margin-right: 20px;
+  margin-top: -50px;
   /* Add margin between the two divs */
 }
 
