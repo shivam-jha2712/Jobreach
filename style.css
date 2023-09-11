@@ -1066,10 +1066,10 @@ form{overflow-y: scroll;}
 
 .containerExpert{
   display:flex;
-  margin-left: 10%;
+  /* margin-left: 10%;
   margin-top: -5%;
-  margin-bottom: -10%;
-  /* justify-content:space-around; */
+  margin-bottom: -10%; */
+  justify-content:space-around;
 }
 
 @media (max-width: 768px) 
@@ -1579,7 +1579,7 @@ form{overflow-y: scroll;}
   height: 476px;
   margin-bottom: 75px;
   margin-top: 75px;
-  border-radius: 25px;
+  border-radius: 56px;
   padding: 40px;
   color: white;
   text-align: center;
@@ -2090,7 +2090,7 @@ form{overflow-y: scroll;}
 
 .data-img img {
   position: absolute;
-  margin-left: -4em;
+  margin-left: -9em;
   margin-top: -5em;
 
 }
@@ -2125,7 +2125,8 @@ form{overflow-y: scroll;}
 
 @media screen {
   .data .btn-primary {
-  margin-top: -0.0em;
+  margin-top: 1.1em;
+  height: 43px;
 }
 
 }
