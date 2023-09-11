@@ -1822,6 +1822,10 @@ form{overflow-y: scroll;}
   margin-bottom: 20px;
   margin-left: -30px;
 }
+.input-group .btn-primary {
+  margin-bottom: 18px;
+  margin-left: -90px;
+}
 
 .form-control {
   width: 90%;
@@ -1837,7 +1841,7 @@ form{overflow-y: scroll;}
   color: #fff;
   border: none;
   width: 105px;
-  height: 43px;
+  height: 45px;
   margin-top: 2em;
   margin-left: 1em;
   /* border-radius: 0 5px 5px 0; */
@@ -1931,7 +1935,7 @@ form{overflow-y: scroll;}
 }
 
 .form-control {
-  width: 80%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2584,6 +2588,10 @@ margin-bottom: -1rem;
   .content-next{
     max-width: 90%;
     margin-top: 2rem;
+  }
+  .blue-box4 .content-next{
+font-size: 12px;
+margin-top: 2rem;
   }
   .data-2 {
     display: none;
