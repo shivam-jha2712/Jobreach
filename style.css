@@ -294,7 +294,7 @@ header .button.white:active {
 /* width: 1440px; */
     width: 90%;
     height: 706px;
-    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
+    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 62.89%);
   display: flex;
   justify-content: center;
   align-items: center;
