@@ -724,5 +724,29 @@
 
 </body>
 <script src="/scriptss/about.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const questions = document.querySelectorAll(".question");
+
+        questions.forEach((question) => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                const plusSign = question.querySelector(".plus-sign");
+
+                // Toggle the 'open' class on the question to change its color
+                question.classList.toggle("open");
+
+                if (answer.style.display === "block") {
+                    answer.style.display = "none";
+                    plusSign.classList.remove("open");
+                } else {
+                    answer.style.display = "block";
+                    plusSign.classList.add("open");
+                }
+            });
+        });
+    });
+</script>
+
 
 </html>
