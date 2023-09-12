@@ -2052,7 +2052,7 @@ line-height: 24px; /* 150% */
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    width: 365px;
+    width: 305px;
     height: 327px;
     flex-shrink: 0;
     border-radius: 27px;
@@ -2067,7 +2067,7 @@ line-height: 24px; /* 150% */
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    width: 365px;
+    width: 305px;
     height: 77px;
     margin-left: -10%;
     flex-shrink: 0;
@@ -2078,9 +2078,9 @@ line-height: 24px; /* 150% */
 }
 
 
-#first{
+/* #first{
   margin-left: -10%;
-}
+} */
 #second{
   margin-left: -17%;
 }
