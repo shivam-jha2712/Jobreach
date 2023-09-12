@@ -284,7 +284,9 @@ header .button.white:active {
   transform: translateX(-50%);
 }
 
-
+.banner .Banner-Image-2{
+  margin-left: 55%;
+}
 
 
 .slide {
@@ -458,10 +460,10 @@ header .button.white:active {
 }
 
 .rating-section .company-logo {
-  margin-left: -115px;
-  margin-bottom: -20px;
-  width: 16px;
-  height: 16px;
+  margin-left: -100px;
+  margin-bottom: -25px;
+  width: 23px;
+  height: 23px;
   vertical-align: middle;
 }
 
@@ -474,7 +476,7 @@ header .button.white:active {
 
 .separator {
   width: 50px;
-  padding-right: 20px;
+  padding-right: 25px;
   height: 50px;
   color: #fff;
 
