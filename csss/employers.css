@@ -2339,6 +2339,7 @@ text-align: center;
   margin-top: 7%;
   background: #4C40F7;
   padding: 40px;
+  padding-top: 140px;
   color: white;
   text-align: center;
 }
@@ -2359,12 +2360,13 @@ text-align: center;
 .quick {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 70px;
+  margin-left: 20px;
   /* Add margin between the two divs */
 }
 
 .reach h3 {
-  margin-left: -83%;
+  margin-left: -70%;
   margin-bottom: 15px;
 }
 .quick h3 {
@@ -2408,17 +2410,25 @@ text-align: center;
 .newsletter-footer {
   text-align: center;
   padding: 20px;
+  margin-left: 3em;
   margin-top: -1em;
 }
 
 .newsletter-footer h2 {
-  margin-bottom: 20px;
+  margin-left: -2em;
+  margin-bottom: 5px;
   color: #ffffff;
+  font-weight: 600;
 }
-
+.newsletter-footer p {
+  text-align: left;
+  margin-left: 3em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
 .input-group {
   margin-bottom: 20px;
-  margin-left: -30px;
+  margin-left: 43px;
 }
 .input-group .btn-primary {
   margin-bottom: 18px;
@@ -2426,7 +2436,7 @@ text-align: center;
 }
 
 .form-control {
-  width: 90%;
+  width: 313px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2450,7 +2460,8 @@ text-align: center;
 
 .footer-social-icons ul {
   list-style: none;
-  margin: 0;
+  margin-left: -9em;
+  /* margin: 0; */
   padding: 0;
   display: flex;
   justify-content: center;
@@ -2514,12 +2525,14 @@ text-align: center;
 
 .newsletter-footer{
   margin-top:-2em;
+  margin-left:-2em;
   /* align-items: center; */
   justify-content: center;
 }
 
 .newsletter-footer h2 {
-  margin-bottom: 20px;
+  margin-bottom: -10px;
+  margin-left: 0.5em;
   font-size: 25px;
   color: #ffffff;
    justify-content: center;
@@ -2562,6 +2575,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
+  margin-left: 2em;
 }
 
 
@@ -2571,7 +2585,6 @@ text-align: center;
 }
 
 }
-
 
 
 
