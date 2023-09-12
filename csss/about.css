@@ -952,6 +952,58 @@ letter-spacing: -1.11px;
     width: 40vw;
   }
 
+  
+.contact >.contact-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.6px;
+
+  /* 138.4% */
+}
+/* .contact-text{
+  width: 28em;
+} */
+.contact-reach {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  /* Add margin between the two divs */
+}
+
+
+.contact-reach ul {
+  list-style: none;
+  /* Remove list style */
+  padding-left: 0;
+  /* Remove default padding */
+  margin-top: 15px;
+  /* Remove default margin */
+}
+
+.contact-reach ul li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* Align items vertically within each list item */
+}
+
+.contact-reach ul li img {
+  margin-right: 20px;
+  /* Add space between image and content */
+}
+
+.contact-reach a {
+  text-decoration: none;
+  color: #000000;
+}
+.contact-content {
+  max-width: 50vw;
+}
+
+
 @media screen and (max-width: 768px) {
     .contact-1 .formContainer{
   display: flex;
@@ -1735,6 +1787,7 @@ letter-spacing: -0.21px;
 
 
 
+
 /* FOOTER WALA BLUE DABBA */
 
 .blue-box5-wrapper {
@@ -1827,6 +1880,10 @@ letter-spacing: -0.21px;
   margin-bottom: 20px;
   margin-left: -30px;
 }
+.input-group .btn-primary {
+  margin-bottom: 18px;
+  margin-left: -90px;
+}
 
 .form-control {
   width: 90%;
@@ -1842,7 +1899,7 @@ letter-spacing: -0.21px;
   color: #fff;
   border: none;
   width: 105px;
-  height: 43px;
+  height: 45px;
   margin-top: 2em;
   margin-left: 1em;
   /* border-radius: 0 5px 5px 0; */
@@ -1936,7 +1993,7 @@ letter-spacing: -0.21px;
 }
 
 .form-control {
-  width: 80%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -1974,6 +2031,8 @@ letter-spacing: -0.21px;
 }
 
 }
+
+
 
 
 
