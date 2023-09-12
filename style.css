@@ -285,7 +285,9 @@ header .button.white:active {
 }
 
 .banner .Banner-Image-2{
-  margin-left: 55%;
+  margin-left: 65%;
+  width: 70%;
+  height: 85%;
 }
 
 
@@ -1366,12 +1368,15 @@ form{overflow-y: scroll;}
 .blue-box3 {
   padding: 3rem 0rem;
   background-color: #4C40F7;
-  width: 80%;
-  height: 100%;
+  width: 84.5rem;
+height: 77.875rem;
+  /* width: 80%;
+  height: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
+  border-radius: 3.5rem;
+  /* border-radius: 25px; */
   color: white;
   text-align: center;
 }
@@ -1384,7 +1389,11 @@ form{overflow-y: scroll;}
   /* Blue text color */
   font-weight: bold;
   border: none;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  width: 19.4375rem;
+height: 3.5625rem;
+  margin-top: 4.37em;
+  margin-bottom: 4em;
   border-radius: 62px;
   padding: 10px 20px;
   font-size: 18px;
@@ -1477,13 +1486,18 @@ form{overflow-y: scroll;}
 }
 
 
+    .blue-box3 .content-top {
+    /* margin-top: 20px; */
+    margin-top: 2.32em;
+    margin-bottom: 9px;
+  }
     .blue-box3 .content-next {
     width: 50%;
     text-align: center;
     font-size: 20px;
     font-style: normal;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 9px;
+    margin-bottom: 74px;
     margin-left: 25%;
   }
 
@@ -1589,7 +1603,7 @@ form{overflow-y: scroll;}
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
+  width: 75%;
   height: 476px;
   margin-bottom: 75px;
   margin-top: 75px;
@@ -1780,6 +1794,7 @@ form{overflow-y: scroll;}
 }
 .contact-content {
   max-width: 50vw;
+  margin-right: 10%;
 }
 
 
@@ -1820,12 +1835,13 @@ form{overflow-y: scroll;}
 .quick {
   display: inline-block;
   vertical-align: top;
-  margin-right: 20px;
+  margin-right: 70px;
+  margin-left: 20px;
   /* Add margin between the two divs */
 }
 
 .reach h3 {
-  margin-left: -83%;
+  margin-left: -70%;
   margin-bottom: 15px;
 }
 .quick h3 {
@@ -1869,17 +1885,24 @@ form{overflow-y: scroll;}
 .newsletter-footer {
   text-align: center;
   padding: 20px;
+  margin-left: 3em;
   margin-top: -1em;
 }
 
 .newsletter-footer h2 {
-  margin-bottom: 20px;
+  margin-left: -1em;
+  margin-bottom: -20px;
   color: #ffffff;
 }
-
+.newsletter-footer p {
+  text-align: left;
+  margin-left: 3em;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
 .input-group {
   margin-bottom: 20px;
-  margin-left: -30px;
+  margin-left: 43px;
 }
 .input-group .btn-primary {
   margin-bottom: 18px;
@@ -1887,7 +1910,7 @@ form{overflow-y: scroll;}
 }
 
 .form-control {
-  width: 90%;
+  width: 313px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -1911,7 +1934,8 @@ form{overflow-y: scroll;}
 
 .footer-social-icons ul {
   list-style: none;
-  margin: 0;
+  margin-left: -9em;
+  /* margin: 0; */
   padding: 0;
   display: flex;
   justify-content: center;
@@ -1975,12 +1999,14 @@ form{overflow-y: scroll;}
 
 .newsletter-footer{
   margin-top:-2em;
+  margin-left:-2em;
   /* align-items: center; */
   justify-content: center;
 }
 
 .newsletter-footer h2 {
-  margin-bottom: 20px;
+  margin-bottom: -10px;
+  margin-left: 0.5em;
   font-size: 25px;
   color: #ffffff;
    justify-content: center;
@@ -2023,6 +2049,7 @@ form{overflow-y: scroll;}
   display: flex;
   justify-content: center;
   margin-bottom: 2em;
+  margin-left: 2em;
 }
 
 
