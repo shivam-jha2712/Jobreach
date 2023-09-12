@@ -697,6 +697,7 @@ letter-spacing: -1.11px;
 }
 .contact-content {
   max-width: 50vw;
+  margin-right: 10%;
 }
 .contact-form {
   text-align: center;
