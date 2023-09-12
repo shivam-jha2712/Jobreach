@@ -933,7 +933,7 @@ letter-spacing: -1.11px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-bottom: 10%;
   list-style: none;
 }
@@ -944,7 +944,7 @@ letter-spacing: -1.11px;
   justify-content: center;
   align-items: center;
   margin-top: 0%;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
   list-style: none;
 }
 
@@ -961,9 +961,9 @@ letter-spacing: -1.11px;
 
   /* 138.4% */
 }
-/* .contact-text{
+.contact-text{
   width: 28em;
-} */
+}
 .contact-reach {
   display: inline-block;
   vertical-align: top;
@@ -1020,6 +1020,9 @@ letter-spacing: -1.11px;
     margin-left: -11em;
   }
 
+  .contact-text{
+  width: 90vw;
+}
 
 }
 
