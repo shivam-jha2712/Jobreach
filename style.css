@@ -282,6 +282,7 @@ header .button.white:active {
   height: 90%;
   margin-left: 80%;
   transform: translateX(-50%);
+    overflow: hidden;
 }
 
 .banner .Banner-Image-2{
@@ -1369,7 +1370,7 @@ form{overflow-y: scroll;}
 .blue-box3 {
   padding: 3rem 0rem;
   background-color: #4C40F7;
-  width: 84.5rem;
+  width: 80.5rem;
 height: 77.875rem;
   /* width: 80%;
   height: 100%; */
@@ -1670,10 +1671,10 @@ height: 3.5625rem;
 
 
 .blue-box4  .content-top {
-  width: 803px;
+  width: 673px;
   color: var(--mindful-gray-white, #FFF);
   text-align: center;
-  font-size: 52px;
+  font-size: 47px;
   width: 80%;
   font-style: normal;
   font-weight: 500;
@@ -2190,7 +2191,6 @@ line-height: 2.12044rem;
 }
 
 
-
 .data-1-content button {
   background-color: transparent;
   color: #4C40F7;
@@ -2214,7 +2214,7 @@ line-height: 2.12044rem;
   .data-1-heading {
     color: var(--mindful-gray-white, #000000);
     text-align: left;
-  font-size: 52px;
+  font-size: 47px;
   font-style: normal;
   font-weight: 600;
   line-height: 80px;
@@ -2228,13 +2228,14 @@ line-height: 2.12044rem;
     width: 100%;
     color: var(--mindful-gray-white, #000000);
     text-align: left;
-  font-size: 52px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 500;
   line-height: 80px;
   /* 153.846% */
   letter-spacing: -1.56px;
   margin-bottom: 2rem;
+  margin-left: -10%;
   }
 
 /* .data-1-heading {
@@ -2369,6 +2370,11 @@ line-height: 2.12044rem;
 }
 
 
+.data-2-content .btn-data{
+  margin-bottom: 1.5em;
+  margin-left: -0.5rem;
+}
+
 /* Media Query for 768px screen width */
 @media screen and (max-width: 768px) {
     .data-1-heading {
@@ -2485,7 +2491,7 @@ line-height: 2.12044rem;
 }
 
 .data-2-heading {
-  margin: -5% 10%;
+  margin: -5% 0%;
 }
 
 .data-2-img {
@@ -2499,7 +2505,7 @@ line-height: 2.12044rem;
 }
 
 .data-2 .contact-reach {
-  margin-left: 10%;
+  margin-left: 0%;
   width: 100%;
   display: inline-block;
   vertical-align: top;
@@ -2517,6 +2523,7 @@ margin-bottom: -50px;
   list-style: none;
   /* Remove list style */
   padding-left: 0;
+  /* margin-left: -5%; */
   /* Remove default padding */
   margin-top: 10%;
   /* Remove default margin */
@@ -2525,7 +2532,8 @@ margin-bottom: -50px;
 .data-2 .contact-reach ul li {
   margin-bottom: 15px;
   font-size: 20px;
-  width: 803px;
+  width: 693px;
+  /* width: 100%; */
   font-style: normal;
   font-weight: 600;
   line-height: 57px;
