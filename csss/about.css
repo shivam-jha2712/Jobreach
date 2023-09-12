@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif, "Urbanist";
 }
+
 body {
   background: #ffffff;
   min-height: 100vh;
@@ -167,12 +169,11 @@ header .button.white:active {
 
 /* Media query for mobile */
 @media screen and (max-width: 768px) {
-  .mobile-menu {
-    display: flex;
+    .mobile-menu {
+    display: flex ;
     justify-content: space-between;
   }
-
-  header {
+  header{
     background-color: white;
   }
 
@@ -220,7 +221,6 @@ header .button.white:active {
     transition: left 1s cubic-bezier(0.19, 1, 0.22, 1);
     /* Add smooth left transition */
   }
-
   .hidden {
     display: none;
   }
@@ -252,6 +252,7 @@ header .button.white:active {
 
 
 
+
 .banner {
   position: relative;
   margin-top: 109px;
@@ -261,28 +262,24 @@ header .button.white:active {
   overflow: hidden;
 }
 
-.banner img {
+/* .banner img {
   width: 1055px;
   height: 706px;
-  /* width: 90%;
-    height: 60%; */
-  margin-left: 38%;
+    background-size: 68% auto;
+  margin-left: 50%;
   object-fit: cover;
+} */
+
+
+.banner img {
+  object-fit: cover;
+  width: 70%;
+  height: 60%;
+  margin-left: 65%;
+  transform: translateX(-50%);
 }
 
-/* .banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1440px;
-    height: 706px;
-    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  } */
+
 
 .slide {
   overflow: hidden;
@@ -294,25 +291,23 @@ header .button.white:active {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 1440px; */
-  width: 90%;
-  height: 706px;
-  background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
+/* width: 1440px; */
+  width: 70%;
+  height: 60%;
+    background: linear-gradient(87deg, #4C40F7 40.86%, rgba(76, 64, 247, 0.00) 87.89%);
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
   opacity: 0;
-  z-index: 1;
-  /* Ensure overlay is above the image */
+  z-index: 1; /* Ensure overlay is above the image */
 }
 
 .overlay-content {
   padding: 20px;
   position: relative;
-  z-index: 2;
-  /* Ensure content is above the overlay */
+  z-index: 2; /* Ensure content is above the overlay */
 }
 
 /* Add hover effect to display the overlay */
@@ -321,11 +316,10 @@ header .button.white:active {
 }
 
 .overlay-content {
-  margin-left: -25em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* Align content to the left */
+  margin-left: -1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
 }
 
 .overlay-content button {
@@ -341,6 +335,16 @@ header .button.white:active {
 
 .overlay-content #banner-text {
   text-align: left;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > h1{
+  text-align: left;
+  font-size: 52px;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > p{
+  text-align: left;
+  font-size: 20px;
   /* Align text content to the left */
 }
 
@@ -403,7 +407,6 @@ header .button.white:active {
   cursor: pointer;
 }
 
-
 .banner .button.white {
   background-color: white;
   /* White color for "Get Hired" */
@@ -419,15 +422,16 @@ header .button.white:active {
   /* Slower transition */
 }
 
+
 .banner .btn-data {
   background-color: transparent;
   /* Light green color for "Hire Talent" */
   color: #ffffff;
   border: 1px solid white;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 50px;
-  padding: 10px 12px;
+  padding: 2px 12px;
   margin: 10px 5px;
   cursor: pointer;
 }
@@ -438,6 +442,7 @@ header .button.white:active {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  margin-left: 25px;
 }
 
 .star-rating .star {
@@ -464,10 +469,10 @@ header .button.white:active {
 }
 
 .rating-section .company-logo {
-  margin-left: -115px;
-  margin-bottom: -20px;
-  width: 16px;
-  height: 16px;
+  margin-left: -100px;
+  margin-bottom: -25px;
+  width: 23px;
+  height: 23px;
   vertical-align: middle;
 }
 
@@ -480,11 +485,12 @@ header .button.white:active {
 
 .separator {
   width: 50px;
-  padding-right: 20px;
+  padding-right: 25px;
   height: 50px;
   color: #fff;
 
 }
+
 
 /* Keep your existing CSS for the banner and overlay */
 
@@ -496,14 +502,6 @@ header .button.white:active {
   transition: transform 0.5s ease;
 }
 
-/* .slide {
-  flex: 0 0 100%;
-} */
-
-/* .banner-slider img {
-  width: 100%;
-  height: auto;
-} */
 
 /* Add styles for the slider navigation */
 .slider-nav {
@@ -533,17 +531,7 @@ header .button.white:active {
   border-radius: 50%;
 }
 
-/* .prev-slide,
-.next-slide {
-  background: rgba(255, 255, 255, 0.5); 
-  color : transparent;
-  border: none;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-} */
+
 
 
 
@@ -587,15 +575,17 @@ header .button.white:active {
     /* Adjust height for responsiveness */
   }
 
-  .banner img {
-    width: 27em;
-        margin-left: 1%;
-    overflow-x: visible;
-    /* margin-left: 0; */
-  }
+.banner img {
+  width: 1055px;
+  height: 706px;
+    background-size: 68% auto;
+  margin-left: 50%;
+  object-fit: cover;
+}
 
   .banner-overlay {
     width: 100%;
+    height: 99%;
     background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 120%);
   }
 
@@ -621,11 +611,27 @@ header .button.white:active {
     justify-content: center;
     align-items: center;
     height: 100%;
-    
     /* Ensure the container takes up the full height of its parent */
   }
 
-  #banner-text h1{
+
+  .overlay-content #banner-text > h1{
+  text-align: center;
+  font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 132.143% */
+letter-spacing: -1.12px;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > p{
+  text-align: center;
+  font-size: 18px;
+  width: 90%;
+  /* Align text content to the left */
+}
+
+    #banner-text h1{
     text-align: center;
 /* font-family: Satoshi; */
 font-size: 27.741px;
@@ -634,13 +640,13 @@ font-weight: 700;
 line-height: 36.658px; /* 132.143% */
 letter-spacing: -1.11px;
   }
+
   #banner-text h1,
   #banner-text p {
     text-align: center;
     /* Center-align both heading and paragraph */
     margin: 10px 0;
     /* Add margin for spacing between elements */
-    
   }
 
   #banner-text p {
@@ -653,156 +659,14 @@ letter-spacing: -1.11px;
   }
 
 
-  /* Additional responsive styles can be added here */
+  .slider-nav {
+   margin-top: 5em;
+}
+  
+
 }
 
 
-
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  list-style: none;
-}
-
-.contact .contact-heading {
-  margin-bottom: 5%;
-}
-
-.contact>.contact-text {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34.6px;
-
-  /* 138.4% */
-}
-
-.contact-text {
-  width: 28em;
-}
-
-.contact-reach {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  /* Add margin between the two divs */
-}
-
-
-.contact-reach ul {
-  list-style: none;
-  /* Remove list style */
-  padding-left: 0;
-  /* Remove default padding */
-  margin-top: 15px;
-  /* Remove default margin */
-}
-
-.contact-reach ul li {
-  margin-bottom: 15px;
-  font-size: 18px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  /* Align items vertically within each list item */
-}
-
-.contact-reach ul li img {
-  margin-right: 20px;
-  /* Add space between image and content */
-}
-
-.contact-reach a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.contact-content {
-  max-width: 50vw;
-}
-
-.contact-form {
-  text-align: center;
-  padding: 20px;
-  width: 459px;
-  height: 150%;
-  background-color: #fffdfd;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  /* Adjust the font size as needed */
-  text-align: left;
-  color: #333;
-}
-
-.contact-form .rect2 {
-  width: 40%;
-  height: 5px;
-  background: #1CC382;
-  border-radius: 3px;
-  margin-top: -4%;
-  margin-bottom: 4%;
-}
-
-.contact-form label {
-  display: block;
-  text-align: left;
-  margin-bottom: 3px;
-  font-size: 14px;
-  color: #333;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.contact-form .form-control {
-  width: 100%;
-  margin-left: 0%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  background-color: #1CC382;
-  color: #fff;
-  border: none;
-  width: 90%;
-  height: 43px;
-  margin-left: -10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.4s, transform 0.4s;
-  /* Slower transition */
-}
-
-/* Add :hover styles */
-.btn-secondary:hover {
-  transform: translateY(-2px);
-  /* Move the button slightly upwards on hover */
-}
-
-/* Add :active styles */
-.btn-secondary:active {
-  background-color: #159b60;
-  /* Darker green for button when pressed */
-  transform: scale(0.95);
-  /* Scale down the button slightly when pressed */
-}
 
 
 /* FORM COMPLETE CSS */
@@ -912,14 +776,13 @@ letter-spacing: -1.11px;
     overflow-y: scroll;
   } */
 
-  .pop-up-Positioning {
-    margin-top: 8em;
-  }
-
   .pop-up-Positioning1 {
     margin-top: 8em;
   }
 
+  .pop-up-Positioning {
+    margin-top: 8em;
+  }
 
   .contact-text {
     width: 90vw;
@@ -944,6 +807,7 @@ letter-spacing: -1.11px;
     align-items: center;
   }
 
+  
   .contact-heading>img {
     width: 80vw;
   }
@@ -1038,6 +902,23 @@ letter-spacing: -1.11px;
     margin-top: 8em;
     /* overflow: scroll; */
   }
+}
+
+
+
+.banner .button.white {
+  background-color: white;
+  /* White color for "Get Hired" */
+  color: #4CAF50;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
 }
 
 
@@ -1159,13 +1040,14 @@ margin-left: 30%;
   display: flex;
   justify-content:center;
   background-color: #4C40F7;
-  width: 95%;
+  width: 80%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 62px;
   padding: 40px;
   color: white;
   text-align: center;
 }
+
 
 
 .content-top {
@@ -1175,10 +1057,11 @@ margin-left: 30%;
   text-align: center;
   font-size: 52px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 80px;
   letter-spacing: -1.56px;
   margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 
@@ -1210,6 +1093,7 @@ margin-left: 30%;
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 5%;
 }
 
 .card2 {
@@ -1265,8 +1149,11 @@ margin-left: 30%;
 }
 
 .card2 .service {
+  width: 75%;
+  text-align: left;
   font-size: 16px;
-  color: #555;
+  font-weight: 500;
+  color: #000000;
   margin-top: 15px;
 }
 
@@ -1306,7 +1193,7 @@ margin-left: 30%;
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      background-color: #4C40F7;
+      background-color: transparent;
       position: absolute;
       left: calc(20% - 53px);
       z-index: 1;
@@ -1320,11 +1207,13 @@ margin-left: 30%;
   }
 
   .circle2> img{
-    width: 100%;
+    width: 80%;
+    margin-top: 8rem;
+    margin-left: 2rem;
   }
   .card2{
     min-width: 80vw !important;
-    height: 28rem;
+    height: 35rem;
   }
 }
 
@@ -1333,19 +1222,17 @@ margin-left: 30%;
 
 .green-box2 {
     background-color: #EFFFF9;
-    /* width: 1352px; */
     width: 100%;
     height: 516px;
-    /* margin-left: 75px; */
     margin-bottom: 75px;
-    /* margin-top: 75px; */
-    margin-top: -22.3em;
+    margin-top: -17.3em;
     border-radius: 25px;
     padding: 40px;
     color: white;
     text-align: center;
     list-style: none;
 }
+
 
 .green-box2 .container2{
   max-width: 1200px;
@@ -2433,7 +2320,7 @@ line-height: 65px;
 }
 
 .content-top > span {
-  color: #159b60;
+  color: #3ceca8;
 }
 
 

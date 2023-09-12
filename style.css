@@ -278,9 +278,9 @@ header .button.white:active {
 
 .banner img {
   object-fit: cover;
-  width: 95%;
-  height: 75%;
-  margin-left: 85%;
+  width: 80%;
+  height: 80%;
+  margin-left: 80%;
   transform: translateX(-50%);
 }
 
@@ -366,7 +366,7 @@ header .button.white:active {
 .overlay-content p {
   text-align: left;
   /* Align paragraph to the left */
-  width: 500px;
+  width: 600px;
   margin-bottom: 20px;
   /* Add margin to create spacing between elements */
 }
@@ -1236,7 +1236,7 @@ form{overflow-y: scroll;}
   background-color: #4C40F7;
   width: 80%;
   height: 100%;
-  border-radius: 25px;
+  border-radius: 62px;
   padding: 40px;
   color: white;
   text-align: center;
