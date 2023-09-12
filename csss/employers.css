@@ -256,8 +256,10 @@ header .button.white:active {
 .banner {
   position: relative;
   margin-top: 109px;
+  margin-bottom: 10%;
   width: 100%;
-  height: 1064px;
+  /* height: 1064px; */
+  height: 100%;
   /* Set the desired height for the banner */
   overflow: hidden;
 }
@@ -317,7 +319,7 @@ header .button.white:active {
 }
 
 .overlay-content {
-  margin-left: -25em;
+  margin-left: -10em;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
