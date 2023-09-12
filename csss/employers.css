@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif, "Urbanist";
 }
+
 body {
   background: #ffffff;
   min-height: 100vh;
@@ -250,6 +252,7 @@ header .button.white:active {
 
 
 
+
 .banner {
   position: relative;
   margin-top: 109px;
@@ -259,29 +262,25 @@ header .button.white:active {
   overflow: hidden;
 }
 
-.banner img {
+/* .banner img {
   width: 1055px;
   height: 706px;
-  /* width: 90%;
-    height: 60%; */
-  margin-left: 38%;
+    background-size: 68% auto;
+  margin-left: 50%;
   object-fit: cover;
+} */
+
+
+.banner img {
+  object-fit: cover;
+  width: 80%;
+  height: 80%;
+  margin-left: 30%;
+  transform: translateX(-50%);
   transform: scaleX(-1);
 }
 
-/* .banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1440px;
-    height: 706px;
-    background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 82%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-  } */
+
 
 .slide {
   overflow: hidden;
@@ -294,9 +293,9 @@ header .button.white:active {
   top: 0;
   left: 0;
 /* width: 1440px; */
-    width: 90%;
-    height: 706px;
-    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 67.89%);
+  width: 80%;
+  height: 80%;
+    background: linear-gradient(87deg, #4C40F7 40.86%, rgba(76, 64, 247, 0.00) 87.89%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,6 +336,16 @@ header .button.white:active {
 
 .overlay-content #banner-text {
   text-align: left;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > h1{
+  text-align: left;
+  font-size: 52px;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > p{
+  text-align: left;
+  font-size: 20px;
   /* Align text content to the left */
 }
 
@@ -399,15 +408,31 @@ header .button.white:active {
   cursor: pointer;
 }
 
+.banner .button.white {
+  background-color: white;
+  /* White color for "Get Hired" */
+  color: #4CAF50;
+  border-radius: 50px;
+  padding: 10px 35px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #4CAF50;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s;
+  /* Slower transition */
+}
+
+
 .banner .btn-data {
   background-color: transparent;
   /* Light green color for "Hire Talent" */
   color: #ffffff;
   border: 1px solid white;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 50px;
-  padding: 10px 12px;
+  padding: 2px 12px;
   margin: 10px 5px;
   cursor: pointer;
 }
@@ -449,7 +474,6 @@ header .button.white:active {
   width: 16px;
   height: 16px;
   vertical-align: middle;
-  transform: scaleX(1);
 }
 
 .star-rating {
@@ -477,14 +501,6 @@ header .button.white:active {
   transition: transform 0.5s ease;
 }
 
-/* .slide {
-  flex: 0 0 100%;
-} */
-
-/* .banner-slider img {
-  width: 100%;
-  height: auto;
-} */
 
 /* Add styles for the slider navigation */
 .slider-nav {
@@ -514,17 +530,7 @@ header .button.white:active {
   border-radius: 50%;
 }
 
-/* .prev-slide,
-.next-slide {
-  background: rgba(255, 255, 255, 0.5); 
-  color : transparent;
-  border: none;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 50%;
-} */
+
 
 
 
@@ -568,13 +574,13 @@ header .button.white:active {
     /* Adjust height for responsiveness */
   }
 
-  .banner img {
-    width: 27em;
-        /* margin-left: 0; */
-    margin-left: -68%;
-    overflow-x: visible;
-    transform: scaleX(-1);
-  }
+.banner img {
+  width: 1055px;
+  height: 706px;
+    background-size: 68% auto;
+  margin-left: 50%;
+  object-fit: cover;
+}
 
   .banner-overlay {
     width: 100%;
@@ -605,6 +611,24 @@ header .button.white:active {
     height: 100%;
     /* Ensure the container takes up the full height of its parent */
   }
+
+
+  .overlay-content #banner-text > h1{
+  text-align: left;
+  font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 25px; /* 132.143% */
+letter-spacing: -1.12px;
+  /* Align text content to the left */
+}
+.overlay-content #banner-text > p{
+  text-align: center;
+  font-size: 18px;
+  width: 90%;
+  /* Align text content to the left */
+}
+
     #banner-text h1{
     text-align: center;
 /* font-family: Satoshi; */
@@ -633,165 +657,25 @@ letter-spacing: -1.11px;
   }
 
 
-  /* Additional responsive styles can be added here */
+  .slider-nav {
+   margin-top: 5em;
 }
-
-
   
-.contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  list-style: none;
-}
 
-.contact .contact-heading {
-  margin-bottom: 5%;
-}
-
-.contact >.contact-text {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 34.6px;
-
-  /* 138.4% */
-}
-.contact-text{
-  width: 28em;
-}
-.contact-reach {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 20px;
-  /* Add margin between the two divs */
 }
 
 
-.contact-reach ul {
-  list-style: none;
-  /* Remove list style */
-  padding-left: 0;
-  /* Remove default padding */
-  margin-top: 15px;
-  /* Remove default margin */
-}
-
-.contact-reach ul li {
-  margin-bottom: 15px;
-  font-size: 18px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  /* Align items vertically within each list item */
-}
-
-.contact-reach ul li img {
-  margin-right: 20px;
-  /* Add space between image and content */
-}
-
-.contact-reach a {
-  text-decoration: none;
-  color: #000000;
-}
-.contact-content {
-  max-width: 50vw;
-}
-.contact-form {
-  text-align: center;
-  padding: 20px;
-  width: 459px;
-  height: 150%;
-  background-color: #fffdfd;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.contact-form h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  /* Adjust the font size as needed */
-  text-align: left;
-  color: #333;
-}
-
-.contact-form .rect2 {
-  width: 40%;
-  height: 5px;
-  background: #1CC382;
-  border-radius: 3px;
-  margin-top: -4%;
-  margin-bottom: 4%;
-}
-
-.contact-form label {
-  display: block;
-  text-align: left;
-  margin-bottom: 3px;
-  font-size: 14px;
-  color: #333;
-}
-
-.form-group {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.contact-form .form-control {
-  width: 100%;
-  margin-left: 0%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  font-size: 14px;
-}
-
-.btn-secondary {
-  padding: 10px 20px;
-  background-color: #1CC382;
-  color: #fff;
-  border: none;
-  width: 90%;
-  height: 43px;
-  margin-left: -10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.4s, transform 0.4s;
-  /* Slower transition */
-}
-
-/* Add :hover styles */
-.btn-secondary:hover {
-  transform: translateY(-2px);
-  /* Move the button slightly upwards on hover */
-}
-
-/* Add :active styles */
-.btn-secondary:active {
-  background-color: #159b60;
-  /* Darker green for button when pressed */
-  transform: scale(0.95);
-  /* Scale down the button slightly when pressed */
-}
 
 
 /* FORM COMPLETE CSS */
 
-.formContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.formContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  overflow: scroll;
 }
+
 
 .contact-form {
   text-align: center;
@@ -875,48 +759,53 @@ letter-spacing: -1.11px;
 
 
 /* Media for Forms in Mobile */
-@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
 
 
-  .contact-form{
+  .contact-form {
     width: 90vw;
+    /* height: 100%; */
     max-height: 715px;
     /* margin: 0 auto; */
+    /* overflow-y: scroll; */
+  }
+
+  /* form {
     overflow-y: scroll;
-  }
-form{overflow-y: scroll;}
+  } */
 
-  .pop-up-Positioning1{
-    margin-top:8em;
-  }
-  .pop-up-Positioning{
-    margin-top:8em;
+  .pop-up-Positioning1 {
+    margin-top: 8em;
   }
 
-      .contact-text{
+  .pop-up-Positioning {
+    margin-top: 8em;
+  }
+
+  .contact-text {
     width: 90vw;
   }
 
 
 
-  .formContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow: scroll;
-}
+  .formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* overflow: scroll; */
+  }
 
 
 
   .contact-reach {
     margin-right: 0px;
     align-items: center;
-}
-  .contact-heading >img{
+  }
+
+  .contact-heading>img {
     width: 80vw;
   }
 
@@ -924,88 +813,97 @@ form{overflow-y: scroll;}
 
 
 .pop-up-Positioning {
-background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-    width: 100%;
-    height: 110vh;
-    display: none;
-    position: fixed;
-    bottom: 0rem;
-    top: -12rem;
-    right: 0rem;
-    left: 0rem;
-    z-index: 100;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(5px);
+  /* Apply a blur effect to the background */
+  width: 100%;
+  height: 110vh;
+  display: none;
+  position: fixed;
+  bottom: 0rem;
+  top: -12rem;
+  right: 0rem;
+  left: 0rem;
+  z-index: 100;
 }
 
-.closebutton{
-    width: 100%;
-    text-align: right;
-    font-size: 2rem;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    
+.closebutton {
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+
 }
-.closebutton:hover{
-    cursor: pointer;
+
+.closebutton:hover {
+  cursor: pointer;
 }
-.hiring{
-    height:100%
+
+.hiring {
+  height: 100%
 }
 
 
 /* Second Form */
-.pop-up-Positioning1{
-background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-    backdrop-filter: blur(5px); /* Apply a blur effect to the background */
-    width: 100%;
-    height: 110vh;
-    display: none;
-    position: fixed;
-    bottom: 0rem;
-    top: -13rem;
-    right: 0rem;
-    left: 0rem;
-    z-index: 100;
+.pop-up-Positioning1 {
+  background-color: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white background */
+  backdrop-filter: blur(5px);
+  /* Apply a blur effect to the background */
+  width: 100%;
+  height: 110vh;
+  display: none;
+  position: fixed;
+  bottom: 0rem;
+  top: -13rem;
+  right: 0rem;
+  left: 0rem;
+  z-index: 100;
 }
 
-.closebutton1{
-    width: 100%;
-    text-align: right;
-    margin-bottom: -1em;
-    font-size: 2rem;
-    font-family: "Helvetica Neue",Helvetica,Arial;
-    
-}
-.closebutton1:hover{
-    cursor: pointer;
+.closebutton1 {
+  width: 100%;
+  text-align: right;
+  margin-bottom: -1em;
+  font-size: 2rem;
+  font-family: "Helvetica Neue", Helvetica, Arial;
+
 }
 
-.getHired{
-    height:100%
+.closebutton1:hover {
+  cursor: pointer;
+}
+
+.getHired {
+  height: 100%
 }
 
 
-@media screen and (max-width: 768px)
-{
-  .contact-form{
+@media screen and (max-width: 768px) {
+  .contact-form {
     width: 90vw;
     max-height: 765px;
     /* display: flex; */
     /* flex-direction: row; */
     margin: 0 auto;
-    overflow: scroll;
+    /* overflow: scroll; */
   }
 
-  .pop-up-Positioning1{
-    margin-top:8em;
-    overflow: scroll;
+  .pop-up-Positioning1 {
+    margin-top: 8em;
+    /* overflow: scroll; */
   }
 
-    .pop-up-Positioning{
-    margin-top:8em;
-    overflow: scroll;
+  .pop-up-Positioning {
+    margin-top: 8em;
+    /* overflow: scroll; */
   }
 }
 
+
+
+/* FORM CSS ENDS HERE  */
 
 
 
