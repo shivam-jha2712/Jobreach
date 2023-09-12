@@ -2000,8 +2000,8 @@ font-size: 50px;
 font-style: normal;
 font-weight: 900;
 line-height: 60px; 
-margin-top: 3em;
-margin-bottom: 2em;
+margin-top: 1em;
+margin-bottom: 1em;
 /* 120% */
 }
 
@@ -2154,7 +2154,8 @@ font-style: normal;
 font-weight: 900;
 line-height: 37px; /* 132.143% */
 text-transform: capitalize;
-margin-top: -2em;
+margin-top: 0.5em;
+margin-bottom: -0.5em;
 }
 .container3{
   /* margin-bottom: em; */
