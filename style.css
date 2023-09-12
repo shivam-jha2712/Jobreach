@@ -2471,9 +2471,10 @@ form{overflow-y: scroll;}
   /* Add margin between the two divs */
 }
 
-/* .dataDream-job-wrapper{
-  
-} */
+.dataDream-job-wrapper{
+margin-top: -50px;  
+margin-bottom: -50px;  
+}
 
 .data-2 .contact-reach ul {
   list-style: none;
