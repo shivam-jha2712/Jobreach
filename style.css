@@ -278,9 +278,10 @@ header .button.white:active {
 
 .banner img {
   object-fit: cover;
-  width: 80%;
+  width: 90%;
   height: 90%;
-  margin-left: 80%;
+  margin-top: -5%;
+  margin-left: 85%;
   transform: translateX(-50%);
     overflow: hidden;
 }
@@ -305,7 +306,7 @@ header .button.white:active {
 /* width: 1440px; */
     width: 90%;
     height: 706px;
-    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 62.89%);
+    background: linear-gradient(87deg, #4C40F7 45.86%, rgba(76, 64, 247, 0.00) 72.89%);
   display: flex;
   justify-content: center;
   align-items: center;
