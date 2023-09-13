@@ -1087,9 +1087,10 @@ form{overflow-y: scroll;}
 }
 
 
-.containerExpert .data-1-content{
-  margin-left: 5%;
-} 
+/* .containerExpert .data-1-content{
+  margin-left: 8%;
+  overflow: hidden;
+}  */
 .containerExpert .data-1-img{
   margin-left: -20%;
 } 
@@ -1112,15 +1113,15 @@ form{overflow-y: scroll;}
   }
 
     .data-1 .contact-reach ul li {
-    font-size: 14px;
+    font-size: 16px;
     width: 343px;
-    margin-left: -3em;
+    margin-left: -1em;
 
     /* Adjust font size for smaller screens */
   }
   .data-1 .contact-reach ul li img{
     font-size: 14px;
-    margin-left: 1em;
+    margin-left: 3em;
     /* width: 353px; */
     /* Adjust font size for smaller screens */
   }
@@ -2423,7 +2424,7 @@ line-height: 2.12044rem;
     font-weight: 500;
     line-height: 37px;
     letter-spacing: -1.56px;
-    margin-left: 1.0em;
+    margin-left: 2.0em;
     margin-top: 20px;
     margin-bottom: 0px;
   }
@@ -2690,7 +2691,7 @@ margin-bottom: -1rem;
     display: flex;
     flex-direction: column;
     width: 99%;
-    padding: 1rem;
+    padding: 2rem;
     }
   
   .blue-box2 .container2 {
