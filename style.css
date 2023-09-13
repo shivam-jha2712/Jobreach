@@ -577,7 +577,7 @@ header .button.white:active {
 
 .banner img {
   width: 1055px;
-  height: 706px;
+  height: 710px;
     background-size: 68% auto;
   margin-left: 50%;
   object-fit: cover;
@@ -587,6 +587,12 @@ header .button.white:active {
     width: 100%;
     background: linear-gradient(88deg, #4C40F7 0%, rgba(76, 64, 247, 0.00) 120%);
   }
+
+  .banner .Banner-Image-2{
+  margin-left: 50%;
+  width: 100%;
+  height: 105%;
+}
 
   .overlay-content {
     margin-left: 0;
