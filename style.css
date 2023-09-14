@@ -2185,7 +2185,6 @@ line-height: 2.12044rem;
   margin-top: 1.1em;
   height: 43px;
 }
-
 }
 
 
@@ -2809,6 +2808,7 @@ margin-top: 2rem;
   /* font-size: 18px; */
 }
 .data .data-text{
+  max-width: 363px;
   text-align: center;
   font-size: 16px;
 }
@@ -2879,4 +2879,87 @@ margin-top: 2rem;
     display: flex;
     flex-direction: column;
   }
+}
+
+
+
+
+.popup-newsletter .overlay-pop-up{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  display: none;
+}
+
+.popup-newsletter .popup-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: #fff;
+  border: 1px solid black;
+  width: 450px;
+  height: 250px;
+  z-index: 7;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 35px;
+}
+
+/* .popup-newsletter .close-btn-popup{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 15;
+  cursor: pointer;
+} */
+
+.popup-newsletter .btn-secondary{
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.popup-newsletter.active .overlay-pop-up{
+display: block;
+}
+
+.popup-newsletter.active .popup-content
+{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-newsletter h1 {
+    color: #159b60; /* Change the heading color to green */
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.popup-newsletter #caution {
+    font-size: 12px; /* Change the font size of the last paragraph to smaller */
+    color: #f74040;
+}
+
+@media screen and (max-width: 768px) {
+  .popup-newsletter .popup-content{
+  width: 363px;
+  height: 250px;
+}
 }

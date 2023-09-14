@@ -11,6 +11,20 @@
 
 <body>
 
+    <!-- Pop-up for newsletter -->
+    <section class="popup-newsletter" id="popup-1" onclick="togglePopup()">
+        <div class="overlay-pop-up" onclick="togglePopup()">
+            <div class="popup-content">
+                <h1>CONGRATULATIONS!</h1>
+                <p>You have successfully subscribed for regular job updates.</p>
+                <!-- <span id="caution">click anywhere outside to exit</s> -->
+                <div class="btn btn-secondary" onclick="togglePopup()">
+                    Great Success!!
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- popup form to Hiring -->
@@ -533,7 +547,7 @@
         <div class="blue-box4">
             <div class="container2">
                 <div class="content-top">
-                    Make Your Dream Job <br> into  <span id="green">Reality with Us.</span>
+                    Make Your Dream Job <br> into <span id="green">Reality with Us.</span>
                 </div>
                 <div class="content-next">
                     Whether you are a job seeker pursuing your next opportunity or an employer searching for the perfect
@@ -572,67 +586,68 @@
         </div>
     </section> -->
 
-    
 
-        <footer>
-            <div class="blue-box5-wrapper">
-                <div class="blue-box5">
-                    <div class="reach">
-                        <h3>Reach Us</h3>
-                        <ul>
-                            <li><img src="/assets/call.svg" alt="call"><a href="#"> +1294934292</a></li>
-                            <li><img src="/assets/mail.svg" alt="mail"><a href="#"> jobreach@inventstaffing.com</a></li>
-                            <li><img src="/assets/location.svg" alt="location"><a href="#"> USA : Intellectt Inc 517 US 1<br>
-                                    South, Suite 1115, Iselin, New Jersey<br> 08830, US
-                                </a></li>
-                        </ul>
-        
-                    </div>
-        
-                    <div class="quick">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="quick">
-                        <h3>Our Services</h3>
-                        <ul>
-                            <li><a href="#">For Job Seekers</a></li>
-                            <li><a href="#">For Employers</a></li>
-                        </ul>
-                    </div>
-        
+
+    <footer>
+        <div class="blue-box5-wrapper">
+            <div class="blue-box5">
+                <div class="reach">
+                    <h3>Reach Us</h3>
+                    <ul>
+                        <li><img src="/assets/call.svg" alt="call"><a href="#"> +1294934292</a></li>
+                        <li><img src="/assets/mail.svg" alt="mail"><a href="#"> jobreach@inventstaffing.com</a></li>
+                        <li><img src="/assets/location.svg" alt="location"><a href="#"> USA : Intellectt Inc 517 US
+                                1<br>
+                                South, Suite 1115, Iselin, New Jersey<br> 08830, US
+                            </a></li>
+                    </ul>
+
                 </div>
-                <div class="newsletter-footer">
-                    <h2>Join Our Newsletter</h2>
-        
 
-                        <form name="submit-to-google-sheet-2" class="input-group">
-                            <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
-                            <button type="submit" class="btn btn-primary">Subscribe</button>
-                        </form>
+                <div class="quick">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="quick">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">For Job Seekers</a></li>
+                        <li><a href="#">For Employers</a></li>
+                    </ul>
+                </div>
 
-                    <!-- <div class="input-group">
+            </div>
+            <div class="newsletter-footer">
+                <h2>Join Our Newsletter</h2>
+
+
+                <form name="submit-to-google-sheet-2" class="input-group">
+                    <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary" onclick="togglePopup()">Subscribe</button>
+                </form>
+
+                <!-- <div class="input-group">
                         <input type="text" class="form-control" placeholder="Enter your email">
                         <button class="btn btn-primary">Subscribe</button>
                     </div> -->
-        
-                    <p>* Will send you weekly updates for your<br> better tool management.</p>
-        
-                    <div class="footer-social-icons">
-                        <ul>
-                            <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
-                            <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
-                            <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
-        
-                        </ul>
-                    </div>
+
+                <p>* Will send you weekly updates for your<br> better tool management.</p>
+
+                <div class="footer-social-icons">
+                    <ul>
+                        <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
+                        <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
+                        <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
+
+                    </ul>
                 </div>
-        
             </div>
-        </footer>
+
+        </div>
+    </footer>
 
 
 
@@ -649,6 +664,20 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+
+<!-- Pop up for newsletter -->
+<script>
+    document.addEventListener('keydown', function (event) {
+        if (event.key === "Escape") {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    });
+
+    function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
 </script>
 <script src="/scriptss/seekers.js"></script>
 

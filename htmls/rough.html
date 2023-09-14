@@ -367,6 +367,19 @@
         </section> -->
 
 
+        <section class="popup-newsletter" id = "popup-1">
+            <div class="overlay-pop-up" onclick="togglePopup()">
+            <div class="popup-content">
+                <div class="close-btn-popup" onclick="togglePopup()">
+                    &times;
+                </div>
+                <h1>CONGRATULATIONS!</h1>
+                <p>You have successfully subscribed for regular job updates.</p>
+            </div>
+            </div>           
+        </section>
+
+        <button onclick="togglePopup()">Show Popup</button>
 
 
     <footer>
@@ -450,6 +463,19 @@
             goToSlide(currentIndex + 1);
         });
     });
+</script>
+
+
+<script>
+    function togglePopup(){
+        document.getElementById("popup-1").classList.toggle("active");
+    }
+
+     document.addEventListener('keydown', function (event) {
+            if (event.key === "Escape") {
+                document.getElementById("popup-1").classList.toggle("active");
+            }
+        });
 </script>
 
 </html>

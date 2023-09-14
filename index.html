@@ -19,7 +19,27 @@
         <div class="loader-hand"></div>
     </div> -->
 
+    <!-- Pop-up for newsletter -->
+    <section class="popup-newsletter" id="popup-1" onclick="togglePopup()">
+        <div class="overlay-pop-up" onclick="togglePopup()">
+            <div class="popup-content">
+                <h1>CONGRATULATIONS!</h1>
+                <p>You have successfully subscribed for regular job updates.</p>
+                <!-- <span id="caution">click anywhere outside to exit</s> -->
+                    <div class="btn btn-secondary" onclick="togglePopup()">
+                        Great Success!!
+                    </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- <div class="btn btn-secondary"  onclick="togglePopup()">
+            &times;
+        </div> -->
+
+    <!-- class="close-btn-popup" -->
+
+    <!-- <button onclick="togglePopup()">Show Popup</button> -->
 
 
 
@@ -146,7 +166,7 @@
             <li><a href="/htmls/employers.html">For Employers</a></li>
             <li><a href="/htmls/about.html">About us</a></li>
             <li><a href="/htmls/contact.html">Contact us</a></li>
-            <!-- <li><a class="active" href="/htmls/rough.html">Rough</a></li> -->
+            <li><a class="active" href="/htmls/rough.html">Rough</a></li>
             <li><button class="button button-onClick-gethired">Hire Talent</button></li>
             <li><button class="button white button-onClick-hireTalent">Get Hired</button></li>
         </ul>
@@ -610,12 +630,13 @@
                     Sign up for our job alerts and be the first to know about<br>new opportunities in your field.
                 </div>
 
+
                 <!-- If not needed remove the form section -->
                 <form name="submit-to-google-sheet" class="input-group">
                     <input type="text" class="form-control" placeholder="Enter your email" name="email" type="email"
                         placeholder="Email" required>
                     <!-- <input type="submit" value="Sign Up" class="btn btn-primary"> -->
-                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                    <button class="btn btn-primary" type="submit" onclick="togglePopup()">Sign Up</button>
                 </form>
 
             </div>
@@ -746,7 +767,7 @@
 
                 <form name="submit-to-google-sheet-2" class="input-group">
                     <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
-                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                    <button type="submit" class="btn btn-primary" onclick="togglePopup()">Subscribe</button>
                 </form>
 
                 <!--                     
@@ -849,6 +870,20 @@
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
     })
+</script>
+
+
+<!-- Pop up for newsletter -->
+<script>
+    document.addEventListener('keydown', function (event) {
+        if (event.key === "Escape") {
+            document.getElementById("popup-1").classList.toggle("active");
+        }
+    });
+
+    function togglePopup() {
+        document.getElementById("popup-1").classList.toggle("active");
+    }
 </script>
 
 <script src="./scriptss/form.js"></script>
