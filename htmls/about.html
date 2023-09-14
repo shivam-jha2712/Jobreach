@@ -150,7 +150,7 @@
                         <div id="banner-text">
                             <h1>
                                 Empowering the synergy <br>between top talent<br>
-                            
+
                                 and Progressive Companies
                             </h1>
 
@@ -295,7 +295,7 @@
                 <div class="seperator">
                     <img src="/assets/Seperator.png" alt="">
                 </div>
-                
+
                 <div class="content-next">
                     <p>Inventstaffing is a leading job agency, with a strategy to empower both individuals and
                         businesses
@@ -357,8 +357,8 @@
 
             <div class="container2">
                 <div class="content-top">
-                See What Our <span>Happy Clients &<br>
-                    Candidates</span> Say About Us
+                    See What Our <span>Happy Clients &<br>
+                        Candidates</span> Say About Us
                 </div>
                 <!-- <div class="union">
                     <img src="/assets/Union.png" alt="">
@@ -672,61 +672,79 @@
 
 
 
-        <footer>
-            <div class="blue-box5-wrapper">
-                <div class="blue-box5">
-                    <div class="reach">
-                        <h3>Reach Us</h3>
-                        <ul>
-                            <li><img src="/assets/call.svg" alt="call"><a href="#"> +1294934292</a></li>
-                            <li><img src="/assets/mail.svg" alt="mail"><a href="#"> jobreach@inventstaffing.com</a></li>
-                            <li><img src="/assets/location.svg" alt="location"><a href="#"> USA : Intellectt Inc 517 US 1<br>
-                                    South, Suite 1115, Iselin, New Jersey<br> 08830, US
-                                </a></li>
-                        </ul>
-        
-                    </div>
-        
-                    <div class="quick">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="quick">
-                        <h3>Our Services</h3>
-                        <ul>
-                            <li><a href="#">For Job Seekers</a></li>
-                            <li><a href="#">For Employers</a></li>
-                        </ul>
-                    </div>
-        
+    <footer>
+        <div class="blue-box5-wrapper">
+            <div class="blue-box5">
+                <div class="reach">
+                    <h3>Reach Us</h3>
+                    <ul>
+                        <li><img src="/assets/call.svg" alt="call"><a href="#"> +1294934292</a></li>
+                        <li><img src="/assets/mail.svg" alt="mail"><a href="#"> jobreach@inventstaffing.com</a></li>
+                        <li><img src="/assets/location.svg" alt="location"><a href="#"> USA : Intellectt Inc 517 US
+                                1<br>
+                                South, Suite 1115, Iselin, New Jersey<br> 08830, US
+                            </a></li>
+                    </ul>
+
                 </div>
-                <div class="newsletter-footer">
-                    <h2>Join Our Newsletter</h2>
-        
-                    <div class="input-group">
+
+                <div class="quick">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="quick">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="#">For Job Seekers</a></li>
+                        <li><a href="#">For Employers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="newsletter-footer">
+                <h2>Join Our Newsletter</h2>
+
+                <form name="submit-to-google-sheet-2" class="input-group">
+                    <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+
+                <!-- <div class="input-group">
                         <input type="text" class="form-control" placeholder="Enter your email">
                         <button class="btn btn-primary">Subscribe</button>
-                    </div>
-        
-                    <p>* Will send you weekly updates for your<br> better tool management.</p>
-        
-                    <div class="footer-social-icons">
-                        <ul>
-                            <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
-                            <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
-                            <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
-        
-                        </ul>
-                    </div>
+                    </div> -->
+
+                <p>* Will send you weekly updates for your<br> better tool management.</p>
+
+                <div class="footer-social-icons">
+                    <ul>
+                        <li><a href="#"><img src="/assets/linkedin.svg" alt=""></li>
+                        <li><a href="#"><img src="/assets/insta.svg" alt=""></li>
+                        <li><a href="#"><img src="/assets/facebook.svg" alt=""></li>
+
+                    </ul>
                 </div>
-        
             </div>
-        </footer>
+
+        </div>
+    </footer>
 
 </body>
+<!-- Footer Wala NewsLetter -->
+<script>
+    const scriptURL1 = 'https://script.google.com/macros/s/AKfycbwEe_e_B1piiSCTFg7oLDZx8jCiHyW-QSc_6rKbbZj32WullcFLpRQAYlNeMD-SZS1L/exec'
+    const form1 = document.forms['submit-to-google-sheet-2']
+
+    form1.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 <script src="/scriptss/about.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {

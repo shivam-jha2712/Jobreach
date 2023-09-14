@@ -608,10 +608,16 @@
                 <div class="newsletter-footer">
                     <h2>Join Our Newsletter</h2>
         
-                    <div class="input-group">
+
+                        <form name="submit-to-google-sheet-2" class="input-group">
+                            <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+
+                    <!-- <div class="input-group">
                         <input type="text" class="form-control" placeholder="Enter your email">
                         <button class="btn btn-primary">Subscribe</button>
-                    </div>
+                    </div> -->
         
                     <p>* Will send you weekly updates for your<br> better tool management.</p>
         
@@ -632,7 +638,18 @@
 
 
 </body>
+<!-- Footer Wala NewsLetter -->
+<script>
+    const scriptURL1 = 'https://script.google.com/macros/s/AKfycbwEe_e_B1piiSCTFg7oLDZx8jCiHyW-QSc_6rKbbZj32WullcFLpRQAYlNeMD-SZS1L/exec'
+    const form1 = document.forms['submit-to-google-sheet-2']
 
+    form1.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL1, { method: 'POST', body: new FormData(form1) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 <script src="/scriptss/seekers.js"></script>
 
 </html>
