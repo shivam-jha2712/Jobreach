@@ -609,14 +609,14 @@
                 <div class="data-text">
                     Sign up for our job alerts and be the first to know about<br>new opportunities in your field.
                 </div>
-                <form action="mailto:shivam.jha.2712@gmail.com" method="post" enctype="text/plain"> 
+                
                     <!-- If not needed remove the form section -->
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Enter your email">
-                        <input type="submit" value="Sign Up" class="btn btn-primary">
-                        <!-- <button class="btn btn-primary">Sign Up</button> -->
-                    </div>
-                </form>
+                    <form  name="submit-to-google-sheet" class="input-group">
+                        <input type="text" class="form-control" placeholder="Enter your email" name="email" type="email" placeholder="Email" required>
+                        <!-- <input type="submit" value="Sign Up" class="btn btn-primary"> -->
+                        <button class="btn btn-primary" type="submit">Sign Up</button>
+                    </form>
+                
             </div>
 
 
@@ -815,6 +815,18 @@
 
 
 
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbws1XomD3_HyrO9N7RoSgUNEi8Gvbz5Yj0Y0bJEsuwD8XBt4LDQE2FaV2TyOFQbLrOG/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
 </script>
 <script src="./scriptss/form.js"></script>
 
