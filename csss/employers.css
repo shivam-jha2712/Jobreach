@@ -789,14 +789,6 @@ letter-spacing: -1.11px;
     overflow-y: scroll;
   } */
 
-  .pop-up-Positioning1 {
-    margin-top: 8em;
-  }
-
-  .pop-up-Positioning {
-    margin-top: 8em;
-  }
-
   .contact-text {
     width: 90vw;
   }
@@ -837,7 +829,7 @@ letter-spacing: -1.11px;
   display: none;
   position: fixed;
   bottom: 0rem;
-  top: -12rem;
+  top: 0rem;
   right: 0rem;
   left: 0rem;
   z-index: 100;
@@ -856,7 +848,8 @@ letter-spacing: -1.11px;
 }
 
 .hiring {
-  height: 100%
+  height: 100%;
+  overflow: scroll;
 }
 
 
@@ -871,7 +864,7 @@ letter-spacing: -1.11px;
   display: none;
   position: fixed;
   bottom: 0rem;
-  top: -13rem;
+  top: 0rem;
   right: 0rem;
   left: 0rem;
   z-index: 100;
@@ -891,7 +884,8 @@ letter-spacing: -1.11px;
 }
 
 .getHired {
-  height: 100%
+  height: 100%;
+  overflow: scroll;
 }
 
 
@@ -906,12 +900,12 @@ letter-spacing: -1.11px;
   }
 
   .pop-up-Positioning1 {
-    margin-top: 8em;
+    margin-top: 0em;
     /* overflow: scroll; */
   }
 
   .pop-up-Positioning {
-    margin-top: 8em;
+    margin-top: 0em;
     /* overflow: scroll; */
   }
 }

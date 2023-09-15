@@ -952,8 +952,9 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 .closebutton:hover{
     cursor: pointer;
 }
-.hiring{
-    height:100%
+.hiring {
+  height: 100%;
+  overflow: scroll;
 }
 
 
@@ -984,9 +985,11 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
     cursor: pointer;
 }
 
-.getHired{
-    height:100%
+.getHired {
+  height: 100%;
+  overflow: scroll;
 }
+
 
 
 @media screen and (max-width: 768px)
