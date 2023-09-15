@@ -295,7 +295,7 @@ header .button.white:active {
 .banner .Banner-Image-2{
   margin-left: 65%;
   width: 70%;
-  height: 85%;
+  height: 105%;
 }
 
 
@@ -583,7 +583,7 @@ header .button.white:active {
 
 .banner img {
   width: 1055px;
-  height: 710px;
+  height: 725px;
     background-size: 68% auto;
   margin-left: 50%;
   object-fit: cover;
