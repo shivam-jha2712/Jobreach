@@ -1136,8 +1136,8 @@ letter-spacing: -1.11px;
   .blue-box3 .content-top {
     font-size: 2rem;
     /* padding: 0 0.5rem; */
-    line-height: 2rem;
-    margin-top: -2.5em;
+    line-height: 3rem;
+    margin-top: -3.5em;
   }
 
 
@@ -1409,7 +1409,7 @@ letter-spacing: -1.11px;
 
   .content-top {
     font-size: 2rem;
-    padding: 0 0.5rem;
+    /* padding: 0 0.5rem; */
     line-height: 2rem;
   }
 
@@ -1608,8 +1608,10 @@ letter-spacing: -1.11px;
   gap: 20px;
   /* Spacing between cards */
   max-width: 1064px;
+  margin-left: -3em;
   /* margin: 0 35px; */
-  margin: 0 auto;
+  /* margin: 0 auto; */ 
+  /* Use the just above one if needed */
 }
 
 
@@ -2197,12 +2199,12 @@ overflow-y: hidden;
 /* BLUE-BOX4 LADKI AND BUTTON */
 
 .blue-box4 img {
-  margin-top: -33.5%;
+  margin-top: -29.5%;
   margin-left: -320%;
   width: 84.4%;
   margin-bottom: -64px;
   padding-left: 1em;
-  padding-right: 1em;
+  padding-right: 3em;
   /* padding: 0 15%; */
   /* transform: scaleX(-1); */
 }
