@@ -1047,6 +1047,13 @@ background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background
 }
 
 @media screen and (max-width: 768px) {
+.contact-1 {
+
+  margin-top: 20%;
+
+}
+
+
     .contact-1 .formContainer{
   display: flex;
   flex-direction: column;
