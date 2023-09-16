@@ -1287,7 +1287,7 @@ form{overflow-y: scroll;}
 }
 
 .container2 .content-top{
-  margin-top:7%;
+  margin-top:4%;
   margin-bottom:5%;
 }
 
@@ -1504,7 +1504,7 @@ height: 3.5625rem;
 
     .blue-box3 .content-top {
     /* margin-top: 20px; */
-    margin-top: 2.32em;
+    margin-top: 1.02em;
     margin-bottom: 9px;
   }
     .blue-box3 .content-next {
@@ -2469,7 +2469,7 @@ line-height: 2.12044rem;
 
 .data-2 {
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 0%;
   background: linear-gradient(180deg, #F3F3FF 0%, rgba(248, 248, 255, 0.00) 100%);
 }
 
@@ -2589,7 +2589,11 @@ margin-bottom: -50px;
 }
 
 
-
+  .button-wrapper-job{
+    justify-content: center;
+    align-items: center;
+    margin-left: -3.5em;
+  }
 
 
 
