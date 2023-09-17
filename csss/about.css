@@ -846,8 +846,10 @@ letter-spacing: -1.11px;
 }
 
 .hiring {
+  margin-top: 1em;
+  margin-bottom: 7em;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 
@@ -883,8 +885,10 @@ letter-spacing: -1.11px;
 }
 
 .getHired {
+margin-top: 1em;
+  margin-bottom: 6em;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 

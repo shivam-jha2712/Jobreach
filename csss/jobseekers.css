@@ -814,14 +814,13 @@ letter-spacing: -1.11px;
 
 }
 
-
 .pop-up-Positioning {
   background-color: rgba(255, 255, 255, 0.2);
   /* Semi-transparent white background */
   backdrop-filter: blur(5px);
   /* Apply a blur effect to the background */
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: none;
   position: fixed;
   bottom: 0rem;
@@ -844,9 +843,12 @@ letter-spacing: -1.11px;
 }
 
 .hiring {
+  margin-top: 1em;
+  margin-bottom: 7em;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
+
 
 
 /* Second Form */
@@ -856,7 +858,7 @@ letter-spacing: -1.11px;
   backdrop-filter: blur(5px);
   /* Apply a blur effect to the background */
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   display: none;
   position: fixed;
   bottom: 0rem;
@@ -880,10 +882,11 @@ letter-spacing: -1.11px;
 }
 
 .getHired {
+margin-top: 1em;
+  margin-bottom: 6em;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
-
 
 
 @media screen and (max-width: 768px) {
