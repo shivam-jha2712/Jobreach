@@ -285,7 +285,7 @@ header .button.white:active {
   width: 70%;
   height: 60%;
   margin-left: 65%;
-  transform: translateX(-50%);
+  transform: translateX(-37%);
 }
 
 
@@ -303,7 +303,7 @@ header .button.white:active {
 /* width: 1440px; */
   width: 70%;
   height: 60%;
-    background: linear-gradient(87deg, #4C40F7 40.86%, rgba(76, 64, 247, 0.00) 87.89%);
+    background: linear-gradient(87deg, #4C40F7 60.86%, rgba(76, 64, 247, 0.00) 87.89%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,7 +325,7 @@ header .button.white:active {
 }
 
 .overlay-content {
-  margin-left: -1em;
+  margin-left: -5em;
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Align content to the left */
@@ -1526,11 +1526,14 @@ letter-spacing: -0.3px;
 .container3{
     display: flex;
     flex-direction: column;
-    /* margin-top:2em ;
-    margin-bottom:2em;
+    /*
     width: 90%;
+    */
+    margin-top:2em ;
+    border-radius: 62px;
+    margin-bottom:2em;
+    padding-bottom: 5em;
     border: 1px solid #000;
-    border-radius: 62px; */
   }
 
   .card1
