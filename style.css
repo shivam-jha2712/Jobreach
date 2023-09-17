@@ -1566,7 +1566,7 @@ height: 3.5625rem;
 
 
   .card3 .line {
-    width: 217px;
+    width: 317px;
     height: 1px;
     background-color: #000000;
     margin: 20px;
@@ -2596,9 +2596,33 @@ margin-bottom: -50px;
   }
 
 
+  .data-1-content .button-data-1{
+    margin-left: -0.3em;
+    margin-top: 0em;
+    background-color: #159b60;
+    color: #fff;
+    padding: 0.7em 1.4em;
+  }
+
 
 /* Media Query for 768px screen width */
 @media screen and (max-width: 768px) {
+  .data-1-content .button-data-1{
+    margin-left: 1.2em;
+    padding: 0.5em 1.2em;
+  }
+  
+  .data-1-content .button-data-1{
+    margin-left: 1.2em;
+    padding: 0.5em 1.2em;
+  }
+  
+  .data-1-content .button-data-1{
+    margin-left: 1.2em;
+    padding: 0.5em 1.2em;
+  }
+  
+  
   .button-wrapper-job{
     display: flex;
     flex-direction: column;
@@ -2730,6 +2754,15 @@ margin-top: 2rem;
     margin-bottom: -0.3em;
   }
 
+  
+  .data-3-content .button-data-1{
+    margin-left: 2.5em;
+    margin-top: 0em;
+    background-color: #159b60;
+    color: #fff;
+    padding: 0.5em 1.4em;
+  }
+
   .data-3-heading {
     margin: -5% 4%;
     /* Adjust heading margin for smaller screens */
@@ -2781,13 +2814,13 @@ margin-top: 2rem;
 
   .data-3 .contact-reach ul li {
     font-size: 14px;
-    width: 333px;
-    margin-left: -2em;
+    width: 353px;
+    margin-left: -2.7em;
     /* Adjust font size for smaller screens */
   }
   .data-3 .contact-reach ul li img{
     font-size: 14px;
-    margin-left: -0.5em;
+    margin-left: 1.5em;
     /* width: 353px; */
     /* Adjust font size for smaller screens */
   }
