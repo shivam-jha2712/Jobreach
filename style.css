@@ -2599,7 +2599,15 @@ margin-bottom: -50px;
   .data-1-content .button-data-1{
     margin-left: -0.3em;
     margin-top: 0em;
-    background-color: #159b60;
+    background-color: #1CC382;
+    color: #fff;
+    padding: 0.7em 1.4em;
+  }
+
+  .data-2-content .button-data-2{
+    margin-left: -0.3em;
+    margin-top: 0em;
+    background-color: #1CC382;
     color: #fff;
     padding: 0.7em 1.4em;
   }
@@ -2758,7 +2766,7 @@ margin-top: 2rem;
   .data-3-content .button-data-1{
     margin-left: 2.5em;
     margin-top: 0em;
-    background-color: #159b60;
+    background-color: #1CC382;
     color: #fff;
     padding: 0.5em 1.4em;
   }
