@@ -465,7 +465,7 @@
             <div class="contact-form">
                 <h2>Contact Us</h2>
                 <div class="rect2"></div>
-                <form action="#" method="post">
+                <form name="submit-to-google-sheet-5">
                     <div class="form-group">
                         <label for="name">Name*</label>
                         <input type="text" id="name" name="name" class="form-control" required
@@ -835,6 +835,17 @@
     })
 </script>
 
+<!-- Contact-Form Script-Sheet -->
+<script>
+    const scriptURL4 = 'https://script.google.com/macros/s/AKfycbyfwTWxVKO4sDch9TRKVI430A7VjiT-Kn4LCsXHC4pT8kCZOCqGbI_8mhJOh4IqZkr6/exec'
+    const form4 = document.forms['submit-to-google-sheet-5']
 
+    form4.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL4, { method: 'POST', body: new FormData(form4) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
 
 </html>
