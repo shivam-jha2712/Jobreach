@@ -203,7 +203,11 @@
                         <textarea  name="message" class="form-control" rows="5" required
                             placeholder="Enter your "></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button type="submit" class="btn btn-secondary" id="submit-button-2">Submit</button>
+                    
+                    <div class="form-success-message-2" style="display: none;">You have successfully filled up the
+                        form!✅
+                    </div>
                 </form>
             </div>
 
@@ -382,5 +386,17 @@
     })
 </script>
 
+
+<!-- Form Submission JS - Contact -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message-2');
+        const submitButton = document.getElementById('submit-button-2');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
 
 </html>
