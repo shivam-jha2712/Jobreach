@@ -54,33 +54,32 @@
                 <p class="closebutton">X</p>
                 <h2>Hire Quickly with Invest Staffing</h2>
                 <div class="rect2"></div>
-                <form action="#" method="post">
+
+                <form name="submit-to-google-sheet-3">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" class="form-control" required
-                            placeholder="Enter your name">
+                        <input name="name" type="text"  required placeholder="Enter your name"  class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" class="form-control" required
-                            placeholder="Enter your email">
+                        <input name="email" type="email"  required placeholder="Enter your email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input type="text" id="job-title" name="job-title" class="form-control"
-                            placeholder="Enter your job title">
+                        <input name="job-title" type="text"  placeholder="Enter your job title" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="organization">Organization</label>
-                        <input type="text" id="organization" name="organization" class="form-control"
-                            placeholder="Enter your organization">
+                        <input name="organization"  type="text" placeholder="Enter your organization" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="requirement">Requirement*</label>
-                        <textarea id="requirement" name="requirement" class="form-control" rows="5" required
-                            placeholder="Enter your requirement"></textarea>
+                        <textarea name="requirement" rows="5" required placeholder="Enter your requirement" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+
+                    <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                    </div>
                 </form>
             </div>
 
@@ -138,7 +137,10 @@
                         <input type="file" id="resume" name="resume" class="form-control-file" required
                             accept=".pdf, .doc, .docx">
                     </div>
-                    <button type="submit" class="btn btn-secondary">Apply</button>
+                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+                    
+                    <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                    </div>
                 </form>
             </div>
 
@@ -411,7 +413,7 @@
                         <div class="line"></div>
                         <h4>Becton, Dickinson</h4>
                         <h5>81 Jobs</h5>
-                        
+
                         <button class="apply-direct button-onClick-hireTalent">Apply Direct</button>
                     </div>
                     <div class="card3">
@@ -419,7 +421,7 @@
                         <div class="line"></div>
                         <h4>Pfizer</h4>
                         <h5>165 Jobs</h5>
-                        
+
                         <button class="apply-direct button-onClick-hireTalent">Apply Direct</button>
                     </div>
                     <div class="card3">
@@ -427,7 +429,7 @@
                         <div class="line"></div>
                         <h4>Moderna</h4>
                         <h5>91 Jobs</h5>
-                        
+
                         <button class="apply-direct button-onClick-hireTalent">Apply Direct</button>
                     </div>
                     <div class="card3">
@@ -435,7 +437,7 @@
                         <div class="line"></div>
                         <h4>Johnson & Johnson</h4>
                         <h5>171 Jobs</h5>
-                        
+
                         <button class="apply-direct button-onClick-hireTalent">Apply Direct</button>
                     </div>
                     <div class="card3">
@@ -443,7 +445,7 @@
                         <div class="line"></div>
                         <h4>Edwards LifeSciences</h4>
                         <h5>52 Jobs</h5>
-                        
+
                         <button class="apply-direct button-onClick-hireTalent">Apply Direct</button>
                     </div>
                 </div>
@@ -732,7 +734,11 @@
                         <textarea id="message" name="message" class="form-control" rows="5" required
                             placeholder="Enter your "></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+                    
+                    <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                    </div>
+
                 </form>
             </div>
 
@@ -885,6 +891,21 @@
 </script>
 
 
+<!-- Hire Talent Wala Script-Sheet -->
+<script>
+    const scriptURL2 = 'https://script.google.com/macros/s/AKfycbxqWFONBkz9YoHmIX1-cv63JUwDDQpO9Ldkbn3DBI5Phh5QMQEBZKe0jpGogBouwpTY/exec'
+    const form2 = document.forms['submit-to-google-sheet-3']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL2, { method: 'POST', body: new FormData(form2) })
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+
 <!-- Pop up for newsletter -->
 <script>
     document.addEventListener('keydown', function (event) {
@@ -897,6 +918,19 @@
         document.getElementById("popup-1").classList.toggle("active");
     }
 </script>
+
+<!-- Form Submission JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message');
+        const submitButton = document.getElementById('submit-button');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
 
 <script src="./scriptss/form.js"></script>
 

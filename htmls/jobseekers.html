@@ -28,48 +28,48 @@
     </section>
 
 
-
     <!-- popup form to Hiring -->
     <section class="contact pop-up-Positioning">
         <div class="formContainer">
-
+    
             <div class="contact-form hiring">
                 <p class="closebutton">X</p>
-                <h2>Hire Quickly with InventStaffing</h2>
+                <h2>Hire Quickly with Invest Staffing</h2>
                 <div class="rect2"></div>
-                <form action="#" method="post">
+    
+                <form name="submit-to-google-sheet-3">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" class="form-control" required
-                            placeholder="Enter your name">
+                        <input name="name" type="text" required placeholder="Enter your name" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" class="form-control" required
-                            placeholder="Enter your email">
+                        <input name="email" type="email" required placeholder="Enter your email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input type="text" id="job-title" name="job-title" class="form-control"
-                            placeholder="Enter your job title">
+                        <input name="job-title" type="text" placeholder="Enter your job title" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="organization">Organization</label>
-                        <input type="text" id="organization" name="organization" class="form-control"
-                            placeholder="Enter your organization">
+                        <input name="organization" type="text" placeholder="Enter your organization" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="requirement">Requirement*</label>
-                        <textarea id="requirement" name="requirement" class="form-control" rows="5" required
-                            placeholder="Enter your requirement"></textarea>
+                        <textarea name="requirement" rows="5" required placeholder="Enter your requirement"
+                            class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary">Submit</button>
+                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+    
+                    <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                    </div>
                 </form>
             </div>
-
-
+    
+    
         </div>
     </section>
+
 
 
     <!-- Pop up form for Applying/getting hired -->
@@ -675,6 +675,21 @@
         document.getElementById("popup-1").classList.toggle("active");
     }
 </script>
+
+
+<!-- Form Submission JS -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message');
+        const submitButton = document.getElementById('submit-button');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
+
 <script src="/scriptss/seekers.js"></script>
 
 </html>
