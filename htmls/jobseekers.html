@@ -115,9 +115,9 @@
                     <label for="resume">Resume/CV-Open-Link*</label>
                     <input type="link" name="resume" class="form-control" required>
                 </div>
-                <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+                <button type="submit" class="btn btn-secondary" id="submit-button-1">Submit</button>
 
-                <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                <div class="form-success-message-1" style="display: none;">You have successfully filled up the form!✅
                 </div>
             </form>
         </div>
@@ -679,6 +679,18 @@
     document.addEventListener('DOMContentLoaded', function () {
         const successMessage = document.querySelector('.form-success-message');
         const submitButton = document.getElementById('submit-button');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
+<!-- Form Submission JS -Get Hired -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message-1');
+        const submitButton = document.getElementById('submit-button-1');
 
         submitButton.addEventListener('click', function () {
             successMessage.style.display = 'block';

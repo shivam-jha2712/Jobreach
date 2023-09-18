@@ -57,9 +57,9 @@
                     <textarea name="requirement" rows="5" required placeholder="Enter your requirement"
                         class="form-control"></textarea>
                 </div>
-                <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+                <button type="submit" class="btn btn-secondary" id="submit-button-1">Submit</button>
 
-                <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                <div class="form-success-message-1" style="display: none;">You have successfully filled up the form!✅
                 </div>
             </form>
         </div>
@@ -553,11 +553,24 @@
         document.getElementById("popup-1").classList.toggle("active");
     }
 </script>
-<!-- Form Submission JS -->
+
+<!-- Form Submission JS Hire-Talent -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const successMessage = document.querySelector('.form-success-message');
         const submitButton = document.getElementById('submit-button');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
+<!-- Form Submission JS -Get Hired -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message-1');
+        const submitButton = document.getElementById('submit-button-1');
 
         submitButton.addEventListener('click', function () {
             successMessage.style.display = 'block';
