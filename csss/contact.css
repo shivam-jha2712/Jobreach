@@ -937,7 +937,7 @@ form{overflow-y: scroll;}
   display: none;
   position: fixed;
   bottom: 0rem;
-  top: 0rem;
+  top: -12rem;
   right: 0rem;
   left: 0rem;
   z-index: 100;
@@ -956,7 +956,7 @@ form{overflow-y: scroll;}
 }
 
 .hiring {
-  margin-top: 1em;
+  margin-top: 5em;
   margin-bottom: 7em;
   height: 100%;
   overflow-y: scroll;
@@ -975,7 +975,7 @@ form{overflow-y: scroll;}
   display: none;
   position: fixed;
   bottom: 0rem;
-  top: 0rem;
+  top: -13rem;
   right: 0rem;
   left: 0rem;
   z-index: 100;
@@ -995,7 +995,7 @@ form{overflow-y: scroll;}
 }
 
 .getHired {
-margin-top: 1em;
+margin-top: 6em;
   margin-bottom: 6em;
   height: 100%;
   overflow-y: scroll;
@@ -1042,7 +1042,7 @@ margin-top: 1em;
   justify-content: center;
   align-items: center;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: -7%;
   list-style: none;
 }
 
