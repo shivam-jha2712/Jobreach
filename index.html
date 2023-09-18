@@ -58,23 +58,25 @@
                 <form name="submit-to-google-sheet-3">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input name="name" type="text"  required placeholder="Enter your name"  class="form-control">
+                        <input name="name" type="text" required placeholder="Enter your name" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input name="email" type="email"  required placeholder="Enter your email" class="form-control">
+                        <input name="email" type="email" required placeholder="Enter your email" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input name="job-title" type="text"  placeholder="Enter your job title" class="form-control">
+                        <input name="job-title" type="text" placeholder="Enter your job title" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="organization">Organization</label>
-                        <input name="organization"  type="text" placeholder="Enter your organization" class="form-control">
+                        <input name="organization" type="text" placeholder="Enter your organization"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="requirement">Requirement*</label>
-                        <textarea name="requirement" rows="5" required placeholder="Enter your requirement" class="form-control"></textarea>
+                        <textarea name="requirement" rows="5" required placeholder="Enter your requirement"
+                            class="form-control"></textarea>
                     </div>
                     <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
 
@@ -99,32 +101,30 @@
                 <form name="submit-to-google-sheet-4">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text"  name="name" class="form-control" required
-                            placeholder="Enter your name">
+                        <input type="text" name="name" class="form-control" required placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email"  name="email" class="form-control" required
-                            placeholder="Enter your email">
+                        <input type="email" name="email" class="form-control" required placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input type="tel"  name="phone" class="form-control" required
+                        <input type="tel" name="phone" class="form-control" required
                             placeholder="Enter your phone number">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input type="text"  name="job-title" class="form-control"
+                        <input type="text" name="job-title" class="form-control"
                             placeholder="Enter the job title you are applying for">
                     </div>
                     <div class="form-group">
                         <label for="job-location">Job Location</label>
-                        <input type="text"  name="job-location" class="form-control"
+                        <input type="text" name="job-location" class="form-control"
                             placeholder="Enter the job location">
                     </div>
                     <div class="form-group">
                         <label for="salary-range">Salary Range</label>
-                        <select  name="salary-range" class="form-control">
+                        <select name="salary-range" class="form-control">
                             <option value="0-50000">$0 - $50,000</option>
                             <option value="50001-100000">$50,001 - $100,000</option>
                             <option value="100001-150000">$100,001 - $150,000</option>
@@ -134,11 +134,12 @@
                     </div>
                     <div class="form-group">
                         <label for="resume">Resume/CV-Open-Link*</label>
-                        <input type="link" name="resume" class="form-control"required>
+                        <input type="link" name="resume" class="form-control" required>
                     </div>
-                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
-                    
-                    <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                    <button type="submit" class="btn btn-secondary" id="submit-button-1">Submit</button>
+
+                    <div class="form-success-message-1" style="display: none;">You have successfully filled up the
+                        form!✅
                     </div>
                 </form>
             </div>
@@ -733,9 +734,10 @@
                         <textarea id="message" name="message" class="form-control" rows="5" required
                             placeholder="Enter your "></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
-                    
-                    <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
+                    <button type="submit" class="btn btn-secondary" id="submit-button-2">Submit</button>
+
+                    <div class="form-success-message-2" style="display: none;">You have successfully filled up the
+                        form!✅
                     </div>
 
                 </form>
@@ -954,11 +956,35 @@
     });
 </script>
 
-<!-- Form Submission JS -->
+<!-- Form Submission JS - Hire Talent -->
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const successMessage = document.querySelector('.form-success-message');
         const submitButton = document.getElementById('submit-button');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
+<!-- Form Submission JS -Get Hired -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message-1');
+        const submitButton = document.getElementById('submit-button-1');
+
+        submitButton.addEventListener('click', function () {
+            successMessage.style.display = 'block';
+        });
+    });
+</script>
+
+<!-- Form Submission JS -Get Hired -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const successMessage = document.querySelector('.form-success-message-2');
+        const submitButton = document.getElementById('submit-button-2');
 
         submitButton.addEventListener('click', function () {
             successMessage.style.display = 'block';
