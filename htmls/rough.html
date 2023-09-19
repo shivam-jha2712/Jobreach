@@ -478,4 +478,40 @@
         });
 </script>
 
+
+            <!-- Script for Contact Form Submission mail -->
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail() {
+                    let name = document.getElementById("name").value;
+                    let phone = document.getElementById("phone").value;
+                    let email = document.getElementById("email").value;
+                    let message = document.getElementById("message").value;
+                    let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
+                    Email.send({
+                        SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                        // Host: "smtp.elasticemail.com",
+                        // Username: "shivam.jha.2712@gmail.com",
+                        // Password: "7563B411CEC333621B579D4D3D984062AFC3",
+                        // To: 'careers@inventstaffing.com',
+                        To: 'shivam.jha.2712@gmail.com',
+                        From: "shivam.jha.2712@gmail.com",
+                        Subject: "SomeOne From Investstaffing Has Contacted.",
+                        Body: finalmessage
+                    }).then(
+                        message => {
+                            if (message == 'OK') {
+                                // swal("Great!", "We will contact you soon!", "success");
+                                // Reset the form
+                                document.getElementById("name").value = "";
+                                document.getElementById("phone").value = "";
+                                document.getElementById("email").value = "";
+                                document.getElementById("message").value = "";
+                            }
+                        }
+                    );
+                }
+            </script>
+
 </html>

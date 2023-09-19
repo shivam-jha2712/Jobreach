@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./csss/pop-up.css">
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Contact</title>
 </head>
 
@@ -31,12 +32,12 @@
     <!-- popup form to Hiring -->
     <section class="contact pop-up-Positioning">
         <div class="formContainer">
-    
+
             <div class="contact-form hiring">
                 <p class="closebutton">X</p>
                 <h2>Hire Quickly with Invest Staffing</h2>
                 <div class="rect2"></div>
-    
+
                 <form name="submit-to-google-sheet-3">
                     <div class="form-group">
                         <label for="name">Name*</label>
@@ -52,7 +53,8 @@
                     </div>
                     <div class="form-group">
                         <label for="organization">Organization</label>
-                        <input name="organization" type="text" placeholder="Enter your organization" class="form-control">
+                        <input name="organization" type="text" placeholder="Enter your organization"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="requirement">Requirement*</label>
@@ -60,21 +62,22 @@
                             class="form-control"></textarea>
                     </div>
                     <button type="submit" class="btn btn-secondary" id="submit-button-1">Submit</button>
-    
-                    <div class="form-success-message-1" style="display: none;">You have successfully filled up the form!✅
+
+                    <div class="form-success-message-1" style="display: none;">You have successfully filled up the
+                        form!✅
                     </div>
                 </form>
             </div>
-    
-    
+
+
         </div>
     </section>
-    
-    
+
+
     <!-- Pop up form for Applying/getting hired -->
     <section class="contact pop-up-Positioning1">
         <div class="formContainer">
-    
+
             <div class="contact-form getHired">
                 <p class="closebutton1">X</p>
                 <h2>Apply for a Job</h2>
@@ -90,7 +93,8 @@
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input type="tel" name="phone" class="form-control" required placeholder="Enter your phone number">
+                        <input type="tel" name="phone" class="form-control" required
+                            placeholder="Enter your phone number">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
@@ -99,7 +103,8 @@
                     </div>
                     <div class="form-group">
                         <label for="job-location">Job Location</label>
-                        <input type="text" name="job-location" class="form-control" placeholder="Enter the job location">
+                        <input type="text" name="job-location" class="form-control"
+                            placeholder="Enter the job location">
                     </div>
                     <div class="form-group">
                         <label for="salary-range">Salary Range</label>
@@ -116,13 +121,13 @@
                         <input type="link" name="resume" class="form-control" required>
                     </div>
                     <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
-    
+
                     <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
                     </div>
                 </form>
             </div>
-    
-    
+
+
         </div>
     </section>
 
@@ -179,32 +184,35 @@
                 </div>
             </div>
 
+
+            <!-- Complete Contact form with Mail sending as well -->
             <div class="contact-form">
                 <h2>Contact Us</h2>
                 <div class="rect2"></div>
-                <form name="submit-to-google-sheet-5">
+                <form name="submit-to-google-sheet-5" method="post">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text"  name="name" class="form-control" required
+                        <input type="text" id="name" name="name" class="form-control" required
                             placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input type="tel"  name="phone" class="form-control" required
+                        <input type="tel" id="phone" name="phone" class="form-control" required
                             placeholder="Enter your Number">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email"  name="email" class="form-control" required
+                        <input type="email" id="email" name="email" class="form-control" required
                             placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="message">Message*</label>
-                        <textarea  name="message" class="form-control" rows="5" required
+                        <textarea name="message" id="message" class="form-control" rows="5" required
                             placeholder="Enter your Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary" id="submit-button-2">Submit</button>
-                    
+                    <button type="submit" name="send" class="btn btn-secondary" id="submit-button-2"
+                        onclick="sendEmail()">Submit</button>
+
                     <div class="form-success-message-2" style="display: none;">You have successfully filled up the
                         form!✅
                     </div>
@@ -213,6 +221,39 @@
 
         </div>
     </section>
+
+
+    <!-- Script for Contact Form Submission mail -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
+            Email.send({
+                SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
+                From: "shivam.jha.2712@gmail.com",
+                Subject: "SomeOne From Investstaffing Has Contacted.",
+                Body: finalmessage
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        // swal("Great!", "We will contact you soon!", "success");
+                         // Reset the form
+                        document.getElementById("name").value = "";
+                        document.getElementById("phone").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                    }
+                }
+            );
+        }
+    </script>
 
 
 
@@ -410,5 +451,7 @@
         });
     });
 </script>
+
+
 
 </html>

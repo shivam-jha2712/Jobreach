@@ -466,10 +466,11 @@
                 </div>
             </div>
 
+            <!-- Complete Contact form with Mail sending as well -->
             <div class="contact-form">
                 <h2>Contact Us</h2>
                 <div class="rect2"></div>
-                <form name="submit-to-google-sheet-5">
+                <form name="submit-to-google-sheet-5" method="post">
                     <div class="form-group">
                         <label for="name">Name*</label>
                         <input type="text" id="name" name="name" class="form-control" required
@@ -487,10 +488,11 @@
                     </div>
                     <div class="form-group">
                         <label for="message">Message*</label>
-                        <textarea id="message" name="message" class="form-control" rows="5" required
+                        <textarea name="message" id="message" class="form-control" rows="5" required
                             placeholder="Enter your Message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary" id="submit-button-2">Submit</button>
+                    <button type="submit" name="send" class="btn btn-secondary" id="submit-button-2"
+                        onclick="sendEmail()">Submit</button>
 
                     <div class="form-success-message-2" style="display: none;">You have successfully filled up the
                         form!✅
@@ -500,6 +502,40 @@
 
         </div>
     </section>
+
+
+    <!-- Script for Contact Form Submission mail -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
+            Email.send({
+                SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
+                From: "shivam.jha.2712@gmail.com",
+                Subject: "SomeOne From Investstaffing Has Contacted.",
+                Body: finalmessage
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        // swal("Great!", "We will contact you soon!", "success");
+                        // Reset the form
+                        document.getElementById("name").value = "";
+                        document.getElementById("phone").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                    }
+                }
+            );
+        }
+    </script>
+
 
     <section class="blue-box-wrapper4">
         <div class="blue-box4">
