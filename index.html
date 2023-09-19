@@ -58,27 +58,31 @@
                 <form name="submit-to-google-sheet-3">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input name="name" type="text" required placeholder="Enter your name" class="form-control">
+                        <input type="text" id="name" name="name" required placeholder="Enter your name"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input name="email" type="email" required placeholder="Enter your email" class="form-control">
+                        <input type="email" id="email" name="email" required placeholder="Enter your email"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input name="job-title" type="text" placeholder="Enter your job title" class="form-control">
+                        <input type="text" id="job-title" name="job-title" placeholder="Enter your job title"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="organization">Organization</label>
-                        <input name="organization" type="text" placeholder="Enter your organization"
+                        <input type="text" id="organization" name="organization" placeholder="Enter your organization"
                             class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="requirement">Requirement*</label>
-                        <textarea name="requirement" rows="5" required placeholder="Enter your requirement"
-                            class="form-control"></textarea>
+                        <textarea name="requirement" id="requirement" rows="5" required
+                            placeholder="Enter your requirement" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-secondary" id="submit-button">Submit</button>
+                    <button type="submit" name="send" class="btn btn-secondary" id="submit-button"
+                        onclick="sendEmailHireTalent()">Submit</button>
 
                     <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
                     </div>
@@ -88,6 +92,44 @@
 
         </div>
     </section>
+
+
+    <!-- Script for Contact Form Submission mail -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmailHireTalent() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let jobtitle = document.getElementById("job-title").value;
+            let organization = document.getElementById("organization").value;
+            let requirement = document.getElementById("requirement").value;
+            let finalmessageforhire = `Name : ${name} <br>  Email : ${email} <br> JobTitle : ${jobtitle} <br>  Organization : ${organization} <br> Requirement : ${requirement} <br> `;
+            Email.send({
+
+                SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
+                From: "shivam.jha.2712@gmail.com",
+                Subject: "Company has Contacted to Hire Talent",
+                Body: finalmessageforhire
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        // swal("Great!", "We will contact you soon!", "success");
+                        // Reset the form
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("job-title").value = "";
+                        document.getElementById("organization").value = "";
+                        document.getElementById("requirement").value = "";
+                    }
+                }
+            );
+        }
+    </script>
+
+
 
 
     <!-- Pop up form for Applying/getting hired -->
@@ -101,30 +143,32 @@
                 <form name="submit-to-google-sheet-4">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text" name="name" class="form-control" required placeholder="Enter your name">
+                        <input id="name" type="text" name="name" class="form-control" required
+                            placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email" name="email" class="form-control" required placeholder="Enter your email">
+                        <input id="email" type="email" name="email" class="form-control" required
+                            placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input type="tel" name="phone" class="form-control" required
+                        <input type="tel" name="phone" id="phone" class="form-control" required
                             placeholder="Enter your phone number">
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input type="text" name="job-title" class="form-control"
+                        <input id="job-title" type="text" name="job-title" class="form-control"
                             placeholder="Enter the job title you are applying for">
                     </div>
                     <div class="form-group">
                         <label for="job-location">Job Location</label>
-                        <input type="text" name="job-location" class="form-control"
+                        <input type="text" name="job-location" id="job-location" class="form-control"
                             placeholder="Enter the job location">
                     </div>
                     <div class="form-group">
                         <label for="salary-range">Salary Range</label>
-                        <select name="salary-range" class="form-control">
+                        <select name="salary-range" class="form-control" id="salary-range">
                             <option value="0-50000">$0 - $50,000</option>
                             <option value="50001-100000">$50,001 - $100,000</option>
                             <option value="100001-150000">$100,001 - $150,000</option>
@@ -134,9 +178,11 @@
                     </div>
                     <div class="form-group">
                         <label for="resume">Resume/CV-Open-Link*</label>
-                        <input type="link" name="resume" class="form-control" required>
+                        <input type="text" name="resume" id="resume" placeholder="Add and Open Link to your Resume"
+                            class="form-control" required>
                     </div>
-                    <button type="submit" class="btn btn-secondary" id="submit-button-1">Submit</button>
+                    <button type="submit" class="btn btn-secondary" id="submit-button-1"
+                        onclick="sendEmailGetHired()">Submit</button>
 
                     <div class="form-success-message-1" style="display: none;">You have successfully filled up the
                         form!✅
@@ -147,6 +193,47 @@
 
         </div>
     </section>
+
+
+    <!-- Script for Contact Form Submission mail -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmailGetHired() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let jobtitle = document.getElementById("job-title").value;
+            let joblocation = document.getElementById("job-location").value;
+            let salary = document.getElementById("salary-range").value;
+            let resume = document.getElementById("resume").value;
+            let finalmessageforBeingHired = `Name : ${name} <br>  Email : ${email} <br> Phone : ${phone} <br> JobTitle : ${jobtitle} <br> JobLocation : ${joblocation} <br>  Salary : ${salary} <br> Resume : ${resume} <br> `;
+            Email.send({
+                SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
+                From: "shivam.jha.2712@gmail.com",
+                Subject: "Someone sent a resume to be hired",
+                Body: finalmessageforBeingHired
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        // swal("Great!", "We will contact you soon!", "success");
+                        // Reset the form
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("phone").value = "";
+                        document.getElementById("job-title").value = "";
+                        document.getElementById("job-location").value = "";
+                        document.getElementById("salary-range").value = "";
+                        document.getElementById("resume").value = "";
+                    }
+                }
+            );
+        }
+    </script>
+
+
 
 
 
@@ -717,15 +804,18 @@
                 <form name="submit-to-google-sheet-5" method="post">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your name">
+                        <input type="text" id="name" name="name" class="form-control" required
+                            placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required placeholder="Enter your Number">
+                        <input type="tel" id="phone" name="phone" class="form-control" required
+                            placeholder="Enter your Number">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
+                        <input type="email" id="email" name="email" class="form-control" required
+                            placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                         <label for="message">Message*</label>
@@ -734,48 +824,48 @@
                     </div>
                     <button type="submit" name="send" class="btn btn-secondary" id="submit-button-2"
                         onclick="sendEmail()">Submit</button>
-            
+
                     <div class="form-success-message-2" style="display: none;">You have successfully filled up the
                         form!✅
                     </div>
                 </form>
             </div>
-            
-            </div>
-            </section>
-            
-            
-            <!-- Script for Contact Form Submission mail -->
-            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-            <script src="https://smtpjs.com/v3/smtp.js"></script>
-            <script>
-                function sendEmail() {
-                    let name = document.getElementById("name").value;
-                    let phone = document.getElementById("phone").value;
-                    let email = document.getElementById("email").value;
-                    let message = document.getElementById("message").value;
-                    let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
-                    Email.send({
-                        SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
-                        // To: 'careers@inventstaffing.com',
-                        To: 'shivam.jha.2712@gmail.com',
-                        From: "shivam.jha.2712@gmail.com",
-                        Subject: "SomeOne From Investstaffing Has Contacted.",
-                        Body: finalmessage
-                    }).then(
-                        message => {
-                            if (message == 'OK') {
-                                // swal("Great!", "We will contact you soon!", "success");
-                                // Reset the form
-                                document.getElementById("name").value = "";
-                                document.getElementById("phone").value = "";
-                                document.getElementById("email").value = "";
-                                document.getElementById("message").value = "";
-                            }
-                        }
-                    );
+
+        </div>
+    </section>
+
+
+    <!-- Script for Contact Form Submission mail -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
+            Email.send({
+                SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
+                From: "shivam.jha.2712@gmail.com",
+                Subject: "SomeOne From Investstaffing Has Contacted.",
+                Body: finalmessage
+            }).then(
+                message => {
+                    if (message == 'OK') {
+                        // swal("Great!", "We will contact you soon!", "success");
+                        // Reset the form
+                        document.getElementById("name").value = "";
+                        document.getElementById("phone").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                    }
                 }
-            </script>
+            );
+        }
+    </script>
 
     <!-- FOOTER Section -->
 
