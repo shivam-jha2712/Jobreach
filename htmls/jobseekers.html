@@ -13,20 +13,19 @@
 
 <body>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    
+
     <!-- Pop-up for newsletter -->
-    <section class="popup-newsletter" id="popup-1" onclick="togglePopup()">
+    <!-- <section class="popup-newsletter" id="popup-1" onclick="togglePopup()">
         <div class="overlay-pop-up" onclick="togglePopup()">
             <div class="popup-content">
                 <h1>CONGRATULATIONS!</h1>
                 <p>You have successfully subscribed for regular job updates.</p>
-                <!-- <span id="caution">click anywhere outside to exit</s> -->
                 <div class="btn btn-secondary" onclick="togglePopup()">
                     Great Success!!
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- popup form to Hiring -->
@@ -91,8 +90,8 @@
             Email.send({
 
                 SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
-                // To: 'careers@inventstaffing.com',
-                To: 'shivam.jha.2712@gmail.com',
+                To: 'careers@inventstaffing.com',
+                // To: 'shivam.jha.2712@gmail.com',
                 From: "shivam.jha.2712@gmail.com",
                 Subject: "Company has Contacted to Hire Talent",
                 Body: finalmessageforhire
@@ -192,8 +191,8 @@
             var finalmessageforBeingHired = "Name: " + name + "<br/> Email:" + email + "<br/> Phone:" + phone + "<br/> Jobtitle:" + jobtitle + "<br/> Joblocation:" + joblocation + "<br/> Salary:" + salary + "<br/> Resume:" + resume;
             Email.send({
                 SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
-                // To: 'careers@inventstaffing.com',
-                To: 'shivam.jha.2712@gmail.com',
+                To: 'careers@inventstaffing.com',
+                // To: 'shivam.jha.2712@gmail.com',
                 From: "shivam.jha.2712@gmail.com",
                 Subject: "Someone sent a resume to be hired",
                 Body: finalmessageforBeingHired
@@ -702,17 +701,37 @@
             </div>
             <div class="newsletter-footer">
                 <h2>Join Our Newsletter</h2>
-
-
+            
                 <form name="submit-to-google-sheet-2" class="input-group">
-                    <input name="email" type="email" class="form-control" placeholder="Enter your email" required>
+                    <input id="newsletter-email" name="email" type="email" class="form-control" placeholder="Enter your email"
+                        required>
                     <button type="submit" class="btn btn-primary" onclick="togglePopup()">Subscribe</button>
                 </form>
+            
+                <script>
+                    function togglePopup() {
+                        let email = document.getElementById("newsletter-email").value;
+                        let finalmessageforsubscribe = `  Email : ${email}  `;
+                        Email.send({
 
-                <!-- <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Enter your email">
-                        <button class="btn btn-primary">Subscribe</button>
-                    </div> -->
+                            SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
+                            To: 'careers@inventstaffing.com',
+                            // To: 'shivam.jha.2712@gmail.com',
+                            From: "shivam.jha.2712@gmail.com",
+                            Subject: "Someone Subscribed for the NewsLetter",
+                            Body: finalmessageforsubscribe
+                        }).then(
+                            message => {
+                                if (message == 'OK') {
+                                    swal("Great!", "You have successfully subscribed", "success");
+                                    // Reset the form
+                                    document.getElementById("newsletter-email").value = "";
+
+                                }
+                            }
+                        );
+                    }
+                </script>
 
                 <p>* Will send you weekly updates for your<br> better tool management.</p>
 
@@ -748,7 +767,7 @@
 
 
 <!-- Pop up for newsletter -->
-<script>
+<!-- <script>
     document.addEventListener('keydown', function (event) {
         if (event.key === "Escape") {
             document.getElementById("popup-1").classList.toggle("active");
@@ -758,7 +777,7 @@
     function togglePopup() {
         document.getElementById("popup-1").classList.toggle("active");
     }
-</script>
+</script> -->
 
 
 <!-- Form Submission JS -->
