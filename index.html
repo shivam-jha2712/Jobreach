@@ -802,17 +802,17 @@
                 <form name="submit-to-google-sheet-5" method="post">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input type="text" id="name" name="name" class="form-control" required
+                        <input type="text" id="name-contact" name="name" class="form-control" required
                             placeholder="Enter your name">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required
+                        <input type="tel" id="phone-contact" name="phone" class="form-control" required
                             placeholder="Enter your Number">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input type="email" id="email" name="email" class="form-control" required
+                        <input type="email" id="email-contact" name="email" class="form-control" required
                             placeholder="Enter your email">
                     </div>
                     <div class="form-group">
@@ -838,9 +838,9 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmail() {
-            let name = document.getElementById("name").value;
-            let phone = document.getElementById("phone").value;
-            let email = document.getElementById("email").value;
+            let name = document.getElementById("name-contact").value;
+            let phone = document.getElementById("phone-contact").value;
+            let email = document.getElementById("email-contact").value;
             let message = document.getElementById("message").value;
             let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
             Email.send({
@@ -855,9 +855,9 @@
                     if (message == 'OK') {
                         // swal("Great!", "We will contact you soon!", "success");
                         // Reset the form
-                        document.getElementById("name").value = "";
-                        document.getElementById("phone").value = "";
-                        document.getElementById("email").value = "";
+                        document.getElementById("name-contact").value = "";
+                        document.getElementById("phone-contact").value = "";
+                        document.getElementById("email-contact").value = "";
                         document.getElementById("message").value = "";
                     }
                 }
