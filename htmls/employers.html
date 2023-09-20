@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Pop-up for newsletter -->
     <section class="popup-newsletter" id="popup-1" onclick="togglePopup()">
         <div class="overlay-pop-up" onclick="togglePopup()">
@@ -29,12 +29,12 @@
     <!-- popup form to Hiring -->
     <section class="contact pop-up-Positioning">
         <div class="formContainer">
-    
+
             <div class="contact-form hiring">
                 <p class="closebutton">X</p>
                 <h2>Hire Quickly with Invest Staffing</h2>
                 <div class="rect2"></div>
-    
+
                 <form name="submit-to-google-sheet-3">
                     <div class="form-group">
                         <label for="name">Name*</label>
@@ -58,22 +58,22 @@
                     </div>
                     <div class="form-group">
                         <label for="requirement">Requirement*</label>
-                        <textarea name="requirement" id="requirement" rows="5" required placeholder="Enter your requirement"
-                            class="form-control"></textarea>
+                        <textarea name="requirement" id="requirement" rows="5" required
+                            placeholder="Enter your requirement" class="form-control"></textarea>
                     </div>
                     <button type="submit" name="send" class="btn btn-secondary" id="submit-button"
                         onclick="sendEmailHireTalent()">Submit</button>
-    
+
                     <div class="form-success-message" style="display: none;">You have successfully filled up the form!✅
                     </div>
                 </form>
             </div>
-    
-    
+
+
         </div>
     </section>
-    
-    
+
+
     <!-- Script for Contact Form Submission mail -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -108,14 +108,14 @@
             );
         }
     </script>
-    
-    
-    
-    
+
+
+
+
     <!-- Pop up form for Applying/getting hired -->
     <section class="contact pop-up-Positioning1">
         <div class="formContainer">
-    
+
             <div class="contact-form getHired">
                 <p class="closebutton1">X</p>
                 <h2>Apply for a Job</h2>
@@ -163,18 +163,18 @@
                     </div>
                     <button type="submit" class="btn btn-secondary" id="submit-button-1"
                         onclick="sendEmailGetHired()">Submit</button>
-    
+
                     <div class="form-success-message-1" style="display: none;">You have successfully filled up the
                         form!✅
                     </div>
                 </form>
             </div>
-    
-    
+
+
         </div>
     </section>
-    
-    
+
+
     <!-- Script for Contact Form Submission mail -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
