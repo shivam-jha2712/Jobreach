@@ -108,8 +108,8 @@
             Email.send({
 
                 SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
-                To: 'careers@inventstaffing.com',
-                // To: 'shivam.jha.2712@gmail.com',
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
                 From: "shivam.jha.2712@gmail.com",
                 Subject: "Company has Contacted to Hire Talent",
                 Body: finalmessageforhire
@@ -143,13 +143,13 @@
                 <form name="submit-to-google-sheet-4">
                     <div class="form-group">
                         <label for="name">Name*</label>
-                        <input id="name" type="text" name="name" class="form-control" required
-                            placeholder="Enter your name">
+                        <input type="text" id="name-get-hired" name="name" required placeholder="Enter your name"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="email">Email*</label>
-                        <input id="email" type="email" name="email" class="form-control" required
-                            placeholder="Enter your email">
+                        <input type="email" id="email-get-hired" name="email" required placeholder="Enter your email"
+                            class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number*</label>
@@ -158,8 +158,8 @@
                     </div>
                     <div class="form-group">
                         <label for="job-title">Job Title</label>
-                        <input id="job-title" type="text" name="job-title" class="form-control"
-                            placeholder="Enter the job title you are applying for">
+                        <input type="text" id="job-title-get-hired" name="job-title"
+                            placeholder="Enter your job title you are applying for" class="form-control">
                     </div>
                     <div class="form-group">
                         <label for="job-location">Job Location</label>
@@ -196,34 +196,32 @@
 
 
     <!-- Script for Contact Form Submission mail -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function sendEmailGetHired() {
-            let name = document.getElementById("name").value;
-            let email = document.getElementById("email").value;
-            let phone = document.getElementById("phone").value;
-            let jobtitle = document.getElementById("job-title").value;
-            let joblocation = document.getElementById("job-location").value;
-            let salary = document.getElementById("salary-range").value;
-            let resume = document.getElementById("resume").value;
-            let finalmessageforBeingHired = `Name : ${name} <br>  Email : ${email} <br> Phone : ${phone} <br> JobTitle : ${jobtitle} <br> JobLocation : ${joblocation} <br>  Salary : ${salary} <br> Resume : ${resume} <br> `;
+            var name = document.getElementById("name-get-hired").value;
+            var email = document.getElementById("email-get-hired").value;
+            var phone = document.getElementById("phone").value;
+            var jobtitle = document.getElementById("job-title-get-hired").value;
+            var joblocation = document.getElementById("job-location").value;
+            var salary = document.getElementById("salary-range").value;
+            var resume = document.getElementById("resume").value;
+            var finalmessageforBeingHired = "Name: " + name + "<br/> Email:" + email + "<br/> Phone:" + phone + "<br/> Jobtitle:" + jobtitle + "<br/> Joblocation:" + joblocation + "<br/> Salary:" + salary + "<br/> Resume:" + resume;
             Email.send({
                 SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
-                To: 'careers@inventstaffing.com',
-                // To: 'shivam.jha.2712@gmail.com',
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
                 From: "shivam.jha.2712@gmail.com",
                 Subject: "Someone sent a resume to be hired",
                 Body: finalmessageforBeingHired
             }).then(
                 message => {
                     if (message == 'OK') {
-                        // swal("Great!", "We will contact you soon!", "success");
                         // Reset the form
-                        document.getElementById("name").value = "";
-                        document.getElementById("email").value = "";
+                        document.getElementById("name-get-hired").value = "";
+                        document.getElementById("email-get-hired").value = "";
                         document.getElementById("phone").value = "";
-                        document.getElementById("job-title").value = "";
+                        document.getElementById("job-title-get-hired").value = "";
                         document.getElementById("job-location").value = "";
                         document.getElementById("salary-range").value = "";
                         document.getElementById("resume").value = "";
@@ -847,8 +845,8 @@
             let finalmessage = `Name : ${name} <br>  Phone : ${phone} <br> Email : ${email} <br>  Message : ${message} <br>`;
             Email.send({
                 SecureToken: "8dd54dc4-fb94-4a65-9902-296ddc3c1c97",
-                To: 'careers@inventstaffing.com',
-                // To: 'shivam.jha.2712@gmail.com',
+                // To: 'careers@inventstaffing.com',
+                To: 'shivam.jha.2712@gmail.com',
                 From: "shivam.jha.2712@gmail.com",
                 Subject: "SomeOne From Investstaffing Has Contacted.",
                 Body: finalmessage
