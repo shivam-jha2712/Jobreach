@@ -2638,7 +2638,9 @@ margin-bottom: -50px;
   }
   .blue-box4 .button{
     margin-left:0;
-
+  }
+  .blue-box4 {
+    width: 90%;
   }
   .blue-box4 .content-top {
 color: #FFF;
@@ -2655,16 +2657,18 @@ margin-bottom: -1rem;
   }
 
   
-/* .blue-box4 .content-next {
+.blue-box4 .content-next {
+  width: 90%;
+  margin-left: 0.7rem;
     text-align: center;
     font-size: 0.8rem;
     font-style: normal;
     margin-bottom: 25px;
-} */
+}
   
-
+  .blue-box4  .button,
   .blue-box4 .button.white{
-    margin-left:0;
+    margin-left:15%;
   }
 
   .blue-box4  .button,
